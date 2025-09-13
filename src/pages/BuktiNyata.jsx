@@ -60,7 +60,7 @@ export default function BuktiNyata() {
           {buktiNyata.map((bukti) => (
             <div key={bukti.id} className="flex flex-col justify-center overflow-hidden bg-transparent rounded-3xl">
               {/* Gambar di kiri */}
-              <div className="absolute z-10 flex flex-col overflow-hidden transition-transform duration-500 shadow-lg h-59 border-3 border-slate-100 rounded-3xl hover:scale-102 hover:shadow-2xl">
+              <div className="absolute z-10 flex flex-col overflow-hidden transition-shadow duration-500 shadow-lg h-59 border-3 border-slate-100 rounded-3xl hover:shadow-2xl ">
                 <div className="object-cover w-full">
                   <img src={bukti.img} alt={bukti.title} className="object-cover h-59 w-80" />
                 </div>
