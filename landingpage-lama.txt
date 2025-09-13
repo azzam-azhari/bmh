@@ -1,0 +1,39 @@
+          <div className="grid items-center grid-cols-1 gap-20 pt-40 md:grid-cols-2 hero mb-30">
+            <div className="box">
+              <p className="pl-1 mb-2 text-sm font-bold text-lime-600 lg:font-extrabold">Berbagi Kebaikan</p>
+              <h1 className="mb-3 text-4xl font-black text-slate-900 lg:text-5xl/tight">
+                Usaha Kecil <br /> Membuat <br /> Perubahan Besar
+              </h1>
+              <p className="text-base/8 mb-7">
+                Dari Anda untuk Sesama, <br />
+                Menuju Kebahagiaan Bersama
+              </p>
+              <a href="#" className="px-8 py-4 transition-all bg-orange-400 rounded-full shadow hover:bg-orange-600 focus:outline-2 focus:outline-offset-2 focus:outline-orange-400 active:bg-orange-900 text-slate-100">
+                Donasi Sekarang<i class="ri-hand-heart-line ms-2 text-medium"></i>
+              </a>
+            </div>
+
+            {/* Donasi Cepat */}
+            <div className="max-w-2xl mx-auto box lg:mx-10 xl:mx-20">
+              <div className="p-8 bg-white shadow-2xl rounded-xl">
+                <h2 className="mb-4 text-xl font-bold text-gray-800 md:text-2xl">Sedekah Jariyah Bantu Bangun Kembali Masjid Ummul Quro</h2>
+                <form className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block mb-1 text-sm font-medium text-gray-600">
+                      Nama:
+                    </label>
+                    <input type="text" id="name" placeholder="Contoh: Alex" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" />
+                  </div>
+                  <div>
+                    <label htmlFor="nominal" className="block mb-1 text-sm font-medium text-gray-600">
+                      Nominal:
+                    </label>
+                    <input type="number" id="nominal" placeholder="Contoh: 100.000" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" />
+                  </div>
+                  <button type="submit" className="w-full py-3 font-bold transition rounded-full bg-lime-500 text-slate-100 hover:bg-lime-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-lime-500 active:bg-lime-700">
+                    Donasi Cepat
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
