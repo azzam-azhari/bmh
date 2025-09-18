@@ -1,31 +1,113 @@
 import React from 'react';
+import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
 
 const ProfilBmh = () => {
   return (
-    <section className="px-4 font-nunito py-20 bg-slate-100 container mx-auto md:px-8 lg:py-30 lg:px-16">
-      <div className="flex flex-col items-center gap-10 mx-auto max-w-7xl lg:flex-row">
-        {/* Images */}
-        <div className="flex flex-col gap-4 sm:flex-row lg:w-1/2 sm:w-full">
-          <img src="/images/profil/profil1.png" alt="BMH Office" className="object-cover w-full shadow-lg rounded-xl md:w-1/2" />
-          <img src="/images/profil/profil2.png" alt="Masjid" className="object-cover w-full shadow-lg rounded-xl md:w-1/2" />
+    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-50 md:px-8 lg:py-30 lg:px-16">
+      <div className="grid items-center gap-10 mx-auto max-w-7xl lg:grid-cols-2">
+        {/* Images Grid */}
+        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
+          {/* Gambar besar: melebar 2 kolom di layar md ke atas */}
+          <img src="/images/profil/profil2.png" alt="BMH Office" className="object-cover w-full h-full shadow-lg md:col-span-2 md:row-span-2 rounded-xl" />
+          {/* Gambar kecil 1 */}
+          <img src="/images/profil/profil2.png" alt="Launching Logo" className="object-cover w-full h-full shadow-lg rounded-xl" />
+          {/* Gambar kecil 2 */}
+          <img src="/images/profil/profil1.png" alt="Produk BMH" className="object-cover w-full h-full shadow-lg rounded-xl" />
         </div>
 
         {/* Text Content */}
-        <div className="text-center lg:w-1/2 lg:text-left">
+        <div className="text-left lg:text-left">
           <h3 className="font-semibold tracking-wide text-green-600 uppercase">TENTANG KAMI</h3>
-          <h2 className="mt-2 mb-4 text-3xl font-bold md:font-extrabold">BAITUL MAAL HIDAYATULLAH</h2>
-          <p className="leading-relaxed text-gray-700 text-left">
-            Lembaga Amil Zakat Nasional Baitul Maal Hidayatullah (BMH) merupakan lembaga amil zakat yang bergerak dalam penghimpunan Responsibility (CSR) perusahaan, dan melakukan distribusi melalui program pendidikan, dakwah, sosial
-            kemanusiaan dan ekonomi secara nasional.
+          <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold">BAITUL MAAL HIDAYATULLAH</h2>
+          <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
+          <p className="leading-relaxed text-justify text-gray-700">
+            Lembaga Amil Zakat Nasional Baitul Maal Hidayatullah (BMH) merupakan lembaga amil zakat yang bergerak dalam penghimpunan dana Zakat, Infaq, Sedekah, Wakaf dan Hibah berikut dana sosial kemanusiaan dan Corporate Social
+            Responsibility (CSR) perusahaan, serta melakukan distribusi melalui program pendidikan, dakwah, sosial kemanusiaan, dan ekonomi secara nasional.
             <br />
             <br />
-            BMH hadir Kantor layanan LAZNAS BMH hadir di 34 Provinsi dengan unit penghimpunan (UPP) zakat, infak dan sedekah mencapai 97 se-Indonesia. Kami wujudkan semua sebagai komitmen untuk menjadi perantara kebaikan, memberi kemudahan
-            bagi masyarakat dalam menunaikan ZISWAF menuju Indonesia yang lebih bermartabat.
+            BMH hadir di 34 Provinsi dengan unit penghimpunan (UPP) zakat, infak dan sedekah mencapai 97 se-Indonesia. Kami wujudkan semua sebagai komitmen untuk menjadi perantara kebaikan, memberi kemudahan bagi masyarakat dalam menunaikan
+            ZISWAF menuju Indonesia yang lebih bermartabat.
             <br />
             <br />
             Kiprah program BMH dari hasil pengelolaan zakat telah melintasi berbagai daerah di Indonesia, setidaknya 287 Pesantren telah eksis dan berkiprah, 5213 Dai Tangguh telah menyebar seantero nusantara, ribuan keluarga dhuafa telah
             terberdayakan dan mandiri, ribuan anak usia sekolah mendapatkan pendidikan yang layak.
           </p>
+        </div>
+      </div>
+
+      {/* CTA Zakat */}
+      <div className="container py-12 mx-auto max-w-7xl">
+        {/* Heading */}
+        <p className="mb-8 text-xl font-medium text-center text-gray-700">
+          Salurkan Zakat Anda Lewat BMH — <span className="font-semibold">Lembaga Zakat Amanah &amp; Terpercaya</span>
+        </p>
+
+        {/* Cards */}
+        <div className="grid gap-6 mb-10 md:grid-cols-2">
+          {/* Kalkulator Zakat */}
+          <div className="flex items-start gap-4 p-6 text-white shadow-md bg-emerald-600 rounded-xl">
+            <div className="p-3 bg-white rounded-lg">
+              <FaCalculator className="w-6 h-6 text-emerald-600" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Kalkulator Zakat</h3>
+              <p className="text-sm text-emerald-100">Temukan dengan cepat berapa kewajiban zakat Anda. Praktis, akurat, dan sesuai syariat.</p>
+              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium rounded-lg bg-slate-50 text-emerald-600 hover:bg-slate-100">
+                Hitung Zakat Anda
+              </a>
+            </div>
+          </div>
+
+          {/* Tunaikan Zakat */}
+          <div className="flex items-start gap-4 p-6 text-white bg-yellow-500 shadow-md rounded-xl">
+            <div className="p-3 bg-white rounded-lg">
+              <FaMoneyBillWave className="w-6 h-6 text-yellow-500" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Tunaikan Zakat</h3>
+              <p className="text-sm text-amber-100">Salurkan zakat Anda secara online dengan aman, transparan, dan tepat sasaran. Setiap rupiah Anda akan membantu mereka yang membutuhkan.</p>
+              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
+                Tunaikan Zakat Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Box */}
+        <div className="p-6 text-center shadow bg-gradient-to-r from-gray-100 to-gray-50 rounded-xl">
+          <p className="mb-2 text-lg font-medium text-gray-500">Mari Bersama Menebar Kebaikan!</p>
+          <h4 className="mb-2 text-lg font-semibold text-emerald-900">BMH: Laznas Amanah, Transparan, dan Profesional Berbasis Dakwah.</h4>
+          <p className="mb-4 text-sm text-gray-600">Dengan zakat Anda, ribuan anak bisa belajar, keluarga dhuafa bisa mandiri, dan pesantren bisa terus berdiri.</p>
+          <a href="https://wa.me/628123456789" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 text-white transition rounded-lg shadow bg-emerald-500 hover:bg-emerald-600">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      {/* Visi-Misi */}
+      <div className="">
+        <div className="container py-12 mx-auto space-y-10 max-w-7xl">
+          {/* Visi */}
+          <div>
+            <h2 className="text-2xl font-bold text-[#095046] flex items-center gap-2">Visi</h2>
+            <div className="h-2 w-20 bg-[#10B981] mt-1 mb-4"></div>
+            <div className="p-4 border rounded-xl border-slate-200">
+              <p className="font-medium text-gray-700">Menjadi Lembaga Amil Zakat Terdepan Dan Terpercaya.</p>
+            </div>
+          </div>
+
+          {/* Misi */}
+          <div>
+            <h2 className="text-2xl font-bold text-[#095046] flex items-center gap-2">Misi</h2>
+            <div className="h-2 w-20 bg-[#F59E0B] mt-1 mb-4"></div>
+            <div className="p-4 border rounded-xl border-slate-200">
+              <ul className="pl-6 space-y-2 font-medium text-gray-700 list-disc">
+                <li>Menjadi Lembaga Amil Zakat Yang Terdepan Dalam Penghimpunan Dan Fokus Dalam Pendayagunaan</li>
+                <li>Melaksanakan Pengelolaan Dana Zakat, Infaq Dan Shadaqah Sesuai Dengan Manajemen Modern Yang Transparan Dan Profesional</li>
+                <li>Melakukan Pemberdayaan Ummat Dengan Meningkatkan Kuantitas, Kualitas Pendidikan Dan Dakwah</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
