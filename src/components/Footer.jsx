@@ -107,7 +107,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="py-6 text-sm text-center text-white bg-emerald-900">© 2025 Hak cipta BMH - All Rights Reserved</div>
+      <div className="py-6 text-sm text-center text-white bg-[#095046] border-t-1 border-white/30">© 2025 Hak cipta BMH - All Rights Reserved</div>
     </footer>
   );
 };

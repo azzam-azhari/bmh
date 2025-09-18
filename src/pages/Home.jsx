@@ -3,6 +3,8 @@ import Hero from './Hero';
 import NewsSection from './NewsSection';
 import BuktiNyata from './BuktiNyata';
 import LastCard from './LastCard';
+import JejakKebaikan from './JejakKebaikan';
+import ProgramKami from './ProgramKami';
 
 export default function Home() {
   return (
@@ -11,16 +13,24 @@ export default function Home() {
       <Hero />
 
       {/* News Section */}
-      <div className="mt-12">
+      <div className="py-10">
         <NewsSection />
       </div>
-      {/* News Section */}
-      <div className="mt-12">
+      {/* BuktiNyata */}
+      <div className="py-10">
         <BuktiNyata />
       </div>
-      {/* News Section */}
-      <div className="mt-12">
+      {/* LastCard */}
+      <div className="py-10">
         <LastCard />
+      </div>
+      {/* JejakKebaikan */}
+      <div className="py-10">
+        <JejakKebaikan />
+      </div>
+      {/* ProgramKami */}
+      <div className="py-10 mb-20">
+        <ProgramKami />
       </div>
     </div>
   );

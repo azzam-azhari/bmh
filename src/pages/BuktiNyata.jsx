@@ -52,9 +52,13 @@ const buktiNyata = [
 
 export default function BuktiNyata() {
   return (
-    <section className="w-full py-12 font-poppins">
+    <section className="w-full font-poppins">
       <div className="container px-4 mx-auto max-w-7xl">
-        <h2 className="mb-10 text-3xl font-bold text-center underline md:text-4xl text-emerald-900">Bukti Nyata</h2>
+        {/* Judul */}
+        <div className="mb-10">
+          <h2 className="text-3xl font-bold text-start md:text-4xl text-emerald-900">Aksi Nyata BMH</h2>
+          <div className="w-32 h-2 mt-2 rounded-none bg-emerald-500"></div>
+        </div>
 
         <div className="grid gap-8 md:grid-cols-2">
           {buktiNyata.map((bukti) => (

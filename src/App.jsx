@@ -9,6 +9,8 @@ import ProfilBmh from './pages/ProfilBmh';
 import NewsSection from './pages/NewsSection';
 import BuktiNyata from './pages/BuktiNyata';
 import LastCard from './pages/LastCard';
+import JejakKebaikan from './pages/JejakKebaikan';
+import ProgramKami from './pages/ProgramKami';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/newsSection" element={<NewsSection />} />
           <Route path="/buktiNyata" element={<BuktiNyata />} />
           <Route path="/lastCard" element={<LastCard />} />
+          <Route path="/jejakKebaikan" element={<JejakKebaikan />} />
+          <Route path="/programKami" element={<ProgramKami />} />
           <Route path="/profilBmh" element={<ProfilBmh />} />
         </Routes>
 

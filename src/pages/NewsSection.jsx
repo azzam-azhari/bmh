@@ -19,15 +19,15 @@ const newsData = [
     img: '/images/berita-terkini/berita3.jpeg',
     title: 'Lorem ipsum dolor sit amet.',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
-    bg: 'bg-teal-900',
+    bg: 'bg-[#095046]',
   },
 ];
 
 export default function NewsSection() {
   return (
-    <section className="w-full py-12 font-poppins">
+    <section className="w-full font-poppins">
       <div className="container px-4 mx-auto max-w-7xl">
-        <h2 className="mb-10 text-3xl font-bold text-center underline md:text-4xl text-emerald-900">Berita Terbaru</h2>
+        {/* <h2 className="mb-10 text-3xl font-bold text-center underline md:text-4xl text-emerald-900">Berita Terbaru</h2> */}
         <div className="grid gap-8 md:grid-cols-3">
           {newsData.map((news) => (
             <div key={news.id} className="flex flex-col">

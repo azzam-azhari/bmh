@@ -23,8 +23,13 @@ const DataCard = [
 
 export default function LastCard() {
   return (
-    <section className="w-full py-12 font-poppins">
+    <section className="w-full font-poppins">
       <div className="container px-4 mx-auto max-w-7xl">
+        {/* Judul */}
+        <div className="mb-10">
+          <h2 className="text-3xl font-bold text-start md:text-4xl text-emerald-900">Blog</h2>
+          <div className="w-32 h-2 mt-2 bg-yellow-500"></div>
+        </div>
         {/* Grid Card */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {DataCard.map((item) => (
