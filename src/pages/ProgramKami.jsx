@@ -14,16 +14,16 @@ export default function ProgramKami() {
     <section className="container px-4 mx-auto max-w-7xl font-poppins">
       {/* Judul */}
       <div className="mb-10">
-        <h2 className="text-3xl font-bold text-emerald-900 md:text-4xl">Program Kami</h2>
+        <h2 className="text-3xl font-bold text-[#095046] md:text-4xl">Program Kami</h2>
         <div className="h-2 mt-2 w-28 bg-amber-400"></div>
       </div>
 
       {/* Grid Program */}
       <div className="grid grid-cols-2 gap-4 mb-12 md:grid-cols-3 lg:grid-cols-3">
         {programs.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-center justify-center gap-2 p-4 transition border border-slate-200 rounded-xl hover:shadow-xs hover:border-0 hover:bg-slate-200">
-            {item.icon}
-            <p className="text-sm font-semibold text-center text-emerald-900">{item.title}</p>
+          <div key={idx} className="flex items-center gap-3 p-4 transition border border-slate-200 rounded-xl hover:shadow-sm hover:border-0 hover:bg-slate-200">
+            <span className="text-xl text-green-600">{item.icon}</span>
+            <p className="text-sm font-semibold text-[#095046]">{item.title}</p>
           </div>
         ))}
       </div>
@@ -43,7 +43,7 @@ export default function ProgramKami() {
 
         {/* Kanan */}
         <div className="flex flex-col flex-1 gap-2">
-          <p className="text-sm text-gray-600">Masih bingung cara berdonasi?, Tim kami siap membantu kamu</p>
+          <p className="text-sm text-[#095046]">Masih bingung cara berdonasi?, Tim kami siap membantu kamu</p>
           <div className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg bg-slate-50 hover:bg-slate-200 hover:cursor-pointer">
             <span className="font-semibold ">WhatsApp:</span> 021 - 7975770
           </div>
