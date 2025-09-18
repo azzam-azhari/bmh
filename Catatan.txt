@@ -2,6 +2,10 @@ container px-4 mx-auto md:px-8 lg:px-16
 
 Popup WA
 
+Color:
+#095046
+#FEB738
+#39BA87
 
 
 ✅ Form Login, Langkah Selanjutnya

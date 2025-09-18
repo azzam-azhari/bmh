@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="relative z-20 shadow-lg bg-emerald-900 backdrop-blur-md text-slate-50 font-poppins">
+    <footer className="relative z-20 shadow-lg bg-[#095046] backdrop-blur-md text-slate-50 font-poppins">
       {/* Konten Utama */}
       <div className="grid grid-cols-1 gap-10 px-6 pt-20 pb-10 mx-auto max-w-7xl md:grid-cols-3">
         {/* Kolom 1 */}

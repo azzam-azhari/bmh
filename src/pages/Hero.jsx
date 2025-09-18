@@ -41,10 +41,14 @@ export default function Hero() {
         </div> */}
 
         {/* Dots Navigation */}
-        <div className="absolute flex justify-center w-full gap-2 bottom-4">
-          {slides.map((_, index) => (
-            <button key={index} onClick={() => setCurrent(index)} className={`w-3 h-3 rounded-full transition ${current === index ? 'bg-emerald-500' : 'bg-white/70'}`} />
-          ))}
+        <div className="relative px-6 bg-white">
+          <div className="absolute flex justify-center w-full bottom-4">
+            <div className="flex gap-2 px-4 py-2 rounded-full bg-white/50">
+              {slides.map((_, index) => (
+                <button key={index} onClick={() => setCurrent(index)} className={`h-3 w-3 rounded-full transition ${current === index ? 'bg-emerald-500' : 'bg-gray-300'}`} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
