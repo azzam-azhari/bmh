@@ -21,7 +21,7 @@ export default function ProgramKami() {
       {/* Grid Program */}
       <div className="grid grid-cols-2 gap-4 mb-12 md:grid-cols-3 lg:grid-cols-3">
         {programs.map((item, idx) => (
-          <div key={idx} className="flex items-center gap-3 p-4 transition border border-slate-200 rounded-xl hover:shadow-xs hover:border-0 hover:bg-slate-200">
+          <div key={idx} className="flex items-center gap-3 p-4 transition border border-slate-200 rounded-xl hover:shadow-sm hover:border-0 hover:bg-slate-200">
             <span className="text-xl text-green-600">{item.icon}</span>
             <p className="text-sm font-semibold text-[#095046]">{item.title}</p>
           </div>
