@@ -62,58 +62,73 @@ const Navbar = () => {
           >
             <li className="flex items-center gap-3">
               <i class="ri-home-5-line text-2xl md:hidden block"></i>
-              <a href="/" className="transition-all duration-100 ease-in hover:text-[#39BA87] text-[#095046]">
+              <a href="/" className="transition-all duration-100 ease-in hover:text-emerald-900 text-slate-700">
                 Beranda
               </a>
             </li>
             <li className="relative flex items-center gap-3 group">
               <i class="ri-building-line text-2xl md:hidden block rounded"></i>
-              <button className="flex items-center gap-1 transition-all duration-100 ease-in  hover:text-[#39BA87] text-[#095046]">
+              <button className="flex items-center gap-1 transition-all duration-100 ease-in hover:text-emerald-900 text-slate-700">
                 Profil
                 <HiChevronDown className="text-base" />
               </button>
               <ul className="absolute left-0 hidden p-2 space-y-2 bg-white rounded-3xl shadow-md text-slate-700 group-hover:block top-full min-w-[12rem]">
                 <li>
-                  <Link to="/profil-bmh" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100  hover:text-[#39BA87] text-[#095046]">
+                  <Link to="/profilBmh" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
                     Tentang Kami
                   </Link>
                 </li>
                 <li>
-                  <a href="/jajaran-manajemen" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100  hover:text-[#39BA87] text-[#095046]">
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
+                    Legalitas
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
                     Jajaran Manajemen
                   </a>
                 </li>
                 <li>
-                  <a href="/kantor-perwakilan" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100  hover:text-[#39BA87] text-[#095046]">
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
                     Perwakilan
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
+                    Penghargaan
                   </a>
                 </li>
               </ul>
             </li>
             <li className="relative flex items-center gap-3 group">
               <i class="ri-service-line text-2xl md:hidden block"></i>
-              <button className="flex items-center gap-1 transition-all duration-100 ease-in  hover:text-[#39BA87] text-[#095046]">
+              <button className="flex items-center gap-1 transition-all duration-100 ease-in hover:text-emerald-900 text-slate-700">
                 Layanan
                 <HiChevronDown className="text-base" />
               </button>
               <ul className="absolute left-0 hidden p-2 space-y-2 bg-white rounded-2xl shadow-md text-slate-700 group-hover:block top-full min-w-[12rem]">
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100  hover:text-[#39BA87] text-[#095046]">
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
                     Kalkulator Zakat
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100  hover:text-[#39BA87] text-[#095046]">
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
                     Konfirmasi Donasi
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100  hover:text-[#39BA87] text-[#095046]">
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
+                    Riwayat Transaksi
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
                     Jemput Zakat
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100  hover:text-[#39BA87] text-[#095046]">
+                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-emerald-900 text-slate-700">
                     Pengajuan Permintaan Bantuan
                   </a>
                 </li>
@@ -121,14 +136,14 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-3">
               <i class="ri-book-open-line text-2xl md:hidden block"></i>
-              <Link to="/" className="transition-all duration-100 ease-in  hover:text-[#39BA87] text-[#095046]">
+              <Link to="/m" className="transition-all duration-100 ease-in hover:text-emerald-900 text-slate-700">
                 Majalah Mulia
               </Link>
             </li>
             <li className="flex items-center gap-3">
               <i class="ri-contacts-line text-2xl md:hidden block"></i>
-              <Link to="/" className="transition-all duration-100 ease-in  hover:text-[#39BA87] text-[#095046]">
-                Publikasi
+              <Link to="/" className="transition-all duration-100 ease-in hover:text-emerald-900 text-slate-700">
+                Kontak
               </Link>
             </li>
           </ul>
@@ -139,10 +154,7 @@ const Navbar = () => {
             >
               Login
             </a>
-            <a href="/" className="px-4 py-1 font-semibold text-white transition duration-300 bg-yellow-500 rounded-xl hover:bg-yellow-600 focus:outline-2 focus:outline-offset-2 focus:outline-yellow-400 active:bg-yellow-700">
-              Donasi
-            </a>
-            <a href="/" className="px-4 py-1 font-semibold text-white transition duration-300 bg-red-600 rounded-xl hover:bg-red-700 focus:outline-2 focus:outline-offset-2 focus:outline-red-400 active:bg-red-700">
+            <a href="#" className="px-4 py-1 font-semibold text-white transition duration-300 bg-red-600 rounded-xl hover:bg-red-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 active:bg-emerald-700">
               Bhs
             </a>
             <i ref={buttonRef} className={`block text-3xl md:hidden text-slate-900 ${show ? 'ri-close-line' : 'ri-menu-line'}`} onClick={handleClick}></i>

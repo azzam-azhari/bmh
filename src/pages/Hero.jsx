@@ -1,7 +1,12 @@
 // src/components/Hero.jsx
 import { useEffect, useState } from 'react';
 
-const slides = ['/images/banner/1.jpg', '/images/banner/2.jpg', '/images/banner/3.jpg', '/images/banner/4.jpg'];
+const slides = [
+  '/images/banner/1.jpg', // ganti dengan path gambar kamu
+  '/images/banner/2.jpg',
+  '/images/banner/3.jpg',
+  '/images/banner/4.jpg',
+];
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);

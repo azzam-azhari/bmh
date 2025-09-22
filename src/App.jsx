@@ -7,14 +7,11 @@ import FloatingMenu from './components/FloatingMenu';
 
 import Home from './pages/Home';
 import ProfilBmh from './pages/ProfilBmh';
-import JajaranManajemen from './pages/JajaranManajemen';
-import KantorPerwakilan from './pages/KantorPerwakilan';
 import NewsSection from './pages/NewsSection';
 import BuktiNyata from './pages/BuktiNyata';
 import LastCard from './pages/LastCard';
 import JejakKebaikan from './pages/JejakKebaikan';
 import ProgramKami from './pages/ProgramKami';
-import DoubleSliderLogin from './pages/DoubleSliderLogin';
 
 function App() {
   return (
@@ -31,10 +28,7 @@ function App() {
           <Route path="/lastCard" element={<LastCard />} />
           <Route path="/jejakKebaikan" element={<JejakKebaikan />} />
           <Route path="/programKami" element={<ProgramKami />} />
-          <Route path="/profil-bmh" element={<ProfilBmh />} />
-          <Route path="/jajaran-manajemen" element={<JajaranManajemen />} />
-          <Route path="/kantor-perwakilan" element={<KantorPerwakilan />} />
-          <Route path="/doubleSliderLogin" element={<DoubleSliderLogin />} />
+          <Route path="/profilBmh" element={<ProfilBmh />} />
         </Routes>
 
         {/* Footer */}

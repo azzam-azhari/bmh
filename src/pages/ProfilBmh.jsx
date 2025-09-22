@@ -110,45 +110,6 @@ const ProfilBmh = () => {
           </div>
         </div>
       </div>
-
-      {/* Legal */}
-      <div className="">
-        <div className="container py-12 mx-auto space-y-10 max-w-7xl">
-          {/* Visi */}
-          <div>
-            <h2 className="text-2xl font-bold text-[#095046] flex items-center gap-2">Legal Formal</h2>
-            <div className="h-2 w-20 bg-[#10B981] mt-1 mb-4"></div>
-            <div className="p-4 border rounded-xl border-slate-200">
-              <ul className="pl-6 space-y-2 font-medium text-gray-700 list-disc">
-                <li>SK Menteri Agama No. 179 Tahun 2021 Sebagai Laznas</li>
-                <li>SK Menteri Agama No. 425 Tahun 2015 Sebagai Laznas</li>
-                <li>SK Menteri Agama No. 538 Tahun 2001 Sebagai Laznas</li>
-                <li>Akte Notaris Lilik Kristiwati, SH tanggal 26 Februari 2001</li>
-                <li>Keputusan Menkumham AHU-AH.01.08-210 tanggal 15 April 2011</li>
-                <li>NPWP 2.028.581.3-002</li>
-                <li>Izin Domisili 018/SRHJ/IV/2011</li>
-                <li>Surat Izin Operasional 011.12510.13/1.848 B</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Misi */}
-          <div>
-            <h2 className="text-2xl font-bold text-[#095046] flex items-center gap-2">Penghargaan & Apresiasi</h2>
-            <div className="h-2 w-20 bg-[#F59E0B] mt-1 mb-4"></div>
-            <div className="p-4 border rounded-xl border-slate-200">
-              <ul className="pl-6 space-y-2 font-medium text-gray-700 list-disc">
-                <li>Rekor MURI dengan sate qurban terbanyak 2005</li>
-                <li>BAZNAS Award 2019 sebagai LAZNAS Dengan Kelembagaan Terbaik</li>
-                <li>BAZNAS Award 2019 sebagai LAZNAS Dengan Pendistribusian ZIS Terbaik</li>
-                <li>Lulus Sertifikasi ISO 9001 : 2015 pada tahun 2018</li>
-                <li>Penghargaan Rekor MURI sebagai Pemrakarsa dan Penyelenggara Sebari Da’i Ramadhan Terbanyak dan Terluas 2013</li>
-                <li>Penghargaan Rekor MURI sebagai Pemrakarsa Pembagian Paket Sekolah Senyum Anak Indonesia Terbanyak dan Terluas 2014</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
