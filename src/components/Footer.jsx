@@ -10,8 +10,10 @@ const Footer = () => {
       <div className="grid grid-cols-1 gap-10 px-6 pt-20 pb-10 mx-auto max-w-7xl md:grid-cols-3">
         {/* Kolom 1 */}
         <div className="flex flex-col items-start">
-          <img src="/1.png" alt="Logo BMH" className="object-contain h-10 mb-6" />
-          <p className="pl-2 pr-2 text-sm leading-relaxed text-justify">
+          <a href="/">
+            <img src="/1.png" alt="Logo BMH" className="object-contain h-10 mb-6" />
+          </a>
+          <p className="pl-2 pr-2 text-sm font-light leading-relaxed text-justify">
             Lembaga Amil Zakat Nasional <span className="font-bold text-emerald-400"> Baitul Maal Hidayatullah (BMH)</span> Merupakan lembaga amil zakat yang bergerak dalam penghimpunan dana Zakat, infaq, sedekah, Wakaf dan Hibah berikut
             dana sosial kemanusiaan dan Corporate Social Responsibility (CSR) perusahaan, dan melakukan distribusi melalui program pendidikan, dakwah, sosial kemanusiaan dan ekonomi secara nasional.
           </p>
@@ -56,25 +58,25 @@ const Footer = () => {
 
       {/* Sosial Media */}
       <div className="flex justify-center gap-6 pt-5 pb-6 text-xl text-slate-50">
-        <a href="https://www.facebook.com/BaitulMaalHidayatullah" className=" hover:text-yellow-500">
+        <a href="https://www.facebook.com/BaitulMaalHidayatullah" className="transition hover:text-yellow-500">
           <FaFacebookF />
         </a>
-        <a href="https://www.instagram.com/official.bmh/" target="_blank" rel="noopener noreferrer" className=" hover:text-yellow-500">
+        <a href="https://www.instagram.com/official.bmh/" target="_blank" rel="noopener noreferrer" className="transition hover:text-yellow-500">
           <FaInstagram />
         </a>
-        <a href="https://x.com/officialbmh" target="_blank" rel="noopener noreferrer" className=" hover:text-yellow-500">
+        <a href="https://x.com/officialbmh" target="_blank" rel="noopener noreferrer" className="transition hover:text-yellow-500">
           <FaTwitter />
         </a>
-        <a href="https://www.tiktok.com/@official.bmh" target="_blank" rel="noopener noreferrer" className=" hover:text-yellow-500">
+        <a href="https://www.tiktok.com/@official.bmh" target="_blank" rel="noopener noreferrer" className="transition hover:text-yellow-500">
           <FaTiktok />
         </a>
-        <a href="https://www.youtube.com/channel/UCaVCytqsC7PZCOkPB41rSlQ" target="_blank" rel="noopener noreferrer" className=" hover:text-yellow-500">
+        <a href="https://www.youtube.com/channel/UCaVCytqsC7PZCOkPB41rSlQ" target="_blank" rel="noopener noreferrer" className="transition hover:text-yellow-500">
           <FaYoutube />
         </a>
       </div>
 
       {/* Copyright */}
-      <div className="py-6 text-sm text-center text-white bg-[#095046] border-t-1 border-white/30">© 2025 Hak cipta BMH - All Rights Reserved</div>
+      <div className="py-6 md:text-lg text-center text-white bg-[#095046] border-t-1 border-white/30 font-extralight">© 2025 Hak cipta BMH - All Rights Reserved</div>
     </footer>
   );
 };

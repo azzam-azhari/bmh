@@ -4,7 +4,7 @@ export default function DoubleSliderLogin() {
   const [isRightPanelActive, setIsRightPanelActive] = useState(false);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-indigo-100 to-slate-100 font-poppins">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-emerald-50 to-slate-50 font-poppins">
       <div className={`relative w-full max-w-4xl min-h-[500px] shadow-xl transition-transform duration-700 ease-in-out rounded-3xl overflow-hidden bg-white ${isRightPanelActive ? 'translate-x-0' : ''}`}>
         {/* Left Login Panel */}
         <div className={`absolute top-0 left-0 w-1/2 h-full px-8 py-12 flex flex-col justify-center transition-transform duration-700 ease-in-out bg-white z-20 ${isRightPanelActive ? '-translate-x-full opacity-0' : 'opacity-100'}`}>

@@ -16,6 +16,7 @@ import JajaranManajemen from './pages/JajaranManajemen';
 import KantorPerwakilan from './pages/KantorPerwakilan';
 import KalkulatorZakat from './pages/KalkulatorZakat';
 import MajalahMulia from './pages/MajalahMulia';
+import HalamanArtikel from './pages/HalamanArtikel';
 import DoubleSliderLogin from './pages/DoubleSliderLogin';
 import UnderConstruction from './pages/UnderConstruction';
 
@@ -33,12 +34,13 @@ function App() {
           <Route path="/buktiNyata" element={<BuktiNyata />} />
           <Route path="/lastCard" element={<LastCard />} />
           <Route path="/jejakKebaikan" element={<JejakKebaikan />} />
-          <Route path="/programKami" element={<ProgramKami />} />
-          <Route path="/profilBmh" element={<ProfilBmh />} />
+          <Route path="/program-kami" element={<ProgramKami />} />
+          <Route path="/profil-bmh" element={<ProfilBmh />} />
           <Route path="/jajaran-manajemen" element={<JajaranManajemen />} />
           <Route path="/kantor-perwakilan" element={<KantorPerwakilan />} />
           <Route path="/kalkulator-zakat" element={<KalkulatorZakat />} />
           <Route path="/majalah-mulia" element={<MajalahMulia />} />
+          <Route path="/artikel-detail" element={<HalamanArtikel />} />
           <Route path="/double-slider-login" element={<DoubleSliderLogin />} />
           <Route path="/under-construction" element={<UnderConstruction />} />
         </Routes>

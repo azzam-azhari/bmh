@@ -2,20 +2,105 @@ import React from 'react';
 import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
 
 export default function MajalahMulia() {
+  const articles = [
+    {
+      id: 1,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=1',
+      link: '/artikel-detail',
+    },
+    {
+      id: 2,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=2',
+      link: '/artikel-detail',
+    },
+    {
+      id: 3,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=3',
+      link: '/artikel-detail',
+    },
+    {
+      id: 4,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=4',
+      link: '/artikel-detail',
+    },
+    {
+      id: 1,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=5',
+      link: '/artikel-detail',
+    },
+    {
+      id: 2,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=6',
+      link: '/artikel-detail',
+    },
+    {
+      id: 3,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=7',
+      link: '/artikel-detail',
+    },
+    {
+      id: 4,
+      title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
+      date: '17 Sept 2025, 05:59 PM',
+      author: 'Admin Website BMH',
+      image: 'https://picsum.photos/400/300?random=8',
+      link: '/artikel-detail',
+    },
+  ];
+
   return (
     <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
       {/* Text Content */}
       <div className="text-left lg:text-left">
-        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Majalah Mulia</h2>
+        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Majalah Mulia – Menginspirasi dengan Dakwah dan Aksi Nyata</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
-        <h4 className="leading-relaxed text-justify  text-xl font-semibold text-[#095046]">Tunaikan Zakat Anda di Laznas BMH — Amanah, Transparan, dan Profesional Berbasis Dakwah</h4>
-        <h4 className="text-xl font-semibold leading-relaxed text-justify text-gray-700">Kantor Pusat BMH</h4>
         <p className="leading-relaxed text-justify text-gray-700">
-          Baitul Maal Hidayatullah (BMH) <br /> Jl. Raya Pasar Minggu No. 21 H, Kalibata, Jakarta Selatan 12740
+          <span className="font-semibold">Majalah Mulia </span>adalah media resmi Lembaga Zakat Baitul Maal Hidayatullah (BMH) yang hadir untuk menyebarkan nilai-nilai kebaikan, dakwah, serta semangat berbagi kepada umat. <br /> Melalui
+          artikel, kisah inspiratif, dan liputan program, Majalah Mulia menjadi jendela informasi bagi masyarakat tentang bagaimana zakat, infak, sedekah, dan wakaf dikelola serta disalurkan secara amanah dan profesional. <br /> Kami
+          percaya bahwa literasi adalah bagian dari ibadah. Karena itu, setiap edisi Majalah Mulia dirancang tidak hanya untuk dibaca, tetapi juga menjadi inspirasi nyata agar setiap orang dapat terus berkhidmat dan memberi manfaat lebih
+          luas bagi sesama.
         </p>
+      </div>
 
-        <h4 className="leading-relaxed text-justify  text-xl font-semibold text-[#095046] mt-4">Daftar Kantor Perwakilan & Layanan ZIS BMH se-Indonesia</h4>
-        <h4 className="mt-1 text-xl font-light leading-relaxed text-justify text-gray-700">Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.</h4>
+      {/* Grid Artikel */}
+      <div className="grid gap-6 py-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {articles.map((article) => (
+          <div key={article.id} className="relative overflow-hidden shadow-md rounded-3xl group">
+            {/* Gambar */}
+            <img src={article.image} alt={article.title} className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105" />
+
+            {/* Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/70 to-transparent">
+              <p className="text-xs opacity-80">{article.date}</p>
+              <h3 className="text-sm font-semibold sm:text-base">{article.title}</h3>
+              <p className="mb-2 text-xs opacity-80">Oleh: {article.author}</p>
+              <a href={article.link} className="text-sm font-medium text-yellow-300 hover:underline">
+                Read More →
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* CTA Zakat */}
