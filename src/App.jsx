@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import FloatingMenu from './components/FloatingMenu';
 
 import Home from './pages/Home';
 import ProfilBmh from './pages/ProfilBmh';
@@ -41,6 +42,7 @@ function App() {
 
         {/* Popup Whatsapp */}
         <WhatsAppButton />
+        <FloatingMenu />
       </div>
     </Router>
   );
