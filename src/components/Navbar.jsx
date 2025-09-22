@@ -150,11 +150,11 @@ const Navbar = () => {
           <div className="flex items-center gap-2 social">
             <a
               href="/doubleSliderLogin"
-              className="px-4 py-1 font-semibold text-white transition duration-300 rounded-xl bg-emerald-500 hover:bg-emerald-600 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 active:bg-emerald-700"
+              className="px-4 py-1 font-semibold text-white transition duration-300 rounded-full bg-emerald-400 hover:bg-emerald-500 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 active:bg-emerald-700"
             >
               Login
             </a>
-            <a href="#" className="px-4 py-1 font-semibold text-white transition duration-300 bg-red-600 rounded-xl hover:bg-red-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 active:bg-emerald-700">
+            <a href="#" className="px-4 py-1 font-semibold text-white transition duration-300 rounded-full bg-emerald-400 hover:bg-emerald-500 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 active:bg-emerald-700">
               Bhs
             </a>
             <i ref={buttonRef} className={`block text-3xl md:hidden text-slate-900 ${show ? 'ri-close-line' : 'ri-menu-line'}`} onClick={handleClick}></i>

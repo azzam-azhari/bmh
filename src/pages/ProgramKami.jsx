@@ -21,7 +21,7 @@ export default function ProgramKami() {
       {/* Grid Program */}
       <div className="grid grid-cols-2 gap-4 mb-12 md:grid-cols-3 lg:grid-cols-3">
         {programs.map((item, idx) => (
-          <div key={idx} className="flex items-center gap-3 p-4 transition border border-slate-200 rounded-xl hover:shadow-xs hover:border-0 hover:bg-slate-100">
+          <div key={idx} className="flex items-center gap-3 p-4 transition border border-slate-200 rounded-xl hover:shadow-xs hover:border-0 hover:bg-slate-200">
             <span className="text-xl text-green-600">{item.icon}</span>
             <p className="text-sm font-semibold text-[#095046]">{item.title}</p>
           </div>
@@ -31,7 +31,7 @@ export default function ProgramKami() {
       {/* Kartu Bantuan */}
       <div className="flex flex-col items-center gap-6 p-6 border border-slate-200 md:flex-row rounded-2xl">
         {/* Kiri */}
-        <div className="flex flex-col items-center flex-1 gap-4 p-6 text-white md:flex-row bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-xl">
+        <div className="flex flex-col items-center flex-1 gap-4 p-6 text-white md:flex-row bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl">
           {/* <div className="text-4xl">💛</div> */}
           <div>
             <button className="px-4 py-2 font-semibold text-yellow-500 bg-white shadow hover:bg-slate-50 rounded-xl hover:cursor-pointer">Bantu Sekarang!</button>
@@ -44,12 +44,12 @@ export default function ProgramKami() {
         {/* Kanan */}
         <div className="flex flex-col flex-1 gap-2">
           <p className="text-sm text-[#095046]">Masih bingung cara berdonasi?, Tim kami siap membantu kamu</p>
-          <a href="https://wa.me/6289661240225" className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg bg-slate-100 hover:bg-slate-200 hover:cursor-pointer">
-            <span className="font-semibold ">WhatsApp:</span> +62 896-6124-0225 (Bapak Nu'man)
-          </a>
-          <a href="https://wa.me/6289661240225" className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg bg-slate-100 hover:bg-slate-200 hover:cursor-pointer">
+          <div className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg bg-slate-50 hover:bg-slate-200 hover:cursor-pointer">
+            <span className="font-semibold ">WhatsApp:</span> 021 - 7975770
+          </div>
+          <div className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg bg-slate-50 hover:bg-slate-200 hover:cursor-pointer">
             <span className="font-semibold ">Email:</span> sekretariat@bmh.or.id
-          </a>
+          </div>
         </div>
       </div>
     </section>
