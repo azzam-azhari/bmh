@@ -79,23 +79,13 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
-                    Legalitas
-                  </a>
-                </li>
-                <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/jajaran-manajemen" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Jajaran Manajemen
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/kantor-perwakilan" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Perwakilan
-                  </a>
-                </li>
-                <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
-                    Penghargaan
                   </a>
                 </li>
               </ul>
@@ -108,27 +98,27 @@ const Navbar = () => {
               </button>
               <ul className="absolute left-0 hidden p-2 space-y-2 bg-white rounded-2xl shadow-md text-[#095046] group-hover:block top-full min-w-[12rem]">
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/kalkulator-zakat" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Kalkulator Zakat
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Konfirmasi Donasi
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Riwayat Transaksi
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Jemput Zakat
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Pengajuan Permintaan Bantuan
                   </a>
                 </li>
@@ -136,7 +126,7 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-3">
               <i class="ri-book-open-line text-2xl md:hidden block"></i>
-              <Link to="/m" className="transition-all duration-100 ease-in hover:text-[#39BA87] text-[#095046]">
+              <Link to="/majalah-mulia" className="transition-all duration-100 ease-in hover:text-[#39BA87] text-[#095046]">
                 Majalah Mulia
               </Link>
             </li>
@@ -148,22 +138,22 @@ const Navbar = () => {
               </button>
               <ul className="absolute left-0 hidden p-2 space-y-2 bg-white rounded-2xl shadow-md text-[#095046] group-hover:block top-full min-w-[12rem]">
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Berita
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Riset
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Laporan Keuangan
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Laporan Tahunan
                   </a>
                 </li>
@@ -172,7 +162,7 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center gap-2 social">
             <a
-              href="/doubleSliderLogin"
+              href="/double-slider-login"
               className="px-4 py-1 font-semibold text-white transition duration-300 rounded-full bg-emerald-400 hover:bg-emerald-500 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 active:bg-emerald-700"
             >
               Login

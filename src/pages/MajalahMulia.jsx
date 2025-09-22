@@ -1,0 +1,71 @@
+import React from 'react';
+import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
+
+export default function MajalahMulia() {
+  return (
+    <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
+      {/* Text Content */}
+      <div className="text-left lg:text-left">
+        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Majalah Mulia</h2>
+        <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
+        <h4 className="leading-relaxed text-justify  text-xl font-semibold text-[#095046]">Tunaikan Zakat Anda di Laznas BMH — Amanah, Transparan, dan Profesional Berbasis Dakwah</h4>
+        <h4 className="text-xl font-semibold leading-relaxed text-justify text-gray-700">Kantor Pusat BMH</h4>
+        <p className="leading-relaxed text-justify text-gray-700">
+          Baitul Maal Hidayatullah (BMH) <br /> Jl. Raya Pasar Minggu No. 21 H, Kalibata, Jakarta Selatan 12740
+        </p>
+
+        <h4 className="leading-relaxed text-justify  text-xl font-semibold text-[#095046] mt-4">Daftar Kantor Perwakilan & Layanan ZIS BMH se-Indonesia</h4>
+        <h4 className="mt-1 text-xl font-light leading-relaxed text-justify text-gray-700">Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.</h4>
+      </div>
+
+      {/* CTA Zakat */}
+      <div className="container py-12 mx-auto max-w-7xl">
+        {/* Heading */}
+        <p className="mb-8 text-xl font-medium text-center text-gray-700">
+          Salurkan Zakat Anda Lewat BMH — <span className="font-semibold">Lembaga Zakat Amanah &amp; Terpercaya</span>
+        </p>
+
+        {/* Cards */}
+        <div className="grid gap-6 mb-10 md:grid-cols-2">
+          {/* Kalkulator Zakat */}
+          <div className="flex items-start gap-4 p-6 text-white shadow-md bg-emerald-600 rounded-xl">
+            <div className="p-3 bg-white rounded-lg">
+              <FaCalculator className="w-6 h-6 text-emerald-600" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Kalkulator Zakat</h3>
+              <p className="text-sm text-emerald-100">Temukan dengan cepat berapa kewajiban zakat Anda. Praktis, akurat, dan sesuai syariat.</p>
+              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium rounded-lg bg-slate-50 text-emerald-600 hover:bg-slate-100">
+                Hitung Zakat Anda
+              </a>
+            </div>
+          </div>
+
+          {/* Tunaikan Zakat */}
+          <div className="flex items-start gap-4 p-6 text-white bg-yellow-500 shadow-md rounded-xl">
+            <div className="p-3 bg-white rounded-lg">
+              <FaMoneyBillWave className="w-6 h-6 text-yellow-500" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold">Tunaikan Zakat</h3>
+              <p className="text-sm text-amber-100">Salurkan zakat Anda secara online dengan aman, transparan, dan tepat sasaran. Setiap rupiah Anda akan membantu mereka yang membutuhkan.</p>
+              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
+                Tunaikan Zakat Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Box */}
+        <div className="p-6 text-center shadow bg-gradient-to-r from-gray-100 to-gray-50 rounded-xl">
+          <p className="mb-2 text-lg font-medium text-gray-500">Mari Bersama Menebar Kebaikan!</p>
+          <h4 className="mb-2 text-lg font-semibold text-emerald-900">BMH: Laznas Amanah, Transparan, dan Profesional Berbasis Dakwah.</h4>
+          <p className="mb-4 text-sm text-gray-600">Dengan zakat Anda, ribuan anak bisa belajar, keluarga dhuafa bisa mandiri, dan pesantren bisa terus berdiri.</p>
+          <a href="https://wa.me/628123456789" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 text-white transition rounded-lg shadow bg-emerald-500 hover:bg-emerald-600">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

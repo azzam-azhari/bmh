@@ -6,12 +6,18 @@ import WhatsAppButton from './components/WhatsAppButton';
 import FloatingMenu from './components/FloatingMenu';
 
 import Home from './pages/Home';
-import ProfilBmh from './pages/ProfilBmh';
 import NewsSection from './pages/NewsSection';
 import BuktiNyata from './pages/BuktiNyata';
 import LastCard from './pages/LastCard';
 import JejakKebaikan from './pages/JejakKebaikan';
 import ProgramKami from './pages/ProgramKami';
+import ProfilBmh from './pages/ProfilBmh';
+import JajaranManajemen from './pages/JajaranManajemen';
+import KantorPerwakilan from './pages/KantorPerwakilan';
+import KalkulatorZakat from './pages/KalkulatorZakat';
+import MajalahMulia from './pages/MajalahMulia';
+import DoubleSliderLogin from './pages/DoubleSliderLogin';
+import UnderConstruction from './pages/UnderConstruction';
 
 function App() {
   return (
@@ -29,6 +35,12 @@ function App() {
           <Route path="/jejakKebaikan" element={<JejakKebaikan />} />
           <Route path="/programKami" element={<ProgramKami />} />
           <Route path="/profilBmh" element={<ProfilBmh />} />
+          <Route path="/jajaran-manajemen" element={<JajaranManajemen />} />
+          <Route path="/kantor-perwakilan" element={<KantorPerwakilan />} />
+          <Route path="/kalkulator-zakat" element={<KalkulatorZakat />} />
+          <Route path="/majalah-mulia" element={<MajalahMulia />} />
+          <Route path="/double-slider-login" element={<DoubleSliderLogin />} />
+          <Route path="/under-construction" element={<UnderConstruction />} />
         </Routes>
 
         {/* Footer */}
