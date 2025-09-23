@@ -72,20 +72,25 @@ export default function JajaranManajemen() {
         <div className="w-40 h-2 mt-1 mb-4 bg-yellow-500"></div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {data.map((item, index) => (
-            <div key={index} className="flex flex-col items-center p-4 overflow-hidden shadow-md bg-slate-50 rounded-2xl">
-              <div className="flex items-center justify-center w-24 h-24 bg-gray-200 rounded-full">
+            <div key={index} className="overflow-hidden bg-white shadow-md rounded-2xl">
+              {/* Cover Image */}
+              <div className="w-full h-60">
                 {item.image ? (
-                  <img src={item.image} alt={item.name} className="object-cover w-full h-full rounded-full" />
+                  <img src={item.image} alt={item.name} className="object-cover w-full h-full" />
                 ) : (
-                  <svg className="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
-                  </svg>
+                  <div className="flex items-center justify-center w-full h-full bg-gray-200">
+                    <svg className="w-16 h-16 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
+                    </svg>
+                  </div>
                 )}
               </div>
-              <div className="mt-4 text-center">
+
+              {/* Info Box */}
+              <div className="p-4 text-center">
                 <p className="text-sm font-medium text-emerald-600">{item.role}</p>
-                <h3 className="text-base font-bold text-slate-800">{item.name}</h3>
-                <p className="text-xs text-slate-500">{item.email}</p>
+                <h3 className="text-lg font-bold text-emerald-900">{item.name}</h3>
+                <p className="text-sm text-slate-500">{item.email}</p>
               </div>
             </div>
           ))}
