@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between text-gray-900 navbar-box">
           <div className="flex items-center space-x-2 text-lg logo">
             <Link to="/">
-              <img src="/images/logo/logo.png" alt="BMH Logo" className="h-10 transition-transform duration-300 ease-in-out cursor-pointer scale-179 hover:scale-185" />
+              <img src="/images/logo/nav.png" alt="BMH Logo" className="h-6 transition-transform duration-300 ease-in-out cursor-pointer scale-179 hover:scale-185" />
             </Link>
           </div>
           <ul
@@ -143,7 +143,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/under-construction" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
+                  <a href="/riset-pengembangan" className="block px-4 py-2 transition-all duration-100 ease-in rounded-xl hover:bg-slate-100 hover:text-[#39BA87] text-[#095046]">
                     Riset
                   </a>
                 </li>

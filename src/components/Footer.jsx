@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Kolom 1 */}
         <div className="flex flex-col items-start">
           <a href="/">
-            <img src="/1.png" alt="Logo BMH" className="object-contain h-10 mt-5 mb-6" />
+            <img src="/footer.png" alt="Logo BMH" className="object-contain h-10 mt-5 mb-6" />
           </a>
           <p className="pl-2 pr-2 text-sm font-light leading-relaxed text-justify">
             Lembaga Amil Zakat Nasional <span className="font-bold text-emerald-400"> Baitul Maal Hidayatullah (BMH)</span> Merupakan lembaga amil zakat yang bergerak dalam penghimpunan dana Zakat, infaq, sedekah, Wakaf dan Hibah berikut
