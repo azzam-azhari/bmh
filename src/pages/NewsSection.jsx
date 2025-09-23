@@ -12,7 +12,7 @@ const newsData = [
     img: '/images/berita-terkini/berita2.jpeg',
     title: 'Lorem ipsum dolor sit amet.',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
-    bg: 'bg-yellow-500',
+    bg: 'bg-[#FEB738]',
   },
   {
     id: 3,

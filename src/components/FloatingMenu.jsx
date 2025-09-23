@@ -9,7 +9,7 @@ const FloatingMenu = () => {
       href={donateLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed z-50 flex items-center justify-start overflow-hidden text-white transition-all duration-300 ease-in-out bg-[#FEB738] shadow-lg  group bottom-24 right-6 w-14 hover:w-64 h-14 rounded-xl"
+      className="fixed z-50 flex items-center justify-start overflow-hidden text-white transition-all duration-300 ease-in-out bg-[#FEB738] shadow-lg  group bottom-8 right-24 w-14 hover:w-64 h-14 rounded-xl"
       aria-label="Donasi Sekarang"
     >
       {/* Icon */}

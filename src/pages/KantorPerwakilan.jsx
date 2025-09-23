@@ -129,7 +129,7 @@ export default function KantorPerwakilan() {
           </div>
 
           {/* Tunaikan Zakat */}
-          <div className="flex items-start gap-4 p-6 text-white bg-yellow-500 shadow-md rounded-xl">
+          <div className="flex items-start gap-4 p-6 text-white bg-[#FEB738] shadow-md rounded-xl">
             <div className="p-3 bg-white rounded-lg">
               <FaMoneyBillWave className="w-6 h-6 text-yellow-500" />
             </div>
