@@ -45,7 +45,7 @@ export default function DoubleSliderLogin() {
 
         {/* Overlay (optional animation or image) */}
         <div className={`absolute top-0 left-1/2 w-1/2 h-full transition-transform duration-700 ease-in-out ${isRightPanelActive ? '-translate-x-full' : 'translate-x-0'}`}>
-          <div className="w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('https://picsum.photos/400/300?random=2')" }}></div>
+          <div className="w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('/images/login/123.jpg')" }}></div>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const DataCard = [
 export default function LastCard() {
   return (
     <section className="w-full font-poppins">
-      <div className="container px-4 mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-7xl">
         {/* Judul */}
         <div className="mb-10">
           <h2 className="text-3xl font-bold text-start md:text-4xl text-emerald-900">Blog</h2>

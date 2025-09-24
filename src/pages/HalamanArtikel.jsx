@@ -9,6 +9,10 @@ const IsiArtikel = ({ title, authors, date, content, images }) => {
         <div className="w-40 h-2 mt-1 mb-4 bg-yellow-500"></div>
       </div>
 
+      <div>
+        <img src="https://picsum.photos/400/300?random=3" alt="Image" className="w-full mb-4 bg-white bg-cover rounded-lg shadow-md h-70" />
+      </div>
+
       {/* Author and Date */}
       <p className="mb-2 text-sm text-gray-600">
         By{' '}
@@ -58,7 +62,7 @@ const HalamanArtikel = () => {
   };
 
   return (
-    <div className="min-h-screen py-10 bg-slate-100">
+    <div className="min-h-screen bg-slate-100">
       <IsiArtikel {...data} />
     </div>
   );

@@ -2,7 +2,7 @@ export default function JejakKebaikan() {
   return (
     <section className="p-8 mx-0 bg-white shadow-sm md:mx-1 rounded-3xl md:p-5 font-poppins">
       {/* Judul */}
-      <div className="container px-4 mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="py-5 mb-10">
           <h2 className="text-3xl font-bold text-emerald-900 md:text-4xl">Jejak Kebaikan Kita</h2>
           <div className="w-32 h-2 mt-2 bg-emerald-500"></div>

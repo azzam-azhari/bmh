@@ -8,10 +8,10 @@ const Footer = () => {
     <footer className="relative z-20 shadow-lg bg-[#095046] backdrop-blur-md text-slate-50 font-poppins">
       {/* Konten Utama */}
       <div className="flex flex-row">
-        <div className="bg-[#39BA87] w-4/1 h-7 "></div>
-        <div className="bg-[#FEB738] w-4/3 h-7 "></div>
+        <div className="bg-[#39BA87] w-4/1 h-6 "></div>
+        <div className="bg-[#FEB738] w-4/3 h-6 "></div>
       </div>
-      <div className="grid grid-cols-1 gap-10 px-6 pt-10 pb-10 mx-auto max-w-7xl md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-10 pt-10 pb-10 mx-auto max-w-7xl md:grid-cols-3">
         {/* Kolom 1 */}
         <div className="flex flex-col items-start">
           <a href="/">

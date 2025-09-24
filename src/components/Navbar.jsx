@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <div className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 navbar font-poppins ${scroll ? 'py-3 bg-white/50 backdrop-blur-sm shadow-md' : 'py-4'}`}>
-      <div className="container px-4 mx-auto md:px-8 lg:px-16">
+      <div className="container px-4 mx-auto md:px-6 lg:px-16">
         <div className="flex items-center justify-between text-gray-900 navbar-box">
           <div className="flex items-center space-x-2 text-lg logo">
             <Link to="/">
@@ -126,6 +126,12 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-3">
               <i class="ri-book-open-line text-2xl md:hidden block"></i>
+              <Link to="/double-slider-login" className="transition-all duration-100 ease-in hover:text-[#39BA87] text-[#095046]">
+                Donasi
+              </Link>
+            </li>
+            <li className="flex items-center gap-3">
+              <i class="ri-book-open-line text-2xl md:hidden block"></i>
               <Link to="/majalah-mulia" className="transition-all duration-100 ease-in hover:text-[#39BA87] text-[#095046]">
                 Majalah Mulia
               </Link>
@@ -163,11 +169,11 @@ const Navbar = () => {
           <div className="flex items-center gap-2 social">
             <a
               href="/double-slider-login"
-              className="px-4 py-1 font-semibold text-white transition rounded-full duration-400 bg-emerald-400 hover:bg-emerald-500 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 active:bg-emerald-700"
+              className="px-4 py-1 text-white rounded-full shadow-lg bg-linear-to-tr from-emerald-600 hover:from-emerald-500 to-emerald-400 hover:to-emerald-300 border-small border-white/50 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-200"
             >
               Login
             </a>
-            <a href="/" className="px-4 py-1 text-white rounded-full shadow-lg bg-linear-to-tr from-pink-600 to-yellow-600 border-small border-white/50">
+            <a href="#" className="px-4 py-1 text-white rounded-full shadow-lg bg-linear-to-tr from-pink-600 to-yellow-600 border-small border-white/50 focus:outline-2 focus:outline-offset-2 focus:outline-red-200">
               ID
             </a>
             <i ref={buttonRef} className={`block text-3xl md:hidden text-slate-900 ${show ? 'ri-close-line' : 'ri-menu-line'}`} onClick={handleClick}></i>
