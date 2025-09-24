@@ -5,22 +5,22 @@ export default function KantorPerwakilan() {
   const kantorPusat = [
     {
       nama: 'BMH Jakarta',
-      gambar: 'https://picsum.photos/400/300?random=1',
-      alamat: 'Samali Residence Jl. H. Samali No. 71 B, Kel. Pejaten Barat, Kec. Pasar Minggu, Jakarta Selatan – DKI Jakarta 12510.',
+      gambar: '/images/kantor-perwakilan/1.jpg',
+      alamat: 'Kalibata Office Park, Jl. KH. Guru Amin No.21, RT.1/RW.8, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12780',
       telp: '18002428478',
       email: 'csjakarta@bmh.or.id',
     },
     {
       nama: 'BMH Depok',
-      gambar: 'https://picsum.photos/400/300?random=2',
-      alamat: 'Ruko Verbena Blok A No. 20, Jl. Boulevard, Grand Depok City, Kel. Tirtajaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16412.',
+      gambar: '/images/kantor-perwakilan/2.jpg',
+      alamat: 'Blk. A, Ruko Verbena Jl. Boulevard Grand Depok City, Tirtajaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16412',
       telp: '18002428478',
       email: 'csdepok@bmh.or.id',
     },
     {
       nama: 'BMH Citayam',
-      gambar: 'https://picsum.photos/400/300?random=3',
-      alamat: 'Samali Residence Jl. H. Samali No. 71 B, Kel. Pejaten Barat, Kec. Pasar Minggu, Jakarta Selatan – DKI Jakarta 12510.',
+      gambar: '/images/kantor-perwakilan/3.jpg',
+      alamat: 'Jl. Taman Depok Permai Blok CD No.1A, RT.002/RW.023, Depok 2 timur, Kec. Cipayung, Kota Depok, Jawa Barat 16415',
       telp: '18002428478',
       email: 'cscitayam@bmh.or.id',
     },
@@ -62,7 +62,7 @@ export default function KantorPerwakilan() {
           {kantorPusat.map((item, idx) => (
             <div key={idx} className="flex flex-col overflow-hidden transition border-[#39BA87] shadow border-1 rounded-2xl hover:shadow-md">
               {/* Gambar */}
-              <img src={item.gambar} alt={item.nama} className="object-cover w-full h-48" />
+              <img src={item.gambar} alt={item.nama} className="object-cover w-full h-55" />
 
               {/* Konten */}
               <div className="flex flex-col justify-between flex-1 p-6">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const DonasiPage = () => {
   const data = [
@@ -63,37 +64,46 @@ const DonasiPage = () => {
       {/* Grid */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {data.map((item) => (
-          <div key={item.id} className="flex items-start overflow-hidden bg-white shadow-md rounded-2xl hover:cursor-pointer">
-            {/* Gambar kiri */}
-            <div className="flex-shrink-0 w-40 h-40 m-4 overflow-hidden rounded-xl">
-              <img src={item.image} alt={item.title} className="object-cover w-full h-full" />
-            </div>
-
-            {/* Konten kanan */}
-            <div className="flex flex-col justify-between flex-1 p-4">
-              <div>
-                <p className="text-xs text-slate-500">{item.organization}</p>
-                <h3 className="mt-1 text-base font-semibold text-slate-800 line-clamp-2">{item.title}</h3>
-
-                {/* Waktu */}
-                <p className="mt-2 text-xs text-orange-500">{item.daysLeft}</p>
-
-                {/* Progress bar */}
-                <div className="w-full h-2 mt-2 rounded-full bg-slate-200">
-                  <div
-                    className="h-2 bg-yellow-400 rounded-full"
-                    style={{
-                      width: `${(item.collected / item.target) * 100}%`,
-                    }}
-                  />
-                </div>
+          <div key={item.id} className="hover:scale-[1.02] transition-transform">
+            <a
+              href="https://berbagi.bmh.or.id/"
+              target="_blank"
+              rel="noopener noreferrer" // ganti sesuai rute tujuanmu
+              className="flex items-start overflow-hidden bg-white shadow-md rounded-2xl hover:cursor-pointer"
+            >
+              {/* Gambar kiri */}
+              <div className="flex-shrink-0 w-40 h-40 m-4 overflow-hidden rounded-xl">
+                <img src={item.image} alt={item.title} className="object-cover w-full h-full" />
               </div>
-              <p className="pt-2 text-xs text-slate-400">Terkumpul</p>
-              {/* Total donasi */}
-              <p className="mt-2 text-sm font-bold text-emerald-600">
-                Rp{item.collected.toLocaleString('id-ID')} <span className="font-normal text-slate-400">/ Rp{item.target.toLocaleString('id-ID')}</span>
-              </p>
-            </div>
+
+              {/* Konten kanan */}
+              <div className="flex flex-col justify-between flex-1 p-4">
+                <div>
+                  <p className="text-xs text-slate-500">{item.organization}</p>
+                  <h3 className="mt-1 text-base font-semibold text-slate-800 line-clamp-2">{item.title}</h3>
+
+                  {/* Waktu */}
+                  <p className="mt-2 text-xs text-orange-500">{item.daysLeft}</p>
+
+                  {/* Progress bar */}
+                  <div className="w-full h-2 mt-2 rounded-full bg-slate-200">
+                    <div
+                      className="h-2 bg-yellow-400 rounded-full"
+                      style={{
+                        width: `${(item.collected / item.target) * 100}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <p className="pt-2 text-xs text-slate-400">Terkumpul</p>
+
+                {/* Total donasi */}
+                <p className="mt-2 text-sm font-bold text-emerald-600">
+                  Rp{item.collected.toLocaleString('id-ID')} <span className="font-normal text-slate-400">/ Rp{item.target.toLocaleString('id-ID')}</span>
+                </p>
+              </div>
+            </a>
           </div>
         ))}
       </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaTiktok, FaYoutube } from 'react-icons/fa';
 import { MdPhone, MdEmail } from 'react-icons/md';
+import { FaHome } from 'react-icons/fa';
+
 import { FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
@@ -47,13 +49,16 @@ const Footer = () => {
           <h3 className="mb-3 text-lg font-extrabold text-[#FEB738]">Kalibata Office Park</h3>
           <div className="space-y-2 text-sm font-light">
             <p className="flex items-center transition">Jalan Raya Pasar Minggu No.21, Blok H RT.1/RW.8, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12780, Indonesia.</p>
-            <a href="tel:0217975770" className="flex items-center transition hover:text-[#39BA87] pt-5">
+            <a href="tel:0217975770" className="flex items-center transition hover:text-[#39BA87] pt-3">
               <MdPhone className="mr-2 text-lg" /> 021-7975-770
             </a>
 
             {/* Email - link ke mailto: */}
             <a href="mailto:sekretariat@bmh.or.id" className="flex items-center transition hover:text-[#39BA87]">
               <MdEmail className="mr-2 text-lg" /> sekretariat@bmh.or.id
+            </a>
+            <a href="/kantor-perwakilan" className="flex items-center transition hover:text-[#39BA87]">
+              <FaHome className="mr-2 text-lg" /> Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.
             </a>
           </div>
         </div>

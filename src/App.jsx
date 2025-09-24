@@ -22,6 +22,8 @@ import HalamanArtikel from './pages/HalamanArtikel';
 import DoubleSliderLogin from './pages/DoubleSliderLogin';
 import UnderConstruction from './pages/UnderConstruction';
 import DonasiPage from './pages/DonasiPage';
+import JemputZakat from './pages/JemputZakat';
+import LaporanKeuangan from './pages/LaporanKeuangan';
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
           <Route path="/double-slider-login" element={<DoubleSliderLogin />} />
           <Route path="/under-construction" element={<UnderConstruction />} />
           <Route path="/donasi-bmh" element={<DonasiPage />} />
+          <Route path="/jemput-zakat" element={<JemputZakat />} />
+          <Route path="/laporan-keuangan" element={<LaporanKeuangan />} />
         </Routes>
 
         {/* Footer */}
