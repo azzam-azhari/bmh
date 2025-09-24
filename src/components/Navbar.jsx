@@ -111,7 +111,7 @@ const Navbar = () => {
             </li>
             <li className="flex items-center gap-3">
               <i className="block text-2xl ri-book-open-line md:hidden"></i>
-              <Link to="/donasi-bmh" className="px-4 py-1 border rounded-full shadow-lg text-emerald-600 border-white/50 animate-blinkLed">
+              <Link to="https://berbagi.bmh.or.id/" className="px-4 py-1 border rounded-full shadow-lg text-emerald-600 border-white/50 animate-blinkLed">
                 Donasi
               </Link>
             </li>

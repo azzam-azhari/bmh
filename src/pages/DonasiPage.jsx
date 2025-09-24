@@ -58,7 +58,9 @@ const DonasiPage = () => {
           <br />
           <br />
         </p>
-        <h2 className="mt-1 text-xl font-md md:text-xl md:font-extrabold text-[#095046]">👉 Donasikan sekarang. Mulai dari Rp10.000, Anda sudah membantu membuka pintu kebaikan tanpa batas.</h2>
+        <h2 className="mt-1 text-xl font-base md:text-xl md:font-base text-[#095046]">
+          👉 Donasikan sekarang. <span className="mt-1 text-xl font-md md:text-xl md:font-extrabold text-[#095046]">Mulai dari Rp10.000</span>, Anda sudah membantu membuka pintu kebaikan tanpa batas.
+        </h2>
       </div>
 
       {/* Grid */}
