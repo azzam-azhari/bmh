@@ -1,6 +1,6 @@
 export default function JejakKebaikan() {
   return (
-    <section className="p-8 mx-0 bg-white shadow-sm md:mx-1 rounded-3xl md:p-5 font-poppins">
+    <section className="p-8 mx-0 bg-white shadow-sm md:mx-5 rounded-3xl md:p-5 font-poppins">
       {/* Judul */}
       <div className="container mx-auto max-w-7xl">
         <div className="py-5 mb-10">

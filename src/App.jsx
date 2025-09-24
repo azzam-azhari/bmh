@@ -21,6 +21,7 @@ import RisetDetail from './pages/RisetDetail';
 import HalamanArtikel from './pages/HalamanArtikel';
 import DoubleSliderLogin from './pages/DoubleSliderLogin';
 import UnderConstruction from './pages/UnderConstruction';
+import DonasiPage from './pages/DonasiPage';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/artikel-detail" element={<HalamanArtikel />} />
           <Route path="/double-slider-login" element={<DoubleSliderLogin />} />
           <Route path="/under-construction" element={<UnderConstruction />} />
+          <Route path="/donasi-bmh" element={<DonasiPage />} />
         </Routes>
 
         {/* Footer */}

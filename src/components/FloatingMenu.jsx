@@ -2,7 +2,7 @@ import React from 'react';
 import { FaHandHoldingHeart } from 'react-icons/fa';
 
 const FloatingMenu = () => {
-  const donateLink = '/under-construction'; // ganti sesuai kebutuhan
+  const donateLink = '/donasi-bmh'; // ganti sesuai kebutuhan
 
   return (
     <a

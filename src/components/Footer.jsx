@@ -47,7 +47,7 @@ const Footer = () => {
           <h3 className="mb-3 text-lg font-extrabold text-[#FEB738]">Kalibata Office Park</h3>
           <div className="space-y-2 text-sm font-light">
             <p className="flex items-center transition">Jalan Raya Pasar Minggu No.21, Blok H RT.1/RW.8, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12780, Indonesia.</p>
-            <a href="tel:0217975770" className="flex items-center transition hover:text-[#39BA87]">
+            <a href="tel:0217975770" className="flex items-center transition hover:text-[#39BA87] pt-5">
               <MdPhone className="mr-2 text-lg" /> 021-7975-770
             </a>
 
