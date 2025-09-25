@@ -65,7 +65,7 @@ const KalkulatorZakat = () => {
   };
 
   return (
-    <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
+    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Kalkulator Zakat</h2>
       <div className="h-2 w-40 bg-[#FEB738] mt-1 mb-4"></div>
       <h4 className="mb-2 text-xl font-bold text-slate-700">Hitung dan Tunaikan Zakat Anda dengan Mudah</h4>

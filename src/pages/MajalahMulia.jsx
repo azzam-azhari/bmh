@@ -70,7 +70,7 @@ export default function MajalahMulia() {
   ];
 
   return (
-    <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
+    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
       <div className="text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Majalah Mulia – Menginspirasi dengan Dakwah dan Aksi Nyata</h2>
@@ -84,7 +84,7 @@ export default function MajalahMulia() {
       </div>
 
       {/* Grid Artikel */}
-      <div className="grid gap-6 py-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid gap-6 py-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
         {articles.map((article) => (
           <div key={article.id} className="relative overflow-hidden shadow-md rounded-3xl group">
             {/* Gambar */}
