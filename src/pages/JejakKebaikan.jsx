@@ -18,7 +18,7 @@ export default function JejakKebaikan() {
           {/* Teks Menjangkau Nusantara */}
           <div>
             <h3 className="mb-4 text-2xl font-bold text-emerald-900">Menjangkau Nusantara</h3>
-            <p className="mb-4 leading-relaxed text-gray-600">Bersama Para Dermawan, Kami Telah Menebar Harapan Dan Kebaikan Ke Seluruh Pelosok Indonesia.</p>
+            <p className="mb-4 text-sm leading-relaxed text-gray-600 ">Bersama Para Dermawan, Kami Telah Menebar Harapan Dan Kebaikan Ke Seluruh Pelosok Indonesia.</p>
             <p className="mb-2 leading-relaxed text-gray-600">Telah Menyentuh Lebih Dari:</p>
             <p className="text-3xl font-bold text-emerald-500">50,3 Juta Jiwa</p>
           </div>
@@ -29,25 +29,25 @@ export default function JejakKebaikan() {
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium">Total Donasi Tersalurkan</p>
             <p className="text-2xl font-bold text-emerald-500">Rp. 744.675.454.225</p>
-            <p className="mt-1 text-sm text-gray-500">Setiap Rupiah Adalah Harapan Yang Nyata.</p>
+            <p className="mt-1 text-xs text-gray-500 md:text-sm">Setiap Rupiah Adalah Harapan Yang Nyata.</p>
           </div>
 
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium">Penerima Manfaat</p>
             <p className="text-2xl font-bold text-emerald-500">7.523.658 Orang</p>
-            <p className="mt-1 text-sm text-gray-500">Hidup Mereka Berubah Berkat Dukungan Anda.</p>
+            <p className="mt-1 text-xs text-gray-500 md:text-sm">Hidup Mereka Berubah Berkat Dukungan Anda.</p>
           </div>
 
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium">Program Kebaikan</p>
             <p className="text-2xl font-bold text-emerald-500">100+ Program</p>
-            <p className="mt-1 text-sm text-gray-500">Ratusan Aksi Nyata Untuk Masa Depan Yang Lebih Cerah.</p>
+            <p className="mt-1 text-xs text-gray-500 md:text-sm">Ratusan Aksi Nyata Untuk Masa Depan Yang Lebih Cerah.</p>
           </div>
 
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium0">Relawan Hebat</p>
             <p className="text-2xl font-bold text-emerald-500">700 Orang</p>
-            <p className="mt-1 text-sm text-gray-500">Pejuang Tanpa Pamrih Di Garda Depan Kemanusiaan.</p>
+            <p className="mt-1 text-xs text-gray-500 md:text-sm">Pejuang Tanpa Pamrih Di Garda Depan Kemanusiaan.</p>
           </div>
         </div>
       </div>

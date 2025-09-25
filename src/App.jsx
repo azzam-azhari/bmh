@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Nav from './components/Nav';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import FloatingMenu from './components/FloatingMenu';
@@ -11,6 +11,7 @@ import BuktiNyata from './pages/BuktiNyata';
 import LastCard from './pages/LastCard';
 import JejakKebaikan from './pages/JejakKebaikan';
 import ProgramKami from './pages/ProgramKami';
+import KenapaHarusKami from './pages/KenapaHarusKami';
 import ProfilBmh from './pages/ProfilBmh';
 import JajaranManajemen from './pages/JajaranManajemen';
 import KantorPerwakilan from './pages/KantorPerwakilan';
@@ -29,8 +30,8 @@ function App() {
   return (
     <Router>
       <div className="relative">
-        {/* Navbar */}
-        <Navbar />
+        {/* Nav */}
+        <Nav />
 
         {/* Routing */}
         <Routes>
@@ -40,6 +41,7 @@ function App() {
           <Route path="/lastCard" element={<LastCard />} />
           <Route path="/jejakKebaikan" element={<JejakKebaikan />} />
           <Route path="/program-kami" element={<ProgramKami />} />
+          <Route path="/kenapa-harus-kami" element={<KenapaHarusKami />} />
           <Route path="/profil-bmh" element={<ProfilBmh />} />
           <Route path="/jajaran-manajemen" element={<JajaranManajemen />} />
           <Route path="/kantor-perwakilan" element={<KantorPerwakilan />} />

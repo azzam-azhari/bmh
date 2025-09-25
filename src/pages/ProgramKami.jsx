@@ -29,10 +29,33 @@ export default function ProgramKami() {
       </div>
 
       {/* Kartu Bantuan */}
-      <div className="flex flex-col items-center gap-6 p-6 border border-slate-200 md:flex-row rounded-2xl">
+      <div className="flex flex-col items-center gap-6 p-4 border border-slate-200 rounded-2xl md:flex-row md:p-4 lg:p-6">
         {/* Kiri */}
+        <div className="flex flex-col items-center justify-center flex-1 w-full gap-4 p-6 text-white bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl md:flex-row md:text-left">
+          <div>
+            <button className="px-2 py-2 font-semibold text-yellow-500 transition bg-white shadow rounded-xl hover:bg-slate-50 hover:cursor-pointer">Bantu Sekarang!</button>
+            <p className="mt-3 text-sm text-center md:text-left">
+              Jadilah bagian dari perubahan — satu donasi kecil, <span className="font-bold">berdampak besar.</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Kanan */}
+        <div className="flex flex-col flex-1 w-full gap-3 md:gap-4">
+          <p className="text-sm text-center text-[#095046] md:text-left">Masih bingung cara berdonasi? Tim kami siap membantu kamu</p>
+          <div className="flex items-center justify-center gap-2 px-3 py-2 text-sm text-gray-700 transition border rounded-lg md:justify-start border-slate-200 hover:bg-slate-200 hover:cursor-pointer">
+            <span className="font-semibold">WhatsApp:</span> 021 - 7975770
+          </div>
+          <div className="flex items-center justify-center gap-2 px-3 py-2 text-sm text-gray-700 transition border rounded-lg md:justify-start border-slate-200 hover:bg-slate-200 hover:cursor-pointer">
+            <span className="font-semibold">Email:</span> sekretariat@bmh.or.id
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="flex flex-col items-center gap-6 p-6 border border-slate-200 md:flex-row rounded-2xl">
+       
         <div className="flex flex-col items-center flex-1 gap-4 p-6 text-white md:flex-row bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl">
-          {/* <div className="text-4xl">💛</div> */}
+          
           <div>
             <button className="px-4 py-2 font-semibold text-yellow-500 bg-white shadow hover:bg-slate-50 rounded-xl hover:cursor-pointer">Bantu Sekarang!</button>
             <p className="mt-2 text-sm">
@@ -41,17 +64,17 @@ export default function ProgramKami() {
           </div>
         </div>
 
-        {/* Kanan */}
+        
         <div className="flex flex-col flex-1 gap-2">
           <p className="text-sm text-[#095046]">Masih bingung cara berdonasi?, Tim kami siap membantu kamu</p>
-          <div className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg bg-slate-50 hover:bg-slate-200 hover:cursor-pointer">
+          <div className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg border-1 border-slate-200 hover:bg-slate-200 hover:cursor-pointer">
             <span className="font-semibold ">WhatsApp:</span> 021 - 7975770
           </div>
-          <div className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg bg-slate-50 hover:bg-slate-200 hover:cursor-pointer">
+          <div className="flex items-center gap-2 px-3 py-2 text-sm text-center text-gray-700 rounded-lg border-1 border-slate-200 hover:bg-slate-200 hover:cursor-pointer">
             <span className="font-semibold ">Email:</span> sekretariat@bmh.or.id
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

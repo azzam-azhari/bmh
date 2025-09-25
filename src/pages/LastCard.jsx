@@ -36,7 +36,7 @@ export default function LastCard() {
             <div key={item.id} className="flex flex-col justify-between p-6 transition-shadow duration-300 bg-white shadow-lg rounded-2xl hover:shadow-2xl">
               <div>
                 <h2 className="mb-3 text-lg font-semibold text-emerald-600">{item.title}</h2>
-                <p className="text-sm text-slate-600">{item.desc}</p>
+                <p className="text-xs md:text-sm text-slate-600">{item.desc}</p>
               </div>
               <button className="self-start px-4 py-2 mt-6 text-xs font-medium text-white rounded-md bg-green-950 hover:bg-green-900">Selengkapnya</button>
             </div>

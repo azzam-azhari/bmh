@@ -39,7 +39,7 @@ export default function NewsSection() {
               <div className="mx-3 bg-transparent">
                 <div className={`${news.bg} text-white p-6 pt-10 flex-1 flex flex-col mt-[-20px] rounded-b-3xl shadow-2xl`}>
                   <h3 className="mb-3 text-xl font-semibold hover:cursor-pointer">{news.title}</h3>
-                  <p className="flex-1 text-sm leading-relaxed">{news.desc}</p>
+                  <p className="flex-1 text-xs leading-relaxed md:text-sm">{news.desc}</p>
                   <button className="self-start px-4 py-2 mt-6 text-sm rounded-xl text-slate-900 bg-slate-50 hover:bg-slate-100 hover:cursor-pointer">Selengkapnya..</button>
                 </div>
               </div>

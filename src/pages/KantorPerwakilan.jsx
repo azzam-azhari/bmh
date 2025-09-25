@@ -26,7 +26,7 @@ export default function KantorPerwakilan() {
     },
   ];
   return (
-    <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
+    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
       <div className="text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Kantor Perwakilan BMH</h2>
@@ -60,7 +60,7 @@ export default function KantorPerwakilan() {
 
         <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
           {kantorPusat.map((item, idx) => (
-            <div key={idx} className="flex flex-col overflow-hidden transition border-[#39BA87] shadow border-1 rounded-2xl hover:shadow-md">
+            <div key={idx} className="flex flex-col overflow-hidden transition border-[#39BA87] shadow border-1 rounded-3xl hover:shadow-md">
               {/* Gambar */}
               <img src={item.gambar} alt={item.nama} className="object-cover w-full h-55" />
 
