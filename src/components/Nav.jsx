@@ -174,45 +174,45 @@ export default function Nav() {
           <div className="flow-root mt-6">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-6 space-y-2">
-                <a href="/" className="block px-3 py-2 -mx-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-lg text-base/7 hover:bg-gray-50">
+                <a href="/" className="block px-3 py-2 -mx-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-xl text-base/7 hover:bg-gray-50">
                   Beranda
                 </a>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-xl py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">
                     Profil
                     <ChevronDownIcon aria-hidden="true" className="flex-none size-5 group-data-open:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
                     {[...profil, ...callsToAction].map((item) => (
-                      <DisclosureButton key={item.name} as="a" href={item.href} className="block py-2 pl-6 pr-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-lg text-sm/7 hover:bg-gray-50">
+                      <DisclosureButton key={item.name} as="a" href={item.href} className="block py-2 pl-6 pr-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-xl text-sm/7 hover:bg-gray-50">
                         {item.name}
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-xl py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">
                     Layanan
                     <ChevronDownIcon aria-hidden="true" className="flex-none size-5 group-data-open:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
                     {[...servicesMenu].map((item) => (
-                      <DisclosureButton key={item.names} as="a" href={item.hrefs} className="block py-2 pl-6 pr-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-lg text-sm/7 hover:bg-gray-50">
+                      <DisclosureButton key={item.names} as="a" href={item.hrefs} className="block py-2 pl-6 pr-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-xl text-sm/7 hover:bg-gray-50">
                         {item.names}
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
 
-                <a href="https://berbagi.bmh.or.id/" className="block px-3 py-2 -mx-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-lg text-base/7 hover:bg-gray-50">
+                <a href="https://berbagi.bmh.or.id/" className="block px-3 py-2 -mx-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-xl text-base/7 hover:bg-gray-50">
                   Donasi
                 </a>
-                <a href="/majalah-mulia" className="block px-3 py-2 -mx-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-lg text-base/7 hover:bg-gray-50">
+                <a href="/majalah-mulia" className="block px-3 py-2 -mx-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-xl text-base/7 hover:bg-gray-50">
                   Majalah Mulia
                 </a>
               </div>
               <div className="py-6">
-                <a href="/double-slider-login" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">
+                <a href="/double-slider-login" className="-mx-3 block rounded-xl px-3 py-2.5 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">
                   Log in
                 </a>
               </div>

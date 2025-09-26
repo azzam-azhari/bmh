@@ -37,19 +37,19 @@ export default function JajaranManajemen() {
     {
       role: 'Ketua Pembina',
       name: 'DR Nashirul Haq',
-      email: 'dr.nashirul.haq@gmail.com',
+      email: 'dr.nashirul.haq@bmh.or.id',
       image: '/images/jajaran-pengurus/1-pembina/1.png',
     },
     {
       role: 'Anggota Pembina',
       name: 'Ust. Fathul Adhim',
-      email: '@',
+      email: 'fathul.adhim@bmh.or.id',
       image: '/images/jajaran-pengurus/1-pembina/2.JPG',
     },
     {
       role: 'Anggota Pembina',
-      name: 'Ust. ',
-      email: 'dr.nashirul.haq@gfsa',
+      name: 'Ust. Marwan Mujahidin',
+      email: 'marwan.mujahidin@bmh.or.id',
       image: '/images/jajaran-pengurus/1-pembina/3.jpg',
     },
   ];
@@ -57,26 +57,26 @@ export default function JajaranManajemen() {
   const dewanPengawas = [
     {
       role: 'Ketua Pengawas',
-      name: 'Ust. ',
-      email: '@gmail.com',
+      name: 'Drs. Wahyu Rahman, M.M',
+      email: 'wahyu.rahman@bmh.or.id',
       image: '/images/jajaran-pengurus/2-pengawas/1.jpg',
     },
     {
       role: 'Anggota Pengawas',
-      name: 'Ust. ',
-      email: '@gmail.com',
+      name: 'Abdul Ghofar, S.Pd.I',
+      email: 'abdul.ghofar@bmh.or.id',
       image: '/images/jajaran-pengurus/2-pengawas/2.jpg',
     },
     {
       role: 'Anggota Pengawas',
-      name: 'Ust. ',
-      email: '@gmail.com',
+      name: 'Abdul Kholiq, Lc, M.H.I',
+      email: 'abdul.kholiq@bmh.or.id',
       image: '/images/jajaran-pengurus/2-pengawas/3.png',
     },
     {
       role: 'Anggota Pengawas',
-      name: 'Ust. ',
-      email: '@gmail.com',
+      name: 'Naspi Arsyad, Lc',
+      email: 'naspi.arsyad@bmh.or.id',
       image: '/images/jajaran-pengurus/2-pengawas/4.png',
     },
   ];
@@ -84,53 +84,53 @@ export default function JajaranManajemen() {
   const dewanPengurus = [
     {
       role: 'Ketua Pengurus',
-      name: 'Ust. Firmanza',
-      email: '@gmail.com',
+      name: 'Ust. Firman Zainal Abidin',
+      email: 'firmanza@bmh.or.id',
       image: '/images/jajaran-pengurus/3-pengurus/1.JPG',
     },
     {
-      role: 'Anggota Pengurus',
+      role: 'Sekretaris Pengurus',
       name: 'Ust. Dede Heri Bachtiar',
-      email: '@gmail.com',
+      email: 'dede.heri@bmh.or.id',
       image: '/images/jajaran-pengurus/3-pengurus/2.JPG',
     },
     {
-      role: 'Anggota Pengurus',
+      role: 'Bendahara Pengurus',
       name: 'Ust. Abdul Chadjib Halik',
-      email: '@gmail.com',
+      email: 'abdul.chajib@bmh.or.id',
       image: '/images/jajaran-pengurus/3-pengurus/3.JPG',
     },
   ];
 
   const direksi = [
     {
-      role: 'Ketua Direksi',
+      role: 'Direktur Utama',
       name: 'Ust. Supendi',
-      email: 'supendi@gmail.com',
+      email: 'supendi@bmh.or.id',
       image: '/images/jajaran-pengurus/4-direksi/1.JPG',
     },
     {
-      role: 'Anggota Direksi',
+      role: 'Direktur Operasional',
       name: 'DR Eko Muliansyah',
-      email: '@gmail.com',
+      email: 'eko.muliansyah@bmh.or.id',
       image: '/images/jajaran-pengurus/4-direksi/2.JPG',
     },
     {
-      role: 'Anggota Direksi',
-      name: 'Ust. ',
-      email: '@gmail.com',
+      role: 'Direktur Marketing',
+      name: 'Ust. Zainal Abidin',
+      email: '@bmh.or.id',
       image: '/images/jajaran-pengurus/4-direksi/3.JPG',
     },
     {
-      role: 'Anggota Direksi',
-      name: 'Ust. ',
-      email: '@gmail.com',
+      role: 'Direktur Prodaya',
+      name: 'Ust. Syamsudin',
+      email: '@bmh.or.id',
       image: '/images/jajaran-pengurus/4-direksi/4.JPG',
     },
     {
-      role: 'Anggota Direksi',
-      name: 'Ust. ',
-      email: '@gmail.com',
+      role: 'Sekretaris Lembaga',
+      name: 'Ust. Tri Winarno',
+      email: 'tri.winarno@bmh.or.id',
       image: '/images/jajaran-pengurus/4-direksi/5.JPG',
     },
   ];

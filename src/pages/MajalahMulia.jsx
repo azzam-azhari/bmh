@@ -75,7 +75,7 @@ export default function MajalahMulia() {
       <div className="text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Majalah Mulia – Menginspirasi dengan Dakwah dan Aksi Nyata</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
-        <p className="leading-relaxed text-justify text-gray-700">
+        <p className="text-sm leading-relaxed text-justify text-gray-700">
           <span className="font-semibold">Majalah Mulia </span>adalah media resmi Lembaga Zakat Baitul Maal Hidayatullah (BMH) yang hadir untuk menyebarkan nilai-nilai kebaikan, dakwah, serta semangat berbagi kepada umat. <br /> Melalui
           artikel, kisah inspiratif, dan liputan program, Majalah Mulia menjadi jendela informasi bagi masyarakat tentang bagaimana zakat, infak, sedekah, dan wakaf dikelola serta disalurkan secara amanah dan profesional. <br /> Kami
           percaya bahwa literasi adalah bagian dari ibadah. Karena itu, setiap edisi Majalah Mulia dirancang tidak hanya untuk dibaca, tetapi juga menjadi inspirasi nyata agar setiap orang dapat terus berkhidmat dan memberi manfaat lebih

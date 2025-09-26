@@ -10,7 +10,7 @@ const IsiArtikel = ({ title, authors, date, content, images }) => {
       </div>
 
       <div>
-        <img src="https://picsum.photos/400/300?random=3" alt="Image" className="w-full mb-4 bg-white bg-cover rounded-lg shadow-md h-70" />
+        <img src="https://picsum.photos/400/300?random=3" alt="Image" className="w-full mb-4 bg-white bg-cover shadow-md rounded-3xl h-70" />
       </div>
 
       {/* Author and Date */}
@@ -38,7 +38,7 @@ const IsiArtikel = ({ title, authors, date, content, images }) => {
       {images && images.length > 0 && (
         <div className="grid grid-cols-1 gap-4 mt-6 md:grid-cols-3">
           {images.map((img, index) => (
-            <img key={index} src={img} alt={`Article image ${index + 1}`} className="object-cover w-full rounded-lg shadow-md h-52" />
+            <img key={index} src={img} alt={`Article image ${index + 1}`} className="object-cover w-full shadow-md rounded-3xl h-52" />
           ))}
         </div>
       )}
