@@ -53,7 +53,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-white/50 font-poppins backdrop-blur-sm">
+    <header className="fixed top-0 left-0 z-50 w-full shadow-md bg-white/50 font-poppins backdrop-blur-sm shadow-gray-300">
       <nav aria-label="Global" className="flex items-center justify-between p-3 px-4 mx-auto max-w-7xl md:px-6 lg:px-8 ">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">

@@ -19,7 +19,7 @@ import KalkulatorZakat from './pages/KalkulatorZakat';
 import MajalahMulia from './pages/MajalahMulia';
 import RisetPengembangan from './pages/RisetPengembangan';
 import RisetDetail from './pages/RisetDetail';
-import HalamanArtikel from './pages/HalamanArtikel';
+import ArtikelDetail from './pages/ArtikelDetail';
 import DoubleSliderLogin from './pages/DoubleSliderLogin';
 import UnderConstruction from './pages/UnderConstruction';
 import DonasiPage from './pages/DonasiPage';
@@ -49,7 +49,7 @@ function App() {
           <Route path="/majalah-mulia" element={<MajalahMulia />} />
           <Route path="/riset-pengembangan" element={<RisetPengembangan />} />
           <Route path="/riset-detail" element={<RisetDetail />} />
-          <Route path="/artikel-detail" element={<HalamanArtikel />} />
+          <Route path="/artikel-detail" element={<ArtikelDetail />} />
           <Route path="/double-slider-login" element={<DoubleSliderLogin />} />
           <Route path="/under-construction" element={<UnderConstruction />} />
           <Route path="/donasi-bmh" element={<DonasiPage />} />

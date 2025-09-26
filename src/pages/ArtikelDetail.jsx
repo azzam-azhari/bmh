@@ -2,7 +2,7 @@ import React from 'react';
 
 const IsiArtikel = ({ title, authors, date, content, images }) => {
   return (
-    <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
+    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Title */}
       <div className="text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">{title}</h2>
@@ -26,7 +26,7 @@ const IsiArtikel = ({ title, authors, date, content, images }) => {
       </p>
 
       {/* Konten Utama */}
-      <div className="mb-6 prose prose-lg max-w-none">
+      <div className="mb-6 text-sm prose prose-lg max-w-none md:text-base">
         {content.map((para, index) => (
           <p key={index} className="mb-4 leading-relaxed text-gray-700">
             {para}
@@ -46,7 +46,7 @@ const IsiArtikel = ({ title, authors, date, content, images }) => {
   );
 };
 
-const HalamanArtikel = () => {
+const ArtikelDetail = () => {
   const data = {
     title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat',
     authors: ['Melanie Zanona', 'Peter Journey'],
@@ -68,4 +68,4 @@ const HalamanArtikel = () => {
   );
 };
 
-export default HalamanArtikel;
+export default ArtikelDetail;

@@ -7,7 +7,7 @@ const JemputZakat = () => {
   const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
 
   return (
-    <section className="flex flex-col min-h-screen mx-auto bg-linear-to-tr from-emerald-50 to-white font-poppins max-w-7xl">
+    <section className="flex flex-col min-h-screen mx-auto bg-slate-100 font-poppins max-w-7xl">
       {/* Hero */}
       <div className="grid items-center flex-1 min-h-screen px-4 py-20 mx-auto grid-row md:px-6 lg:px-12 max-w-7xl lg:py-30 gap-x-12 gap-y-6 md:grid-cols-2 lg:grid-cols-2">
         <div>

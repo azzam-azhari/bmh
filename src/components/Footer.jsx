@@ -59,7 +59,7 @@ const Footer = () => {
                 <MdEmail className="mr-2 text-xs md:text-sm" /> sekretariat@bmh.or.id
               </a>
               <a href="/kantor-perwakilan" className="flex items-center transition hover:text-[#39BA87]">
-                <FaHome className="mr-2 text-xs md:text-sm" /> Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.
+                <FaHome className="mr-2 text-xs md:text-sm" /> Temukan kantor BMH terdekat
               </a>
             </div>
           </div>
