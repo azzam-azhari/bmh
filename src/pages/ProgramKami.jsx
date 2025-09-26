@@ -33,7 +33,9 @@ export default function ProgramKami() {
         {/* Kiri */}
         <div className="flex flex-col items-center justify-center flex-1 w-full gap-4 p-6 text-white bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl md:flex-row md:text-left">
           <div>
-            <button className="px-2 py-2 font-semibold text-yellow-500 transition bg-white shadow rounded-xl hover:bg-slate-50 hover:cursor-pointer">Bantu Sekarang!</button>
+            <a href="https://berbagi.bmh.or.id/" target="blank" className="px-5 py-2 font-semibold text-yellow-500 transition bg-white shadow rounded-xl hover:bg-slate-50 hover:cursor-pointer">
+              Bantu Sekarang!
+            </a>
             <p className="mt-3 text-sm text-center md:text-left">
               Jadilah bagian dari perubahan — satu donasi kecil, <span className="font-bold">berdampak besar.</span>
             </p>

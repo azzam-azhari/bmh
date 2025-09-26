@@ -2,11 +2,8 @@
 
 import { useState } from 'react';
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react';
-import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
-import { InformationCircleIcon, UsersIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
-
-import { CalculatorIcon, TruckIcon } from '@heroicons/react/24/outline';
+import { InformationCircleIcon, UsersIcon, BuildingOfficeIcon, NewspaperIcon, BookOpenIcon, LightBulbIcon, Bars3Icon, XMarkIcon, BanknotesIcon, CalendarDaysIcon, CalculatorIcon, TruckIcon } from '@heroicons/react/24/outline';
 
 const profil = [
   { name: 'Tentang Kami', description: 'Kenali lebih dekat visi, misi, dan komitmen BMH dalam membangun peradaban berbasis zakat.', href: '/profil-bmh', icon: InformationCircleIcon },
@@ -29,6 +26,39 @@ const services = [
     icon: TruckIcon,
   },
 ];
+const publikasi = [
+  {
+    name: 'Berita',
+    description: 'Kumpulan berita terbaru seputar aktivitas, program, dan capaian BMH untuk masyarakat.',
+    href: '/majalah-mulia',
+    icon: NewspaperIcon,
+  },
+  {
+    name: 'PID',
+    description: 'Publikasi Inspirasi Dakwah (PID) berisi tulisan keislaman, renungan, dan dakwah bil qalam.',
+    href: '/pid',
+    icon: BookOpenIcon,
+  },
+  {
+    name: 'Riset & Pengembangan',
+    description: 'Laporan riset dan inovasi pengembangan program BMH agar lebih tepat sasaran dan bermanfaat.',
+    href: '/riset-pengembangan',
+    icon: LightBulbIcon,
+  },
+  {
+    name: 'Laporan Keuangan',
+    description: 'Transparansi pengelolaan dana BMH yang disajikan dalam bentuk laporan keuangan resmi dan dapat diakses publik.',
+    href: '/laporan-keuangan',
+    icon: BanknotesIcon,
+  },
+  {
+    name: 'Laporan Tahunan',
+    description: 'Rangkuman kegiatan, capaian, dan kontribusi BMH selama satu tahun penuh dalam satu dokumen komprehensif.',
+    href: '/laporan-tahunan',
+    icon: CalendarDaysIcon,
+  },
+];
+
 const servicesMenu = [
   {
     names: 'Kalkulator Zakat',
@@ -53,7 +83,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full shadow-md bg-white/50 font-poppins backdrop-blur-sm shadow-gray-300">
+    <header className="fixed top-0 left-0 z-50 w-full shadow-lg bg-white/50 font-poppins backdrop-blur-sm shadow-black/5">
       <nav aria-label="Global" className="flex items-center justify-between p-3 px-4 mx-auto max-w-7xl md:px-6 lg:px-8 ">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -148,6 +178,34 @@ export default function Nav() {
           <a href="/majalah-mulia" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
             Majalah Mulia
           </a>
+          <Popover className="relative">
+            <PopoverButton className="flex items-center font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 gap-x-1 text-sm/6">
+              Publikasi
+              <ChevronDownIcon aria-hidden="true" className="flex-none text-gray-400 size-5" />
+            </PopoverButton>
+
+            <PopoverPanel
+              transition
+              className="absolute z-10 w-screen max-w-md mt-3 overflow-hidden transition -translate-x-1/2 bg-white shadow-lg left-1/2 rounded-3xl outline-1 outline-[#095046]/5 data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+            >
+              <div className="p-4">
+                {publikasi.map((item) => (
+                  <div key={item.name} className="relative flex items-center p-4 rounded-lg group gap-x-6 text-sm/6 hover:bg-gray-50">
+                    <div className="flex items-center justify-center flex-none rounded-lg size-11 bg-gray-50 group-hover:bg-white">
+                      <item.icon aria-hidden="true" className="text-gray-600 size-6 group-hover:text-[#39BA87] transition-all duration-200" />
+                    </div>
+                    <div className="flex-auto">
+                      <a href={item.href} className="block font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200">
+                        {item.name}
+                        <span className="absolute inset-0" />
+                      </a>
+                      <p className="mt-1 text-xs text-gray-600">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </PopoverPanel>
+          </Popover>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
@@ -210,6 +268,19 @@ export default function Nav() {
                 <a href="/majalah-mulia" className="block px-3 py-2 -mx-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-xl text-base/7 hover:bg-gray-50">
                   Majalah Mulia
                 </a>
+                <Disclosure as="div" className="-mx-3">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-xl py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">
+                    Publikasi
+                    <ChevronDownIcon aria-hidden="true" className="flex-none size-5 group-data-open:rotate-180" />
+                  </DisclosureButton>
+                  <DisclosurePanel className="mt-2 space-y-2">
+                    {[...publikasi].map((item) => (
+                      <DisclosureButton key={item.name} as="a" href={item.href} className="block py-2 pl-6 pr-3 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 rounded-xl text-sm/7 hover:bg-gray-50">
+                        {item.name}
+                      </DisclosureButton>
+                    ))}
+                  </DisclosurePanel>
+                </Disclosure>
               </div>
               <div className="py-6">
                 <a href="/double-slider-login" className="-mx-3 block rounded-xl px-3 py-2.5 text-base/7 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-50">

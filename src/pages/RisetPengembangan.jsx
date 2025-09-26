@@ -70,7 +70,7 @@ export default function RisetPengembangan() {
   ];
 
   return (
-    <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
+    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
       <div className="text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Riset dan Pengembangan</h2>
@@ -121,7 +121,7 @@ export default function RisetPengembangan() {
             <div>
               <h3 className="text-lg font-bold">Kalkulator Zakat</h3>
               <p className="text-sm text-emerald-100">Temukan dengan cepat berapa kewajiban zakat Anda. Praktis, akurat, dan sesuai syariat.</p>
-              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium rounded-lg bg-slate-50 text-emerald-600 hover:bg-slate-100">
+              <a href="/kalkulator-zakat" className="inline-block px-4 py-2 mt-3 text-sm font-medium rounded-lg bg-slate-50 text-emerald-600 hover:bg-slate-100">
                 Hitung Zakat Anda
               </a>
             </div>
@@ -135,7 +135,7 @@ export default function RisetPengembangan() {
             <div>
               <h3 className="text-lg font-bold">Tunaikan Zakat</h3>
               <p className="text-sm text-amber-100">Salurkan zakat Anda secara online dengan aman, transparan, dan tepat sasaran. Setiap rupiah Anda akan membantu mereka yang membutuhkan.</p>
-              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
+              <a href="https://berbagi.bmh.or.id/" target="blank" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
                 Tunaikan Zakat Sekarang
               </a>
             </div>

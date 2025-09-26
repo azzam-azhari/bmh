@@ -65,7 +65,7 @@ export default function ProfilBmh() {
             <div>
               <h3 className="text-lg font-bold">Tunaikan Zakat</h3>
               <p className="text-sm text-amber-100">Salurkan zakat Anda secara online dengan aman, transparan, dan tepat sasaran. Setiap rupiah Anda akan membantu mereka yang membutuhkan.</p>
-              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
+              <a href="https://berbagi.bmh.or.id/" target="blank" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
                 Tunaikan Zakat Sekarang
               </a>
             </div>

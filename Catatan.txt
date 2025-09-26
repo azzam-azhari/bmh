@@ -4,6 +4,8 @@ Popup WA
 
 Color:
 [#095046]
+#9aa8a6ff
+#095046
 #FEB738
 #39BA87
 

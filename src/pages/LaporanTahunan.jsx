@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const LaporanKeuangan = () => {
+const LaporanTahunan = () => {
   const years = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027];
   const [activeYear, setActiveYear] = useState(2017);
 
@@ -8,7 +8,7 @@ const LaporanKeuangan = () => {
     <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
       <div className="mb-20 text-left lg:text-left">
-        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Laporan Keuangan</h2>
+        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Laporan Tahunan</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
       </div>
       {/* Timeline Tahun */}
@@ -38,4 +38,4 @@ const LaporanKeuangan = () => {
   );
 };
 
-export default LaporanKeuangan;
+export default LaporanTahunan;

@@ -25,6 +25,7 @@ import UnderConstruction from './pages/UnderConstruction';
 import DonasiPage from './pages/DonasiPage';
 import JemputZakat from './pages/JemputZakat';
 import LaporanKeuangan from './pages/LaporanKeuangan';
+import LaporanTahunan from './pages/LaporanTahunan';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Route path="/donasi-bmh" element={<DonasiPage />} />
           <Route path="/jemput-zakat" element={<JemputZakat />} />
           <Route path="/laporan-keuangan" element={<LaporanKeuangan />} />
+          <Route path="/laporan-tahunan" element={<LaporanTahunan />} />
         </Routes>
 
         {/* Footer */}
