@@ -1,31 +1,137 @@
 import React from 'react';
 import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
 
+// Reusable Component
+const CardManajemen = ({ data }) => {
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
+      {data.map((item, index) => (
+        <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
+          {/* Foto pengurus */}
+          <div className="w-full bg-gray-200 h-111">
+            {item.image ? (
+              <img src={item.image} alt={item.name} className="object-cover w-full h-full" />
+            ) : (
+              <div className="flex items-center justify-center w-full h-full bg-gray-200">
+                <svg className="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
+                </svg>
+              </div>
+            )}
+          </div>
+
+          {/* Overlay gradasi */}
+          <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-[#095046] to-transparent">
+            <p className="text-sm font-medium text-white">{item.role}</p>
+            <h3 className="text-lg font-semibold text-yellow-500">{item.name}</h3>
+            <p className="text-xs text-gray-200">{item.email}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 export default function JajaranManajemen() {
-  const data = [
+  const dewanPembina = [
     {
       role: 'Ketua Pembina',
-      name: 'DR NASHIRUL HAQ',
-      email: 'dr.nashirul.haq@gfsa',
+      name: 'DR Nashirul Haq',
+      email: 'dr.nashirul.haq@gmail.com',
       image: '/images/jajaran-pengurus/1-pembina/1.png',
     },
     {
-      role: 'Ketua Pembina',
-      name: 'DR NASHIRUL HAQ',
-      email: 'dr.nashirul.haq@gfsa',
+      role: 'Anggota Pembina',
+      name: 'Ust. Fathul Adhim',
+      email: '@',
       image: '/images/jajaran-pengurus/1-pembina/2.JPG',
     },
     {
-      role: 'Ketua Pembina',
-      name: 'DR NASHIRUL HAQ',
+      role: 'Anggota Pembina',
+      name: 'Ust. ',
       email: 'dr.nashirul.haq@gfsa',
       image: '/images/jajaran-pengurus/1-pembina/3.jpg',
     },
+  ];
+
+  const dewanPengawas = [
     {
-      role: 'Ketua Pembina',
-      name: 'DR NASHIRUL HAQ',
-      email: 'dr.nashirul.haq@gfsa',
-      image: '/images/jajaran-pengurus/1-pembina/1.png',
+      role: 'Ketua Pengawas',
+      name: 'Ust. ',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/2-pengawas/1.jpg',
+    },
+    {
+      role: 'Anggota Pengawas',
+      name: 'Ust. ',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/2-pengawas/2.jpg',
+    },
+    {
+      role: 'Anggota Pengawas',
+      name: 'Ust. ',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/2-pengawas/3.png',
+    },
+    {
+      role: 'Anggota Pengawas',
+      name: 'Ust. ',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/2-pengawas/4.png',
+    },
+  ];
+
+  const dewanPengurus = [
+    {
+      role: 'Ketua Pengurus',
+      name: 'Ust. Firmanza',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/3-pengurus/1.JPG',
+    },
+    {
+      role: 'Anggota Pengurus',
+      name: 'Ust. Dede Heri Bachtiar',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/3-pengurus/2.JPG',
+    },
+    {
+      role: 'Anggota Pengurus',
+      name: 'Ust. Abdul Chadjib Halik',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/3-pengurus/3.JPG',
+    },
+  ];
+
+  const direksi = [
+    {
+      role: 'Ketua Direksi',
+      name: 'Ust. Supendi',
+      email: 'supendi@gmail.com',
+      image: '/images/jajaran-pengurus/4-direksi/1.JPG',
+    },
+    {
+      role: 'Anggota Direksi',
+      name: 'DR Eko Muliansyah',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/4-direksi/2.JPG',
+    },
+    {
+      role: 'Anggota Direksi',
+      name: 'Ust. ',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/4-direksi/3.JPG',
+    },
+    {
+      role: 'Anggota Direksi',
+      name: 'Ust. ',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/4-direksi/4.JPG',
+    },
+    {
+      role: 'Anggota Direksi',
+      name: 'Ust. ',
+      email: '@gmail.com',
+      image: '/images/jajaran-pengurus/4-direksi/5.JPG',
     },
   ];
 
@@ -36,128 +142,39 @@ export default function JajaranManajemen() {
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Jajaran Manajemen</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
 
-        <p className="leading-relaxed text-justify text-gray-700">
+        <p className="text-xs leading-relaxed text-justify text-gray-700 md:text-sm">
           Di balik setiap langkah besar BMH, ada para pemimpin visioner yang bekerja penuh dedikasi. Jajaran manajemen Baitul Maal Hidayatullah (BMH) merupakan sosok-sosok terbaik yang menjalankan amanah lembaga dengan penuh integritas,
           profesionalitas, dan semangat melayani umat. Mereka bukan hanya mengelola organisasi, tapi juga memastikan setiap program berjalan tepat sasaran, transparan, dan membawa manfaat luas bagi masyarakat. Dengan struktur manajemen yang
           solid—mulai dari Dewan Pembina, Dewan Pengawas, hingga Dewan Pengurus—BMH terus berkomitmen menghadirkan kebermanfaatan zakat, infak, dan sedekah secara optimal.
         </p>
       </div>
 
+      {/* Bagian Dewan Pembina */}
       <div className="my-10">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Dewan Pembina</h2>
         <div className="w-40 h-2 mt-1 mb-4 bg-yellow-500"></div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
-          {data.map((item, index) => (
-            <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
-              {/* Foto pengurus */}
-              <div className="w-full bg-gray-200 h-111">
-                {item.image ? (
-                  <img src={item.image} alt={item.name} className="object-cover w-full h-full" />
-                ) : (
-                  <div className="flex items-center justify-center w-full h-full bg-gray-200">
-                    <svg className="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
-                    </svg>
-                  </div>
-                )}
-              </div>
-
-              {/* Overlay gradasi */}
-              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-[#095046] to-transparent">
-                <p className="text-sm font-medium text-white">{item.role}</p>
-                <h3 className="text-lg font-semibold text-yellow-500">{item.name}</h3>
-                <p className="text-xs text-gray-200">{item.email}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <CardManajemen data={dewanPembina} />
       </div>
+
+      {/* Bagian Dewan Pengawas */}
       <div className="my-10">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Dewan Pengawas</h2>
         <div className="w-40 h-2 mt-1 mb-4 bg-yellow-500"></div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
-          {data.map((item, index) => (
-            <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
-              {/* Foto pengurus */}
-              <div className="w-full bg-gray-200 h-111">
-                {item.image ? (
-                  <img src="/images/jajaran-pengurus/2-pengawas/1.jpg" alt={item.name} className="object-cover w-full h-full" />
-                ) : (
-                  <div className="flex items-center justify-center w-full h-full bg-gray-200">
-                    <svg className="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
-                    </svg>
-                  </div>
-                )}
-              </div>
-
-              {/* Overlay gradasi */}
-              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-[#095046] to-transparent">
-                <p className="text-sm font-medium text-white">{item.role}</p>
-                <h3 className="text-lg font-semibold text-yellow-500">{item.name}</h3>
-                <p className="text-xs text-gray-200">{item.email}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <CardManajemen data={dewanPengawas} />
       </div>
+
+      {/* Bagian Dewan Pengurus */}
       <div className="my-10">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Dewan Pengurus</h2>
         <div className="w-40 h-2 mt-1 mb-4 bg-yellow-500"></div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
-          {data.map((item, index) => (
-            <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
-              {/* Foto pengurus */}
-              <div className="w-full bg-gray-200 h-111">
-                {item.image ? (
-                  <img src="/images/jajaran-pengurus/3-pengurus/1.JPG" alt={item.name} className="object-cover w-full h-full" />
-                ) : (
-                  <div className="flex items-center justify-center w-full h-full bg-gray-200">
-                    <svg className="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
-                    </svg>
-                  </div>
-                )}
-              </div>
-
-              {/* Overlay gradasi */}
-              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-[#095046] to-transparent">
-                <p className="text-sm font-medium text-white">{item.role}</p>
-                <h3 className="text-lg font-semibold text-yellow-500">{item.name}</h3>
-                <p className="text-xs text-gray-200">{item.email}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <CardManajemen data={dewanPengurus} />
       </div>
+
+      {/* Bagian Direksi */}
       <div className="my-10">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Direksi</h2>
         <div className="w-40 h-2 mt-1 mb-4 bg-yellow-500"></div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
-          {data.map((item, index) => (
-            <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
-              {/* Foto pengurus */}
-              <div className="w-full bg-gray-200 h-111">
-                {item.image ? (
-                  <img src="/images/jajaran-pengurus/4-direksi/1.JPG" alt={item.name} className="object-cover w-full h-full" />
-                ) : (
-                  <div className="flex items-center justify-center w-full h-full bg-gray-200">
-                    <svg className="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
-                    </svg>
-                  </div>
-                )}
-              </div>
-
-              {/* Overlay gradasi */}
-              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-[#095046] to-transparent">
-                <p className="text-sm font-medium text-white">{item.role}</p>
-                <h3 className="text-lg font-semibold text-yellow-500">{item.name}</h3>
-                <p className="text-xs text-gray-200">{item.email}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <CardManajemen data={direksi} />
       </div>
 
       {/* CTA Zakat */}

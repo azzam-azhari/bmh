@@ -20,7 +20,7 @@ export default function ProfilBmh() {
           <h3 className="font-semibold tracking-wide text-green-600 uppercase">TENTANG KAMI</h3>
           <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold">BAITUL MAAL HIDAYATULLAH</h2>
           <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
-          <p className="leading-relaxed text-justify text-gray-700">
+          <p className="text-xs leading-relaxed text-justify text-gray-700 md:text-sm">
             Lembaga Amil Zakat Nasional Baitul Maal Hidayatullah (BMH) merupakan lembaga amil zakat yang bergerak dalam penghimpunan dana Zakat, Infaq, Sedekah, Wakaf dan Hibah berikut dana sosial kemanusiaan dan Corporate Social
             Responsibility (CSR) perusahaan, serta melakukan distribusi melalui program pendidikan, dakwah, sosial kemanusiaan, dan ekonomi secara nasional.
             <br />
