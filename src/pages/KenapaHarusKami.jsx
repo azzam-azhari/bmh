@@ -7,7 +7,7 @@ const KenapaHarusKami = () => {
         {/* Judul */}
         <div className="mb-5">
           <h2 className="text-3xl font-bold text-start md:text-4xl text-emerald-900">Kenapa Harus BMH</h2>
-          <div className="w-32 h-2 mt-2 bg-[#39BA87]"></div>
+          <div className="w-32 h-2 mt-2 bg-[#FEB738]"></div>
         </div>
 
         <div className="grid grid-cols-1 mt-10 text-center sm:mt-5 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-5">
@@ -17,7 +17,7 @@ const KenapaHarusKami = () => {
               <path d="M13 29H1V41C1 43.209 2.791 45 5 45H13V29Z" fill="#9aa8a6ff" stroke="#095046" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M45 29H33V45H41C43.209 45 45 43.209 45 41V29Z" fill="#9aa8a6ff" stroke="#095046" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <h3 className="mt-12 text-xl font-bold text-[#FEB738] font-pj">Pendampingan Terpercaya</h3>
+            <h3 className="mt-12 text-xl font-bold text-[#39BA87] font-pj">Pendampingan Terpercaya</h3>
             <p className="mt-5 text-base text-gray-600 font-pj">BMH selalu hadir memberikan pendampingan terbaik untuk setiap program zakat, infak, dan sedekah agar manfaatnya tepat sasaran.</p>
           </div>
 
@@ -29,7 +29,7 @@ const KenapaHarusKami = () => {
               <path d="M5 17L15 7L23 15L37 1" stroke="#095046" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M28 1H37V10" stroke="#095046" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <h3 className="mt-12 text-xl font-bold text-[#FEB738] font-pj">Transparansi Dana</h3>
+            <h3 className="mt-12 text-xl font-bold text-[#39BA87] font-pj">Transparansi Dana</h3>
             <p className="mt-5 text-base text-gray-600 font-pj">Setiap rupiah yang dititipkan disalurkan dengan amanah dan transparan, lengkap dengan laporan yang bisa dipantau.</p>
           </div>
 
@@ -40,7 +40,7 @@ const KenapaHarusKami = () => {
               <path d="M18 26H7V35H18V26Z" stroke="#095046" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M35 7H24V35H35V7Z" fill="#9aa8a6ff" stroke="#095046" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <h3 className="mt-12 text-xl font-bold text-[#FEB738] font-pj">Penyaluran Cepat</h3>
+            <h3 className="mt-12 text-xl font-bold text-[#39BA87] font-pj">Penyaluran Cepat</h3>
             <p className="mt-5 text-base text-gray-600 font-pj">Dana zakat, infak, dan sedekah disalurkan dengan cepat ke penerima manfaat yang membutuhkan.</p>
           </div>
 
@@ -62,7 +62,7 @@ const KenapaHarusKami = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <h3 className="mt-12 text-xl font-bold text-[#FEB738] font-pj">Program Unggulan</h3>
+            <h3 className="mt-12 text-xl font-bold text-[#39BA87] font-pj">Program Unggulan</h3>
             <p className="mt-5 text-base text-gray-600 font-pj">Mulai dari pendidikan, dakwah, kesehatan, hingga pemberdayaan ekonomi—semua program dirancang sesuai kebutuhan umat.</p>
           </div>
 
@@ -86,7 +86,7 @@ const KenapaHarusKami = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <h3 className="mt-12 text-xl font-bold text-[#FEB738] font-pj">Amanah & Profesional</h3>
+            <h3 className="mt-12 text-xl font-bold text-[#39BA87] font-pj">Amanah & Profesional</h3>
             <p className="mt-5 text-base text-gray-600 font-pj">BMH mengelola zakat dengan standar tinggi, berlandaskan amanah, profesionalitas, dan keberlanjutan.</p>
           </div>
 
@@ -95,7 +95,7 @@ const KenapaHarusKami = () => {
               <path d="M25 7C34.941 7 43 15.059 43 25C43 34.941 34.941 43 25 43C15.059 43 7 34.941 7 25" stroke="#095046" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M19 1C9.059 1 1 9.059 1 19H19V1Z" fill="#9aa8a6ff" stroke="#095046" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <h3 className="mt-12 text-xl font-bold text-[#FEB738] font-pj">Dampak Nyata</h3>
+            <h3 className="mt-12 text-xl font-bold text-[#39BA87] font-pj">Dampak Nyata</h3>
             <p className="mt-5 text-base text-gray-600 font-pj">Setiap kontribusi menghadirkan perubahan nyata: anak bisa sekolah, dhuafa terbantu, dan masyarakat lebih berdaya.</p>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import CountUp from '../ReactBits/CountUp/CountUp.jsx';
+
 export default function JejakKebaikan() {
   return (
     <section className="p-8 mx-0 bg-white shadow-sm md:mx-5 rounded-3xl md:p-5 font-poppins">
@@ -28,25 +30,29 @@ export default function JejakKebaikan() {
         <div className="grid grid-cols-1 gap-4 mt-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium">Total Donasi Tersalurkan</p>
-            <p className="text-2xl font-bold text-emerald-500">Rp. 744.675.454.225</p>
+            <span className="text-2xl font-bold text-emerald-500">Rp. </span>
+            <CountUp from={0} to={744675454225} separator="," direction="up" duration={1} className="text-2xl font-bold count-up-text text-emerald-500" />
             <p className="mt-1 text-xs text-gray-500 md:text-sm">Setiap Rupiah Adalah Harapan Yang Nyata.</p>
           </div>
 
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium">Penerima Manfaat</p>
-            <p className="text-2xl font-bold text-emerald-500">7.523.658 Orang</p>
+            <CountUp from={0} to={7523658} separator="," direction="up" duration={1} className="text-2xl font-bold count-up-text text-emerald-500" />
+            <span className="text-2xl font-bold text-emerald-500"> Orang</span>
             <p className="mt-1 text-xs text-gray-500 md:text-sm">Hidup Mereka Berubah Berkat Dukungan Anda.</p>
           </div>
 
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium">Program Kebaikan</p>
-            <p className="text-2xl font-bold text-emerald-500">100+ Program</p>
+            <CountUp from={0} to={100} separator="," direction="up" duration={1} className="text-2xl font-bold count-up-text text-emerald-500" />
+            <span className="text-2xl font-bold text-emerald-500">+ Program</span>
             <p className="mt-1 text-xs text-gray-500 md:text-sm">Ratusan Aksi Nyata Untuk Masa Depan Yang Lebih Cerah.</p>
           </div>
 
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium0">Relawan Hebat</p>
-            <p className="text-2xl font-bold text-emerald-500">700 Orang</p>
+            <CountUp from={0} to={708} separator="," direction="up" duration={1} className="text-2xl font-bold count-up-text text-emerald-500" />
+            <span className="text-2xl font-bold text-emerald-500"> Orang</span>
             <p className="mt-1 text-xs text-gray-500 md:text-sm">Pejuang Tanpa Pamrih Di Garda Depan Kemanusiaan.</p>
           </div>
         </div>

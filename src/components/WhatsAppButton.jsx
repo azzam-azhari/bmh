@@ -2,7 +2,7 @@ import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '18002428478'; // Ganti dengan nomor WA Anda
+  const phoneNumber = '6285697779888';
   const message = 'Halo, saya ingin bertanya tentang layanan BMH';
 
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

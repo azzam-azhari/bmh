@@ -1,23 +1,23 @@
 const DataCard = [
   {
     id: 1,
-    title: 'Lorem ipsum dolor sit amet.',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.',
+    title: 'Mengalirkan Kebaikan Lewat Zakat Produktif',
+    desc: 'Bagaimana zakat tidak hanya untuk konsumsi sesaat, tapi bisa memberdayakan masyarakat dhuafa agar mandiri secara ekonomi.',
   },
   {
     id: 2,
-    title: 'Lorem ipsum dolor sit amet.',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.',
+    title: 'Santri Qur’an, Generasi Harapan Bangsa',
+    desc: 'BMH mendukung lahirnya generasi Qur’ani lewat program pendidikan dan beasiswa untuk para santri penghafal Al-Qur’an.',
   },
   {
     id: 3,
-    title: 'Lorem ipsum dolor sit amet.',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.',
+    title: 'Dampak Nyata Sedekah untuk Palestina',
+    desc: 'Setiap bantuan yang Anda titipkan, hadir sebagai wujud solidaritas kemanusiaan untuk saudara kita di Palestina.',
   },
   {
     id: 4,
-    title: 'Lorem ipsum dolor sit amet.',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.',
+    title: 'Ramadhan: Momentum Terbaik untuk Berbagi',
+    desc: 'Ramadhan bukan sekadar ibadah, tapi juga momen terbaik untuk berbagi melalui zakat, infak, dan sedekah.',
   },
 ];
 

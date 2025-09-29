@@ -7,24 +7,30 @@ const JemputZakat = () => {
   const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
 
   return (
-    <section className="flex flex-col min-h-screen mx-auto bg-slate-100 font-poppins max-w-7xl">
-      {/* Hero */}
-      <div className="grid items-center flex-1 min-h-screen px-4 py-20 mx-auto grid-row md:px-6 lg:px-12 max-w-7xl lg:py-30 gap-x-12 gap-y-6 md:grid-cols-2 lg:grid-cols-2">
+    <section className="bg-slate-100 font-poppins">
+      <div className="grid items-center min-h-screen gap-12 px-4 py-20 mx-auto max-w-7xl md:px-6 lg:px-12 md:grid-cols-2">
+        {/* Left Content */}
         <div>
-          <h2 className="mb-4 text-3xl font-extrabold md:text-4xl text-emerald-800">
+          <h2 className="mb-4 text-3xl font-extrabold text-emerald-800 md:text-4xl">
             <span className="text-yellow-500">Jemput</span> Zakat, Infak & Sedekah Anda
           </h2>
-          <p className="max-w-xl mb-6 text-slate-600">
+          <p className="max-w-md mb-8 text-slate-600">
             Tidak perlu repot keluar rumah, cukup klik tombol di bawah ini dan tim <span className="font-semibold text-emerald-700">Baitul Maal Hidayatullah (BMH)</span> akan menjemput zakat Anda. Donasi sekecil apapun sangat berarti bagi
             saudara kita yang membutuhkan.
           </p>
-          <a href={waLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 text-lg text-white transition rounded-full shadow font-base bg-emerald-600 hover:bg-emerald-700">
+          <a
+            href={waLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-full gap-2 px-6 py-3 text-lg font-medium text-white transition rounded-full shadow-md bg-emerald-600 hover:bg-emerald-700 sm:w-auto"
+          >
             <FaWhatsapp className="text-2xl" />
             Klik untuk Jemput Zakat
           </a>
         </div>
-        <div className="flex items-end justify-center w-full overflow-hidden shadow-2xl h-111 bg-slate-200 rounded-4xl shadow-emerald-100">
-          <img src="https://picsum.photos/400/300?random=3" alt="Jemput Zakat" className="object-cover w-full h-full transition-shadow shadow-lg" />
+        {/* Right Content */}
+        <div className="flex items-center justify-center w-full overflow-hidden rounded-3xl shadow-lg bg-slate-200 h-[400px]">
+          <img src="https://picsum.photos/600/400?random=3" alt="Jemput Zakat" className="object-cover w-full h-full" />
         </div>
       </div>
     </section>

@@ -4,6 +4,10 @@ export default {
   theme: {
     extend: {
       keyframes: {
+        shine: {
+          '0%': { 'background-position': '100%' },
+          // '100%': { 'background-position': '-100%' },
+        },
         tilt: { '0%,100%': { transform: 'rotate(-2deg)' }, '50%': { transform: 'rotate(2deg)' } },
         blinkLed: {
           '0%, 100%': {
@@ -21,6 +25,7 @@ export default {
         },
       },
       animation: {
+        shine: 'shine 5s linear infinite',
         tilt: 'tilt 6s infinite ease-in-out',
         blinkLed: 'blinkLed 3s infinite ease-in-out',
       },

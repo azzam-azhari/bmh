@@ -36,7 +36,7 @@ const publikasi = [
   {
     name: 'PID',
     description: 'Publikasi Inspirasi Dakwah (PID) berisi tulisan keislaman, renungan, dan dakwah bil qalam.',
-    href: '/pid',
+    href: '/under-construction',
     icon: BookOpenIcon,
   },
   {
@@ -75,15 +75,15 @@ const servicesMenu = [
 ];
 
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Bukti Nyata', href: 'https://youtu.be/toD10MqZkcQ?si=xMYiBElCAau7HthJ', icon: PlayCircleIcon },
+  { name: 'Kontak', href: 'https://wa.me/6285697779888', icon: PhoneIcon },
 ];
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full shadow-lg bg-white/50 font-poppins backdrop-blur-sm shadow-black/5">
+    <header className="fixed top-0 left-0 z-50 w-full shadow-lg bg-white/70 font-poppins backdrop-blur-sm shadow-black/5">
       <nav aria-label="Global" className="flex items-center justify-between p-3 px-4 mx-auto max-w-7xl md:px-6 lg:px-8 ">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -129,7 +129,7 @@ export default function Nav() {
               </div>
               <div className="grid grid-cols-2 divide-x divide-[#095046]/5 bg-gray-50">
                 {callsToAction.map((item) => (
-                  <a key={item.name} href={item.href} className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-100">
+                  <a key={item.name} href={item.href} target="_blank" className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 hover:bg-gray-100">
                     <item.icon aria-hidden="true" className="flex-none text-gray-400 size-5" />
                     {item.name}
                   </a>
@@ -175,6 +175,7 @@ export default function Nav() {
           <a href="https://berbagi.bmh.or.id/" target="_blank" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
             Donasi
           </a>
+
           <a href="/majalah-mulia" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
             Majalah Mulia
           </a>
