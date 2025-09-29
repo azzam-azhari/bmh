@@ -23,12 +23,12 @@ const DataCard = [
 
 export default function LastCard() {
   return (
-    <section className="w-full font-poppins">
+    <section className="w-full px-5 font-poppins">
       <div className="container mx-auto max-w-7xl">
         {/* Judul */}
         <div className="mb-10">
           <h2 className="text-3xl font-bold text-start md:text-4xl text-emerald-900">Blog</h2>
-          <div className="w-32 h-2 mt-2 bg-yellow-500"></div>
+          <div className="w-32 h-2 mt-2 bg-[#FEB738]"></div>
         </div>
         {/* Grid Card */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -38,7 +38,7 @@ export default function LastCard() {
                 <h2 className="mb-3 text-lg font-semibold text-emerald-600">{item.title}</h2>
                 <p className="text-xs md:text-sm text-slate-600">{item.desc}</p>
               </div>
-              <button className="self-start px-4 py-2 mt-6 text-xs font-medium text-white rounded-md bg-green-950 hover:bg-green-900">Selengkapnya</button>
+              <button className="self-start px-4 py-2 mt-6 text-xs font-medium text-white rounded-xl bg-[#095046] hover:bg-emerald-800">Selengkapnya</button>
             </div>
           ))}
         </div>

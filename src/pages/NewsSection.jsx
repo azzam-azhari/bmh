@@ -3,22 +3,22 @@ const newsData = [
   {
     id: 1,
     img: '/images/berita-terkini/berita1.jpeg',
-    title: 'BMH Kuatkan Kiprah Rumah Qur...',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+    title: 'BMH Kuatkan Kiprah Rumah Qur’an',
+    desc: 'BMH terus menguatkan peran Rumah Qur’an sebagai pusat pembinaan generasi Qur’ani, agar lahir anak-anak yang cinta Al-Qur’an dan berakhlak mulia.',
     bg: 'bg-[#39BA87]',
   },
   {
     id: 2,
     img: '/images/berita-terkini/berita2.jpeg',
-    title: 'BMH Membawa Cahaya ke Kamp....',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt Lorem ipsum dolor sit amet, con ut laoreet dolore magna aliquam erat volutpat.',
+    title: 'BMH Membawa Cahaya ke Kampung Terpencil',
+    desc: 'Melalui program dakwah dan pendidikan, BMH menghadirkan cahaya ilmu dan iman ke pelosok negeri, menjangkau mereka yang belum tersentuh fasilitas layak.',
     bg: 'bg-[#FEB738]',
   },
   {
     id: 3,
     img: '/images/berita-terkini/berita3.jpeg',
-    title: 'Maulid Nabi di SDIT Al-Fadl 2, BMH ...',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+    title: 'Maulid Nabi di SDIT Al-Fadl 2, BMH Hadir Meriahkan Acara',
+    desc: 'Dalam rangka memperingati Maulid Nabi Muhammad SAW, BMH berkolaborasi dengan sekolah dan masyarakat untuk menghadirkan acara penuh hikmah dan kebersamaan.',
     bg: 'bg-[#095046]',
   },
 ];
@@ -40,7 +40,7 @@ export default function NewsSection() {
                 <div className={`${news.bg} text-white p-6 pt-10 flex-1 flex flex-col mt-[-20px] rounded-b-3xl shadow-2xl`}>
                   <h3 className="mb-3 text-xl font-semibold hover:cursor-pointer">{news.title}</h3>
                   <p className="flex-1 text-xs leading-relaxed md:text-sm">{news.desc}</p>
-                  <button className="self-start px-4 py-2 mt-6 text-sm rounded-xl text-slate-900 bg-slate-50 hover:bg-slate-100 hover:cursor-pointer">Selengkapnya..</button>
+                  <button className="self-start px-4 py-2 mt-6 text-sm rounded-xl text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-50 hover:cursor-pointer">Selengkapnya..</button>
                 </div>
               </div>
             </div>

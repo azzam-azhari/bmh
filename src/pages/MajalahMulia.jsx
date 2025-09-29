@@ -120,7 +120,7 @@ export default function MajalahMulia() {
             <div>
               <h3 className="text-lg font-bold">Kalkulator Zakat</h3>
               <p className="text-sm text-emerald-100">Temukan dengan cepat berapa kewajiban zakat Anda. Praktis, akurat, dan sesuai syariat.</p>
-              <a href="#" className="inline-block px-4 py-2 mt-3 text-sm font-medium rounded-lg bg-slate-50 text-emerald-600 hover:bg-slate-100">
+              <a href="/kalkulator-zakat" className="inline-block px-4 py-2 mt-3 text-sm font-medium rounded-lg bg-slate-50 text-emerald-600 hover:bg-slate-100">
                 Hitung Zakat Anda
               </a>
             </div>

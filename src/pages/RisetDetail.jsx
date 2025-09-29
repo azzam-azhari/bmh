@@ -70,18 +70,30 @@ export default function RisetDetail() {
   ];
 
   return (
-    <section className="container py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl">
+    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
       <div className="text-left lg:text-left">
-        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Riset Judul</h2>
+        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Riset & Pengembangan</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
-        <p className="leading-relaxed text-justify text-gray-700">
-          <span className="font-semibold">Lembaga Zakat Baitul Maal Hidayatullah (BMH)</span>Lembaga Zakat Baitul Maal Hidayatullah (BMH) tidak hanya berperan dalam penghimpunan dan penyaluran zakat, infak, serta sedekah, tetapi juga aktif
-          mengembangkan riset yang berbasis kebutuhan umat. Melalui riset dan pengembangan, BMH menghadirkan kajian strategis dan inovasi sosial yang dapat memberikan arah dalam pengelolaan zakat modern, pemberdayaan masyarakat, serta
-          peningkatan kualitas layanan amil. Hasil riset ini diharapkan menjadi rujukan sekaligus inspirasi bagi para pemangku kepentingan dalam menebar kebermanfaatan secara lebih luas. <br /> Selain itu, riset dan pengembangan di BMH
-          menjadi fondasi penting dalam menciptakan program-program unggulan yang tepat sasaran dan berkelanjutan. Dengan memadukan pendekatan akademis, pengalaman lapangan, serta kebutuhan riil masyarakat, BMH berupaya melahirkan
-          solusi-solusi yang inovatif dan adaptif. Komitmen ini merupakan wujud nyata ikhtiar BMH dalam memastikan dana zakat, infak, dan sedekah dikelola secara optimal, profesional, serta berdampak besar bagi kemajuan umat dan bangsa.
-        </p>
+        <div className="flex flex-col md:flex-row gap-7">
+          <img src="https://picsum.photos/400/300?random=8" alt="Riset Image" className="object-cover pt-2 overflow-hidden transition-transform duration-500 shadow-md w-700 h-120 group-hover:scale-105 rounded-3xl" />
+          <div>
+            <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#39BA87] pb-3">
+              Problems in Implementing Regulations Concerning Zakat Fund Management by Zakat Collection Institutions (Case Study of Baitul Maal Hidayatullah Kudus)
+            </h2>
+
+            <p className="text-sm leading-relaxed text-justify text-gray-700 ">
+              By: Azhar Ahnaffidin Indiarso <br />
+              Year: 2025 <br /> <br />
+              Purpose of Study: This study aims to examine the problems in implementing regulations related to zakat fund management by Zakat Collection Institutions (LAZ), using a case study of Baitul Maal Hidayatullah Kudus.
+              Design/methodology/approach: This research uses interview methods to collect qualitative data from relevant stakeholders regarding the implementation of these regulations. Finding: BMH Kudus has basically complied with
+              positive law and Islamic law. In terms of collection, BMH Kudus refers to Law Number 23 of 2011 and Government Regulation Number 14 of 2014, so that muzakki obtains legal certainty and trust to distribute zakat through BMH
+              Kudus as an official institution. In distribution, BMH Kudus distributes zakat to eight asnaf in accordance with sharia, not only in the form of consumption but also empowerment programs such as education, da’wah, and
+              productive economy that focus on the independence of mustahik. Meanwhile, as a form of accountability, BMH Kudus prepares financial reports based on PSAK 109 and submits them to BAZNAS and the public
+            </p>
+            <button className="self-start px-4 py-2 mt-6 text-xs font-medium text-white rounded-xl bg-[#095046] hover:bg-emerald-800">Selengkapnya</button>
+          </div>
+        </div>
       </div>
 
       {/* Grid Artikel */}

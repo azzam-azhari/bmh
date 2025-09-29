@@ -73,7 +73,7 @@ export default function BuktiNyata() {
                 <div className="flex flex-col justify-center w-full p-6">
                   <h3 className={'${bukti.judul} mb-2 font-semibold text-md hover:cursor-pointer'}>{bukti.title}</h3>
                   <p className="flex-1 text-xs leading-relaxed md:text-xs text-slate-600">{bukti.desc}</p>
-                  <button className="self-start px-5 py-2 mt-4 text-xs text-white bg-teal-900 rounded-xl hover:bg-teal-950">Selengkapnya</button>
+                  <button className="self-start px-5 py-2 mt-4 text-xs text-white bg-[#095046] rounded-xl hover:bg-emerald-800">Selengkapnya</button>
                 </div>
               </div>
             </div>

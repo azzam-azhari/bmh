@@ -11,7 +11,7 @@ export default function ProgramKami() {
   ];
 
   return (
-    <section className="container mx-auto max-w-7xl font-poppins">
+    <section className="container px-5 mx-auto max-w-7xl font-poppins">
       {/* Judul */}
       <div className="mb-10">
         <h2 className="text-3xl font-bold text-[#095046] md:text-4xl">Program Kami</h2>
