@@ -31,7 +31,7 @@ export default function JejakKebaikan() {
           <div className="p-6 text-center border rounded-xl border-slate-200">
             <p className="text-[#095046] font-medium">Total Donasi Tersalurkan</p>
             <span className="text-2xl font-bold text-emerald-500">Rp. </span>
-            <CountUp from={0} to={744675454225} separator="," direction="up" duration={1} className="text-2xl font-bold count-up-text text-emerald-500" />
+            <CountUp from={744665454225} to={744675454225} separator="," direction="up" duration={1} className="text-2xl font-bold count-up-text text-emerald-500" />
             <p className="mt-1 text-xs text-gray-500 md:text-sm">Setiap Rupiah Adalah Harapan Yang Nyata.</p>
           </div>
 

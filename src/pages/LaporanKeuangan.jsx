@@ -20,6 +20,8 @@ const LaporanKeuangan = () => {
         ))}
       </div>
 
+      {/* nav ReactBits */}
+
       {/* Konten */}
       <div className="grid items-start gap-8 md:grid-cols-2">
         {/* Gambar Laporan */}
