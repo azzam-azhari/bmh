@@ -14,7 +14,7 @@ const JemputZakat = () => {
           <h2 className="mb-4 text-3xl font-extrabold text-emerald-800 md:text-4xl">
             <span className="text-yellow-500">Jemput</span> Zakat, Infak & Sedekah Anda
           </h2>
-          <p className="max-w-md mb-8 text-slate-600">
+          <p className="max-w-md mb-8 text-sm text-slate-600 md:text-lg">
             Tidak perlu repot keluar rumah, cukup klik tombol di bawah ini dan tim <span className="font-semibold text-emerald-700">Baitul Maal Hidayatullah (BMH)</span> akan menjemput zakat Anda. Donasi sekecil apapun sangat berarti bagi
             saudara kita yang membutuhkan.
           </p>
@@ -22,9 +22,9 @@ const JemputZakat = () => {
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-full gap-2 px-6 py-3 text-lg font-medium text-white transition rounded-full shadow-md bg-emerald-600 hover:bg-emerald-700 sm:w-auto"
+            className="flex items-center justify-center w-full gap-2 px-6 py-2 text-sm font-medium text-white transition rounded-full shadow-md md:text-lg bg-emerald-600 hover:bg-emerald-700 sm:w-auto"
           >
-            <FaWhatsapp className="text-2xl" />
+            <FaWhatsapp className="text-sm md:text-lg" />
             Klik untuk Jemput Zakat
           </a>
         </div>

@@ -8,7 +8,7 @@ const CardManajemen = ({ data }) => {
       {data.map((item, index) => (
         <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
           {/* Foto pengurus */}
-          <div className="w-full bg-gray-200 h-111">
+          <div className="w-full bg-gray-200 h-85 md:h-111">
             {item.image ? (
               <img src={item.image} alt={item.name} className="object-cover w-full h-full" />
             ) : (
@@ -22,8 +22,8 @@ const CardManajemen = ({ data }) => {
 
           {/* Overlay gradasi */}
           <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-[#095046] to-transparent">
-            <p className="text-sm font-medium text-white">{item.role}</p>
-            <h3 className="text-lg font-semibold text-yellow-500">{item.name}</h3>
+            <p className="text-xs font-medium text-white md:text-sm">{item.role}</p>
+            <h3 className="text-sm font-semibold text-yellow-500 md:text-base">{item.name}</h3>
             <p className="text-xs text-gray-200">{item.email}</p>
           </div>
         </div>

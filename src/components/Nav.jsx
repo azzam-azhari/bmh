@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react';
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import { InformationCircleIcon, UsersIcon, BuildingOfficeIcon, NewspaperIcon, BookOpenIcon, LightBulbIcon, Bars3Icon, XMarkIcon, BanknotesIcon, CalendarDaysIcon, CalculatorIcon, TruckIcon } from '@heroicons/react/24/outline';
+import { NavLink } from 'react-router-dom';
 
 const profil = [
   { name: 'Tentang Kami', description: 'Kenali lebih dekat visi, misi, dan komitmen BMH dalam membangun peradaban berbasis zakat.', href: '/profil-bmh', icon: InformationCircleIcon },
@@ -98,9 +99,18 @@ export default function Nav() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `font-semibold transition-all duration-200 text-sm/6 ${
+                isActive
+                  ? 'text-[#39BA87]' // warna hijau muda kalau aktif
+                  : 'text-[#095046] hover:text-[#39BA87]' // default hijau tua + hover
+              }`
+            }
+          >
             Beranda
-          </a>
+          </NavLink>
           <Popover className="relative">
             <PopoverButton className="flex items-center font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 gap-x-1 text-sm/6">
               Profil
@@ -172,13 +182,22 @@ export default function Nav() {
           <a href="/jemput-zakat" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
             Jemput Zakat
           </a> */}
-          <a href="https://berbagi.bmh.or.id/" target="_blank" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
+          <a href="https://berbagi.bmh.or.id/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
             Donasi
           </a>
 
-          <a href="/majalah-mulia" className="font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 text-sm/6">
+          <NavLink
+            to="/majalah-mulia"
+            className={({ isActive }) =>
+              `font-semibold transition-all duration-200 text-sm/6 ${
+                isActive
+                  ? 'text-[#39BA87]' // warna hijau muda kalau aktif
+                  : 'text-[#095046] hover:text-[#39BA87]' // default hijau tua + hover
+              }`
+            }
+          >
             Majalah Mulia
-          </a>
+          </NavLink>
           <Popover className="relative">
             <PopoverButton className="flex items-center font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 gap-x-1 text-sm/6">
               Publikasi

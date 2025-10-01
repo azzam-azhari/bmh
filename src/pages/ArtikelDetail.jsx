@@ -10,7 +10,7 @@ const IsiArtikel = ({ title, authors, date, content, images }) => {
       </div>
 
       <div>
-        <img src="https://picsum.photos/400/300?random=3" alt="Image" className="w-full mb-4 bg-white bg-cover shadow-md rounded-3xl h-70" />
+        <img src="https://picsum.photos/400/300?random=3" alt="Image" className="object-cover w-full mb-4 bg-white shadow-md rounded-3xl h-75" />
       </div>
 
       {/* Author and Date */}

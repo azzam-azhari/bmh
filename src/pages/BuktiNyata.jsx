@@ -64,7 +64,7 @@ export default function BuktiNyata() {
           {buktiNyata.map((bukti) => (
             <div key={bukti.id} className="flex flex-col items-center pt-1 pl-1 overflow-hidden bg-transparent border-2 border-emerald-500 rounded-3xl md:flex-row">
               {/* Gambar */}
-              <div className="absolute z-20 overflow-hidden duration-500 border-3 w-97 h-45 md:w-80 md:h-50 border-slate-50 rounded-3xl hover:shadow-2xl">
+              <div className="absolute z-20 overflow-hidden duration-500 border-3 w-85 h-45 md:w-80 md:h-50 border-slate-50 rounded-3xl hover:shadow-2xl">
                 <img src={bukti.img} alt={bukti.title} className="object-cover w-full h-full transition-shadow shadow-lg" />
               </div>
 

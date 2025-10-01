@@ -12,9 +12,9 @@ function CardManajemen({ item }) {
       <div className="flex flex-col justify-between flex-1 p-6">
         <div>
           <h3 className="mb-2 text-xl font-extrabold text-emerald-700">{item.nama}</h3>
-          <p className="mb-2 text-sm leading-relaxed text-gray-700">{item.alamat}</p>
-          <p className="text-sm text-gray-700">Tlp: {item.telp}</p>
-          {item.email && <p className="text-sm text-gray-700">Email: {item.email}</p>}
+          <p className="mb-2 text-xs leading-relaxed text-gray-700">{item.alamat}</p>
+          <p className="text-xs text-gray-700">Tlp: {item.telp}</p>
+          {item.email && <p className="text-xs text-gray-700">Email: {item.email}</p>}
         </div>
         <a href={`https://wa.me/${item.telp}?text=Halo`} target="_blank" rel="noopener noreferrer" className="self-start px-5 py-2 mt-4 text-sm font-semibold text-white transition rounded-full bg-emerald-600 hover:bg-emerald-700">
           Hubungi Perwakilan
@@ -241,8 +241,13 @@ export default function KantorPerwakilan() {
         <h4 className="mt-1 text-xl font-light leading-relaxed text-justify text-gray-700">Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.</h4>
       </div>
 
+      <div className="flex my-5 overflow-hidden rounded-full md:my-10">
+        <input type="text" placeholder="Type to start searching..." className="flex-grow px-4 py-2 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none" />
+        <button className="px-4 py-2 md:py-3 text-sm font-semibold text-white rounded-r-full bg-[#39BA87] hover:bg-emerald-600">Search</button>
+      </div>
+
       {/* Grid Perwakilan */}
-      <section className="py-12 mx-auto">
+      <section className="mx-auto">
         {/* Pusat */}
         <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Pusat</h2>
         <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
