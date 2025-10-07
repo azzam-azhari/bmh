@@ -198,6 +198,7 @@ export default function Nav() {
           >
             Majalah Mulia
           </NavLink>
+
           <Popover className="relative">
             <PopoverButton className="flex items-center font-semibold text-[#095046] hover:text-[#39BA87] transition-all duration-200 gap-x-1 text-sm/6">
               Publikasi
