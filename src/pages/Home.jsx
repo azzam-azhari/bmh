@@ -1,5 +1,5 @@
 // src/pages/Home.jsx
-import Hero from './Hero';
+import HeroTailwind from './HeroTailwind';
 import NewsSection from './NewsSection';
 import BuktiNyata from './BuktiNyata';
 import LastCard from './LastCard';
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="min-h-screen px-4 bg-slate-100 md:px-6 lg:px-12">
       {/* Hero Section */}
-      <Hero />
+      <HeroTailwind />
 
       {/* News Section */}
       <div className="py-10">

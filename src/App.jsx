@@ -37,8 +37,8 @@ function App() {
         {/* Routing */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/newsSection" element={<NewsSection />} />
-          <Route path="/buktiNyata" element={<BuktiNyata />} />
+          <Route path="/news-section" element={<NewsSection />} />
+          <Route path="/bukti-nyata" element={<BuktiNyata />} />
           <Route path="/lastCard" element={<LastCard />} />
           <Route path="/jejakKebaikan" element={<JejakKebaikan />} />
           <Route path="/program-kami" element={<ProgramKami />} />

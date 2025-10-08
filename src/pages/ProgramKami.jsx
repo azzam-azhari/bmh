@@ -56,12 +56,12 @@ export default function ProgramKami() {
       </div>
 
       {/* ReactBits */}
-      <SpotlightCard
+      {/* <SpotlightCard
         className="flex flex-col items-center gap-6 p-4 mt-20 border custom-spotlight-card border-slate-200 rounded-2xl md:flex-row md:p-4 lg:p-6"
         spotlightColor="rgba(57, 186, 135, 0.1)
 "
       >
-        {/* Kiri */}
+        
         <div className="flex flex-col items-center justify-center flex-1 w-full gap-4 p-6 text-white bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl md:flex-row md:text-left">
           <div>
             <a href="https://berbagi.bmh.or.id/" target="blank" className="px-5 py-2 font-semibold text-yellow-500 transition bg-white shadow rounded-xl hover:bg-slate-50 hover:cursor-pointer">
@@ -73,7 +73,6 @@ export default function ProgramKami() {
           </div>
         </div>
 
-        {/* Kanan */}
         <div className="flex flex-col flex-1 w-full gap-3 md:gap-4">
           <p className="text-sm text-center text-[#095046] md:text-left">Masih bingung cara berdonasi? Tim kami siap membantu kamu</p>
           <div className="flex items-center justify-center gap-2 px-3 py-2 text-sm text-gray-700 transition border rounded-lg md:justify-start border-slate-200 hover:bg-slate-200 hover:cursor-pointer">
@@ -83,7 +82,7 @@ export default function ProgramKami() {
             <span className="font-semibold">Email:</span> sekretariat@bmh.or.id
           </div>
         </div>
-      </SpotlightCard>
+      </SpotlightCard> */}
       {/* <div className="flex flex-col items-center gap-6 p-6 border border-slate-200 md:flex-row rounded-2xl">
        
         <div className="flex flex-col items-center flex-1 gap-4 p-6 text-white md:flex-row bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl">
