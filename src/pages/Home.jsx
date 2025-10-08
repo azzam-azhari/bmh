@@ -6,6 +6,7 @@ import LastCard from './LastCard';
 import JejakKebaikan from './JejakKebaikan';
 import ProgramKami from './ProgramKami';
 import KenapaHarusKami from './KenapaHarusKami';
+import Testimonials from './Testimonials';
 
 export default function Home() {
   return (
@@ -36,6 +37,10 @@ export default function Home() {
       {/* ProgramKami */}
       <div className="py-10 mb-20">
         <ProgramKami />
+      </div>
+      {/* Testimonials */}
+      <div className="py-10 mb-20">
+        <Testimonials />
       </div>
     </div>
   );

@@ -30,10 +30,14 @@ export default function HeroTailwind() {
               Bersama BMH, wujudkan kepedulian yang nyata untuk dakwah, pendidikan, sosial, dan kemanusiaan. Satu klik kebaikanmu hari ini bisa mengubah masa depan banyak orang.
             </p>
             <div className="flex items-center justify-center mt-10 gap-x-6">
-              <a href="#" className="rounded-xl bg-[#39BA87] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#37b683] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#39BA87]">
+              <a
+                href="https://berbagi.bmh.or.id/"
+                target="_blank"
+                className="rounded-xl bg-[#39BA87] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#37b683] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#39BA87]"
+              >
                 Donasi Sekarang
               </a>
-              <a href="#" className="font-semibold text-gray-700 hover:text-gray-900 text-sm/6">
+              <a href="/program-kami" className="font-semibold text-gray-700 hover:text-gray-900 text-sm/6">
                 Pelajari Program <span aria-hidden="true">→</span>
               </a>
             </div>

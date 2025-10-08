@@ -60,15 +60,32 @@ export default function BuktiNyata() {
           <div className="w-32 h-2 mt-2 rounded-none bg-emerald-500"></div>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {buktiNyata.map((bukti) => (
+            <div key={bukti.id} className="relative flex flex-col overflow-hidden transition duration-300 border-2 shadow-md border-emerald-500 rounded-3xl bg-white/60 hover:shadow-xl md:flex-row">
+              {/* Gambar */}
+              <div className="relative object-cover w-full h-56 overflow-hidden md:w-1/2 md:h-auto">
+                <img src={bukti.img} alt={bukti.title} className="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+              </div>
+
+              {/* Konten */}
+              <div className="flex flex-col justify-between flex-1 p-6 md:p-8 bg-white/80 backdrop-blur-sm">
+                <h3 className={`text-lg font-semibold text-emerald-800 mb-2 hover:text-emerald-600 transition-colors duration-200`}>{bukti.title}</h3>
+                <p className="mb-4 text-sm leading-relaxed text-slate-600">{bukti.desc}</p>
+                <button className="self-start px-5 py-2 text-xs font-medium text-white bg-[#095046] rounded-xl hover:bg-emerald-700 transition">Selengkapnya</button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* <div className="grid gap-8 md:grid-cols-2">
           {buktiNyata.map((bukti) => (
             <div key={bukti.id} className="flex flex-col items-center pt-1 pl-1 overflow-hidden bg-transparent border-2 border-emerald-500 rounded-3xl md:flex-row">
-              {/* Gambar */}
+              
               <div className="absolute z-20 overflow-hidden duration-500 border-3 w-85 h-45 md:w-80 md:h-50 border-slate-50 rounded-3xl hover:shadow-2xl">
                 <img src={bukti.img} alt={bukti.title} className="object-cover w-full h-full transition-shadow shadow-lg" />
               </div>
 
-              {/* Konten */}
               <div className="flex-1 pt-40 mt-4 backdrop-blur md:mt-0 md:ml-6 md:pl-75 md:pt-0">
                 <div className="flex flex-col justify-center w-full p-6">
                   <h3 className={'${bukti.judul} mb-2 font-semibold text-md hover:cursor-pointer'}>{bukti.title}</h3>
@@ -78,7 +95,7 @@ export default function BuktiNyata() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* <div className="grid gap-8 md:grid-cols-2">
           {buktiNyata.map((bukti) => (

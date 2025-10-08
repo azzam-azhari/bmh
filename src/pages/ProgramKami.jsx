@@ -22,7 +22,7 @@ export default function ProgramKami() {
       {/* Grid Program */}
       <div className="grid grid-cols-2 gap-4 mb-12 md:grid-cols-3 lg:grid-cols-3">
         {programs.map((item, idx) => (
-          <div key={idx} className="flex items-center gap-3 p-4 transition border border-slate-200 rounded-xl hover:shadow-sm hover:border-0 hover:bg-slate-200">
+          <div key={idx} className="flex items-center gap-3 p-4 transition border-1 border-slate-200 rounded-xl hover:border-slate-300">
             <span className="text-xl text-green-600">{item.icon}</span>
             <p className="text-sm font-semibold text-[#095046]">{item.title}</p>
           </div>
@@ -37,7 +37,7 @@ export default function ProgramKami() {
             <a href="https://berbagi.bmh.or.id/" target="blank" className="px-5 py-2 font-semibold text-yellow-500 transition bg-white shadow rounded-xl hover:bg-slate-50 hover:cursor-pointer">
               Bantu Sekarang!
             </a>
-            <p className="mt-3 text-sm text-center md:text-left">
+            <p className="text-sm text-center mt-7 md:text-left">
               Jadilah bagian dari perubahan — satu donasi kecil, <span className="font-bold">berdampak besar.</span>
             </p>
           </div>
