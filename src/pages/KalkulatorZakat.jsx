@@ -84,7 +84,7 @@ const KalkulatorZakat = () => {
               key={type}
               onClick={() => setSelectedType(type)}
               className={`border-1 px-5 py-2 rounded-xl flex items-center gap-2 transition-all ${
-                selectedType === type ? 'border-green-400 text-[#39BA87] font-semibold hover:border-[#39BA87]' : 'border-gray-200 text-[#095046] hover:cursor-pointer hover:text-[#095046] hover:border-slate-300'
+                selectedType === type ? 'border-green-400 text-[#39BA87] font-semibold hover:border-[#39BA87]' : 'border-gray-200 text-[#158173] hover:cursor-pointer hover:text-[#011d1a] hover:border-slate-300'
               }`}
             >
               {type}

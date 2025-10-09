@@ -30,7 +30,11 @@ const JemputZakat = () => {
         </div>
         {/* Right Content */}
         <div className="flex items-center justify-center w-full overflow-hidden rounded-3xl shadow-lg bg-slate-200 md:h-[400px]">
-          <img src="https://picsum.photos/600/400?random=3" alt="Jemput Zakat" className="object-cover w-full h-full" />
+          <img
+            src="https://images.unsplash.com/photo-1617347454431-f49d7ff5c3b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y291cmllcnxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Jemput Zakat"
+            className="object-cover w-full h-full"
+          />
         </div>
       </div>
     </section>

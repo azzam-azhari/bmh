@@ -29,6 +29,12 @@ import JemputZakat from './pages/JemputZakat';
 import LaporanKeuangan from './pages/LaporanKeuangan';
 import LaporanTahunan from './pages/LaporanTahunan';
 
+// App.jsx
+// import { app, db, storage } from './config/firebase';
+// console.log('Firebase initialized:', app);
+// console.log('Firestore instance:', db);
+// console.log('Storage instance:', storage);
+
 function App() {
   return (
     <Router>
@@ -51,7 +57,7 @@ function App() {
           <Route path="/kalkulator-zakat" element={<KalkulatorZakat />} />
           <Route path="/majalah-mulia" element={<MajalahMulia />} />
           <Route path="/berita-bmh" element={<BeritaBmh />} />
-          <Route path="/berita-detail" element={<BeritaDetail />} />
+          <Route path="/berita-bmh-detail" element={<BeritaDetail />} />
           <Route path="/riset-pengembangan" element={<RisetPengembangan />} />
           <Route path="/riset-detail" element={<RisetDetail />} />
           <Route path="/majalah-mulia-detail" element={<MajMulDetail />} />

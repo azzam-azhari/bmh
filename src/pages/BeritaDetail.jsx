@@ -46,7 +46,7 @@ const BeritaDetail = ({ title, authors, date, content, images }) => {
   );
 };
 
-const ArtikelDetail = () => {
+const IsiBerita = () => {
   const data = {
     title: 'Berita - Amil Mesti Progresif dalam Berkhidmat kepada Umat',
     authors: ['Melanie Zanona', 'Peter Journey'],
@@ -68,4 +68,4 @@ const ArtikelDetail = () => {
   );
 };
 
-export default ArtikelDetail;
+export default IsiBerita;

@@ -76,11 +76,11 @@ export default function RisetPengembangan() {
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Riset dan Pengembangan</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
         <p className="leading-relaxed text-justify text-gray-700">
-          <span className="font-semibold">Lembaga Zakat Baitul Maal Hidayatullah (BMH) </span>Lembaga Zakat Baitul Maal Hidayatullah (BMH) tidak hanya berperan dalam penghimpunan dan penyaluran zakat, infak, serta sedekah, tetapi juga aktif
-          mengembangkan riset yang berbasis kebutuhan umat. Melalui riset dan pengembangan, BMH menghadirkan kajian strategis dan inovasi sosial yang dapat memberikan arah dalam pengelolaan zakat modern, pemberdayaan masyarakat, serta
-          peningkatan kualitas layanan amil. Hasil riset ini diharapkan menjadi rujukan sekaligus inspirasi bagi para pemangku kepentingan dalam menebar kebermanfaatan secara lebih luas. <br /> Selain itu, riset dan pengembangan di BMH
-          menjadi fondasi penting dalam menciptakan program-program unggulan yang tepat sasaran dan berkelanjutan. Dengan memadukan pendekatan akademis, pengalaman lapangan, serta kebutuhan riil masyarakat, BMH berupaya melahirkan
-          solusi-solusi yang inovatif dan adaptif. Komitmen ini merupakan wujud nyata ikhtiar BMH dalam memastikan dana zakat, infak, dan sedekah dikelola secara optimal, profesional, serta berdampak besar bagi kemajuan umat dan bangsa.
+          <span className="font-semibold">Lembaga Zakat Baitul Maal Hidayatullah (BMH) </span>tidak hanya berperan dalam penghimpunan dan penyaluran zakat, infak, serta sedekah, tetapi juga aktif mengembangkan riset yang berbasis kebutuhan
+          umat. Melalui riset dan pengembangan, BMH menghadirkan kajian strategis dan inovasi sosial yang dapat memberikan arah dalam pengelolaan zakat modern, pemberdayaan masyarakat, serta peningkatan kualitas layanan amil. Hasil riset
+          ini diharapkan menjadi rujukan sekaligus inspirasi bagi para pemangku kepentingan dalam menebar kebermanfaatan secara lebih luas. <br /> Selain itu, riset dan pengembangan di BMH menjadi fondasi penting dalam menciptakan
+          program-program unggulan yang tepat sasaran dan berkelanjutan. Dengan memadukan pendekatan akademis, pengalaman lapangan, serta kebutuhan riil masyarakat, BMH berupaya melahirkan solusi-solusi yang inovatif dan adaptif. Komitmen
+          ini merupakan wujud nyata ikhtiar BMH dalam memastikan dana zakat, infak, dan sedekah dikelola secara optimal, profesional, serta berdampak besar bagi kemajuan umat dan bangsa.
         </p>
       </div>
 

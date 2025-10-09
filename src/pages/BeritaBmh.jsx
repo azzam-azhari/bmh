@@ -9,7 +9,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=1',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=2',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=3',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=4',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
     {
       id: 1,
@@ -41,7 +41,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=5',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=6',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
     {
       id: 3,
@@ -57,7 +57,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=7',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
     {
       id: 4,
@@ -65,7 +65,7 @@ export default function BeritaBmh() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=8',
-      link: '/berita-detail',
+      link: '/berita-bmh-detail',
     },
   ];
 
