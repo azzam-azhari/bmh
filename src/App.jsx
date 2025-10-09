@@ -17,9 +17,11 @@ import JajaranManajemen from './pages/JajaranManajemen';
 import KantorPerwakilan from './pages/KantorPerwakilan';
 import KalkulatorZakat from './pages/KalkulatorZakat';
 import MajalahMulia from './pages/MajalahMulia';
+import BeritaBmh from './pages/BeritaBmh';
+import BeritaDetail from './pages/BeritaDetail';
 import RisetPengembangan from './pages/RisetPengembangan';
 import RisetDetail from './pages/RisetDetail';
-import ArtikelDetail from './pages/ArtikelDetail';
+import MajMulDetail from './pages/MajMulDetail';
 import DoubleSliderLogin from './pages/DoubleSliderLogin';
 import UnderConstruction from './pages/UnderConstruction';
 import DonasiPage from './pages/DonasiPage';
@@ -48,9 +50,11 @@ function App() {
           <Route path="/kantor-perwakilan" element={<KantorPerwakilan />} />
           <Route path="/kalkulator-zakat" element={<KalkulatorZakat />} />
           <Route path="/majalah-mulia" element={<MajalahMulia />} />
+          <Route path="/berita-bmh" element={<BeritaBmh />} />
+          <Route path="/berita-detail" element={<BeritaDetail />} />
           <Route path="/riset-pengembangan" element={<RisetPengembangan />} />
           <Route path="/riset-detail" element={<RisetDetail />} />
-          <Route path="/artikel-detail" element={<ArtikelDetail />} />
+          <Route path="/majalah-mulia-detail" element={<MajMulDetail />} />
           <Route path="/double-slider-login" element={<DoubleSliderLogin />} />
           <Route path="/under-construction" element={<UnderConstruction />} />
           <Route path="/donasi-bmh" element={<DonasiPage />} />

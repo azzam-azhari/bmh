@@ -31,7 +31,7 @@ const publikasi = [
   {
     name: 'Berita',
     description: 'Kumpulan berita terbaru seputar aktivitas, program, dan capaian BMH untuk masyarakat.',
-    href: '/majalah-mulia',
+    href: '/berita-bmh',
     icon: NewspaperIcon,
   },
   {

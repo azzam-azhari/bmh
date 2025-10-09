@@ -1,15 +1,15 @@
 import React from 'react';
 import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
 
-export default function MajalahMulia() {
-  const articles = [
+export default function BeritaBmh() {
+  const berita = [
     {
       id: 1,
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=1',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ export default function MajalahMulia() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=2',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ export default function MajalahMulia() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=3',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export default function MajalahMulia() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=4',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
     {
       id: 1,
@@ -41,7 +41,7 @@ export default function MajalahMulia() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=5',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ export default function MajalahMulia() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=6',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
     {
       id: 3,
@@ -57,7 +57,7 @@ export default function MajalahMulia() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=7',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
     {
       id: 4,
@@ -65,7 +65,7 @@ export default function MajalahMulia() {
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
       image: 'https://picsum.photos/400/300?random=8',
-      link: '/majalah-mulia-detail',
+      link: '/berita-detail',
     },
   ];
 
@@ -73,19 +73,17 @@ export default function MajalahMulia() {
     <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
       <div className="text-left lg:text-left">
-        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Majalah Mulia – Menginspirasi dengan Dakwah dan Aksi Nyata</h2>
+        <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Berita – Menginspirasi dengan Dakwah dan Aksi Nyata</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
         <p className="text-sm leading-relaxed text-justify text-gray-700">
-          <span className="font-semibold">Majalah Mulia </span>adalah media resmi Lembaga Zakat Baitul Maal Hidayatullah (BMH) yang hadir untuk menyebarkan nilai-nilai kebaikan, dakwah, serta semangat berbagi kepada umat. <br /> Melalui
-          artikel, kisah inspiratif, dan liputan program, Majalah Mulia menjadi jendela informasi bagi masyarakat tentang bagaimana zakat, infak, sedekah, dan wakaf dikelola serta disalurkan secara amanah dan profesional. <br /> Kami
-          percaya bahwa literasi adalah bagian dari ibadah. Karena itu, setiap edisi Majalah Mulia dirancang tidak hanya untuk dibaca, tetapi juga menjadi inspirasi nyata agar setiap orang dapat terus berkhidmat dan memberi manfaat lebih
-          luas bagi sesama.
+          <span className="font-semibold">Berita Terbaru Lembaga Zakat Baitul Maal Hidayatullah (BMH) </span>adalah publikasi digital yang menyajikan informasi aktual seputar kegiatan, program, dan dampak sosial dari penghimpunan dan
+          penyaluran dana zakat, infak, sedekah, wakaf, dan hibah oleh BMH di seluruh Indonesia. <br /> Berita mencakup aksi kemanusiaan, pendidikan, dakwah, dan kolaborasi strategis yang dilakukan oleh BMH bersama mitra dan masyarakat.
         </p>
       </div>
 
       {/* Grid Artikel */}
       <div className="grid gap-6 py-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
-        {articles.map((article) => (
+        {berita.map((article) => (
           <div key={article.id} className="relative overflow-hidden shadow-md rounded-3xl group">
             {/* Gambar */}
             <img src={article.image} alt={article.title} className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105" />

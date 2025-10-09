@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IsiArtikel = ({ title, authors, date, content, images }) => {
+const BeritaDetail = ({ title, authors, date, content, images }) => {
   return (
     <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Title */}
@@ -48,7 +48,7 @@ const IsiArtikel = ({ title, authors, date, content, images }) => {
 
 const ArtikelDetail = () => {
   const data = {
-    title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat',
+    title: 'Berita - Amil Mesti Progresif dalam Berkhidmat kepada Umat',
     authors: ['Melanie Zanona', 'Peter Journey'],
     date: '17 Sept 2025, 05:59 PM',
     content: [
@@ -63,7 +63,7 @@ const ArtikelDetail = () => {
 
   return (
     <div className="min-h-screen bg-slate-100">
-      <IsiArtikel {...data} />
+      <BeritaDetail {...data} />
     </div>
   );
 };
