@@ -62,7 +62,7 @@ export default function BuktiNyata() {
 
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {buktiNyata.map((bukti) => (
-            <div key={bukti.id} className="relative flex flex-col overflow-hidden transition duration-300 border-2 shadow-md border-emerald-500 rounded-3xl bg-white/10 hover:shadow-xl md:flex-row">
+            <div key={bukti.id} className="relative flex flex-col overflow-hidden transition duration-300 shadow-md border-1 border-emerald-500 rounded-3xl bg-white/10 hover:shadow-xl md:flex-row">
               {/* Gambar */}
               <div className="relative object-cover w-full h-56 overflow-hidden md:w-1/2 md:h-auto">
                 <img src={bukti.img} alt={bukti.title} className="object-cover w-full h-full transition-transform duration-500 hover:scale-105" />

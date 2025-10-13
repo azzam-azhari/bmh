@@ -8,7 +8,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=1',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -16,7 +16,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=2',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -24,7 +24,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=3',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -32,7 +32,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=4',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -40,7 +40,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=5',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -48,7 +48,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=6',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -56,7 +56,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=7',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -64,7 +64,7 @@ export default function RisetDetail() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=8',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
   ];
@@ -76,7 +76,11 @@ export default function RisetDetail() {
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Riset & Pengembangan</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
         <div className="flex flex-col md:flex-row gap-7">
-          <img src="https://picsum.photos/400/300?random=8" alt="Riset Image" className="object-cover pt-2 overflow-hidden transition-transform duration-500 shadow-md w-700 h-120 group-hover:scale-105 rounded-3xl" />
+          <img
+            src="https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D"
+            alt="Riset Image"
+            className="object-cover pt-2 overflow-hidden transition-transform duration-500 shadow-md w-700 h-120 group-hover:scale-105 rounded-3xl"
+          />
           <div>
             <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#39BA87] pb-3">
               Problems in Implementing Regulations Concerning Zakat Fund Management by Zakat Collection Institutions (Case Study of Baitul Maal Hidayatullah Kudus)

@@ -4,7 +4,7 @@ import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
 // Reusable Component
 const CardManajemen = ({ data }) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
+    <div className="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 lg:px-16 md:px-8 px-4 mx-auto">
       {data.map((item, index) => (
         <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
           {/* Foto pengurus */}

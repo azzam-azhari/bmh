@@ -6,7 +6,7 @@ export default function ProgramKami() {
     { icon: <GraduationCap className="w-6 h-6 font-bold text-emerald-500" />, title: 'Dakwah' },
     { icon: <Home className="w-6 h-6 font-bold text-emerald-500" />, title: 'Pendidikan' },
     { icon: <Coins className="w-6 h-6 font-bold text-emerald-500" />, title: 'Ekonomi' },
-    { icon: <Heart className="w-6 h-6 font-bold text-emerald-500" />, title: 'Social Kemanusiaan' },
+    { icon: <Heart className="w-6 h-6 font-bold text-emerald-500" />, title: 'Sosial Kemanusiaan' },
     { icon: <Leaf className="w-6 h-6 font-bold text-emerald-500" />, title: 'Lingkungan' },
     { icon: <Stethoscope className="w-6 h-6 font-bold text-emerald-500" />, title: 'Kesehatan' },
   ];
@@ -24,7 +24,7 @@ export default function ProgramKami() {
         {programs.map((item, idx) => (
           <div key={idx} className="flex items-center gap-3 p-4 transition border-1 border-slate-200 rounded-xl hover:border-slate-300">
             <span className="text-xl text-green-600">{item.icon}</span>
-            <p className="text-sm font-semibold text-[#095046]">{item.title}</p>
+            <p className="text-xs md:text-sm font-semibold text-[#095046]">{item.title}</p>
           </div>
         ))}
       </div>

@@ -15,31 +15,31 @@ export default function Home() {
       <HeroTailwind />
 
       {/* News Section */}
-      <div className="py-10">
+      <div className="pt-20 md:pt-23">
         <NewsSection />
       </div>
       {/* BuktiNyata */}
-      <div className="py-10">
+      <div className="pt-20 md:pt-23" id="bukti-nyata">
         <BuktiNyata />
       </div>
       {/* LastCard */}
-      <div className="py-10">
+      <div className="pt-20 md:pt-23">
         <LastCard />
       </div>
       {/* KenapaHarusKami */}
-      <div className="py-10">
+      <div className="pt-20 md:pt-23">
         <KenapaHarusKami />
       </div>
       {/* JejakKebaikan */}
-      <div className="py-10">
+      <div className="pt-20 md:pt-23">
         <JejakKebaikan />
       </div>
       {/* ProgramKami */}
-      <div className="py-10 mb-20">
+      <div className="pt-20 md:pt-23" id="program-kami">
         <ProgramKami />
       </div>
       {/* Testimonials */}
-      <div className="py-10 mb-20">
+      <div className="pt-20 mb-30 md:pt-23">
         <Testimonials />
       </div>
     </div>

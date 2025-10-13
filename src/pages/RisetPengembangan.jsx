@@ -8,7 +8,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=1',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -16,7 +16,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=2',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -24,7 +24,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=3',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -32,7 +32,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=4',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -40,7 +40,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=5',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -48,7 +48,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=6',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -56,7 +56,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=7',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
     {
@@ -64,7 +64,7 @@ export default function RisetPengembangan() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=8',
+      image: 'https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmlzZXQlMjBib29rJTIwY292ZXJ8ZW58MHx8MHx8fDA%3D',
       link: '/riset-detail',
     },
   ];

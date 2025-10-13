@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav';
+import NavQween from './components/NavQween';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import FloatingMenu from './components/FloatingMenu';
@@ -39,8 +39,8 @@ function App() {
   return (
     <Router>
       <div className="relative">
-        {/* Nav */}
-        <Nav />
+        {/* NavQween */}
+        <NavQween />
 
         {/* Routing */}
         <Routes>
