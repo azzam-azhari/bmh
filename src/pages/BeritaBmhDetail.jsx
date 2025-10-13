@@ -58,7 +58,7 @@ const IsiBerita = () => {
       'Kedua, setiap amil tidak bisa bekerja atas perspektif yang terbatas. Satu sama lain antar tim harus mampu melakukan sinkronisasi yang cepat bahkan perlu menjadi budaya yang sudah mapan.',
       'Kemudian yang ketiga, jadilah amil yang mampu membangun paradigma berpikir besar. Kita hadir, berhimpun, bersama adalah dalam rangka ikut membangun umat, memberdayakan masyarakat dan mewujudkan Indonesia yang lebih baik.',
     ],
-    images: ['https://picsum.photos/400/300?random=2', 'https://picsum.photos/400/300?random=3', 'https://picsum.photos/400/300?random=4'],
+    images: ['/images/profil/profil2.png', '/images/profil/profil2.png', '/images/profil/profil2.png'],
   };
 
   return (
