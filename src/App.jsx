@@ -18,7 +18,7 @@ import KantorPerwakilan from './pages/KantorPerwakilan';
 import KalkulatorZakat from './pages/KalkulatorZakat';
 import MajalahMulia from './pages/MajalahMulia';
 import BeritaBmh from './pages/BeritaBmh';
-import BeritaDetail from './pages/BeritaDetail';
+import BeritaBmhDetail from './pages/BeritaBmhDetail';
 import RisetPengembangan from './pages/RisetPengembangan';
 import RisetDetail from './pages/RisetDetail';
 import MajMulDetail from './pages/MajMulDetail';
@@ -57,7 +57,7 @@ function App() {
           <Route path="/kalkulator-zakat" element={<KalkulatorZakat />} />
           <Route path="/majalah-mulia" element={<MajalahMulia />} />
           <Route path="/berita-bmh" element={<BeritaBmh />} />
-          <Route path="/berita-bmh-detail" element={<BeritaDetail />} />
+          <Route path="/berita-bmh-detail" element={<BeritaBmhDetail />} />
           <Route path="/riset-pengembangan" element={<RisetPengembangan />} />
           <Route path="/riset-detail" element={<RisetDetail />} />
           <Route path="/majalah-mulia-detail" element={<MajMulDetail />} />

@@ -8,7 +8,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=1',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
     {
@@ -16,7 +16,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=2',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
     {
@@ -24,7 +24,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=3',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
     {
@@ -32,7 +32,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=4',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
     {
@@ -40,7 +40,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=5',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
     {
@@ -48,7 +48,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=6',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
     {
@@ -56,7 +56,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=7',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
     {
@@ -64,7 +64,7 @@ export default function BeritaBmh() {
       title: 'Amil Mesti Progresif dalam Berkhidmat kepada Umat.',
       date: '17 Sept 2025, 05:59 PM',
       author: 'Admin Website BMH',
-      image: 'https://picsum.photos/400/300?random=8',
+      image: '/images/profil/profil2.png',
       link: '/berita-bmh-detail',
     },
   ];
