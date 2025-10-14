@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
 
-// Reusable CardManajemen Component
+// Fungsi bantu untuk membaca query string
+const useQuery = () => {
+  return React.useMemo(() => new URLSearchParams(window.location.search), []);
+};
+
 function CardManajemen({ item }) {
+  // Hapus spasi berlebih di telp untuk WhatsApp URL
+  const cleanTelp = item.telp.replace(/\s+/g, '');
   return (
     <div className="flex flex-col overflow-hidden transition border-[#39BA87] shadow border-1 rounded-3xl hover:shadow-md">
-      {/* Gambar */}
       <img src={item.gambar} alt={item.nama} className="object-cover w-full h-55 md:h-48" />
-
-      {/* Konten */}
       <div className="flex flex-col justify-between flex-1 p-6">
         <div>
           <h3 className="mb-2 text-xl font-extrabold text-emerald-700">{item.nama}</h3>
@@ -16,7 +19,7 @@ function CardManajemen({ item }) {
           <p className="text-xs text-gray-700">Tlp: {item.telp}</p>
           {item.email && <p className="text-xs text-gray-700">Email: {item.email}</p>}
         </div>
-        <a href={`https://wa.me/${item.telp}?text=Halo`} target="_blank" rel="noopener noreferrer" className="self-start px-5 py-2 mt-4 text-sm font-semibold text-white transition rounded-full bg-emerald-600 hover:bg-emerald-700">
+        <a href={`https://wa.me/${cleanTelp}?text=Halo`} target="_blank" rel="noopener noreferrer" className="self-start px-5 py-2 mt-4 text-sm font-semibold text-white transition rounded-full bg-emerald-600 hover:bg-emerald-700">
           Hubungi Perwakilan
         </a>
       </div>
@@ -25,6 +28,12 @@ function CardManajemen({ item }) {
 }
 
 export default function KantorPerwakilan() {
+  let query = useQuery();
+  const initialSearch = query.get('q') || '';
+
+  const [searchTerm, setSearchTerm] = useState(initialSearch);
+
+  // Data kantor (sama seperti sebelumnya)
   const kantorPusat = [
     {
       nama: 'BMH Jakarta',
@@ -213,89 +222,135 @@ export default function KantorPerwakilan() {
     },
   ];
 
+  // Fungsi untuk memfilter berdasarkan searchTerm
+  const filterKantor = (list) => {
+    if (!searchTerm) return list;
+    const term = searchTerm.toLowerCase();
+    return list.filter((item) => item.nama.toLowerCase().includes(term) || item.alamat.toLowerCase().includes(term) || item.telp.includes(term) || (item.email && item.email.toLowerCase().includes(term)));
+  };
+
+  // Filter tiap grup
+  const filteredPusat = filterKantor(kantorPusat);
+  const filteredJabar = filterKantor(kantorJabar);
+  const filteredBanten = filterKantor(kantorBanten);
+  const filteredJateng = filterKantor(kantorJateng);
+  const filteredJatim = filterKantor(kantorJatim);
+
   return (
     <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
       <div className="text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Kantor Perwakilan BMH</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
-        <h4 className="leading-relaxed text-justify  text-xl font-semibold text-[#095046]">Tunaikan Zakat Anda di Laznas BMH — Amanah, Transparan, dan Profesional Berbasis Dakwah</h4>
+        <h4 className="leading-relaxed text-justify text-xl font-semibold text-[#095046]">Tunaikan Zakat Anda di Laznas BMH — Amanah, Transparan, dan Profesional Berbasis Dakwah</h4>
         <h4 className="text-xl font-semibold leading-relaxed text-justify text-[#e79f22]">Kantor Pusat BMH</h4>
         <p className="text-sm leading-relaxed text-justify text-gray-700">
           Baitul Maal Hidayatullah (BMH) <br /> Jl. Raya Pasar Minggu No. 21 H, Kalibata, Jakarta Selatan 12740
         </p>
         <div className="flex flex-col gap-2 mt-2 w-70">
           <a
-            href={`https://wa.me/${kantorPusat[0].telp}?text=Halo`}
+            href={`https://wa.me/${kantorPusat[0].telp.replace(/\s+/g, '')}?text=Halo`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 transition rounded-xl bg-slate-200 hover:bg-slate-300"
           >
             WhatsApp: {kantorPusat[0].telp}
           </a>
-          <a href={`mailto:${kantorPusat[0].email}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 transition rounded-xl bg-slate-200 hover:bg-slate-300">
+          <a href={`mailto:${kantorPusat[0].email}`} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 transition rounded-xl bg-slate-200 hover:bg-slate-300">
             Email: {kantorPusat[0].email}
           </a>
         </div>
-        <h4 className="leading-relaxed text-justify  text-xl font-semibold text-[#095046] mt-4">Daftar Kantor Perwakilan & Layanan ZIS BMH se-Indonesia</h4>
+        <h4 className="leading-relaxed text-justify text-xl font-semibold text-[#095046] mt-4">Daftar Kantor Perwakilan & Layanan ZIS BMH se-Indonesia</h4>
         <h4 className="mt-1 text-xl font-light leading-relaxed text-justify text-gray-700">Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.</h4>
       </div>
 
+      {/* Search Input di atas (opsional) */}
       <div className="flex my-5 overflow-hidden rounded-full md:my-10">
-        <input type="text" placeholder="Type to start searching..." className="flex-grow px-4 py-2 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none" />
-        <button className="px-4 py-2 md:py-3 text-sm font-semibold text-white rounded-r-full bg-[#39BA87] hover:bg-emerald-600">Search</button>
+        <input
+          type="text"
+          placeholder="Cari kantor (nama, alamat, kota, dll)..."
+          className="flex-grow px-4 py-2 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button className="px-4 py-2 md:py-3 text-sm font-semibold text-white rounded-r-full bg-[#39BA87] hover:bg-emerald-600" onClick={() => {}}>
+          Search
+        </button>
       </div>
 
       {/* Grid Perwakilan */}
       <section className="mx-auto">
-        {/* Pusat */}
-        <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Pusat</h2>
-        <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
-          {kantorPusat.map((item, idx) => (
-            <CardManajemen key={idx} item={item} />
-          ))}
-        </div>
+        {filteredPusat.length > 0 && (
+          <>
+            <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Pusat</h2>
+            <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
+              {filteredPusat.map((item, idx) => (
+                <CardManajemen key={`pusat-${idx}`} item={item} />
+              ))}
+            </div>
+          </>
+        )}
 
-        {/* Jabar */}
-        <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Jawa Barat</h2>
-        <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
-          {kantorJabar.map((item, idx) => (
-            <CardManajemen key={idx} item={item} />
-          ))}
-        </div>
+        {filteredJabar.length > 0 && (
+          <>
+            <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Jawa Barat</h2>
+            <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
+              {filteredJabar.map((item, idx) => (
+                <CardManajemen key={`jabar-${idx}`} item={item} />
+              ))}
+            </div>
+          </>
+        )}
 
-        {/* Banten */}
-        <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Banten</h2>
-        <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
-          {kantorBanten.map((item, idx) => (
-            <CardManajemen key={idx} item={item} />
-          ))}
-        </div>
+        {filteredBanten.length > 0 && (
+          <>
+            <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Banten</h2>
+            <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
+              {filteredBanten.map((item, idx) => (
+                <CardManajemen key={`banten-${idx}`} item={item} />
+              ))}
+            </div>
+          </>
+        )}
 
-        {/* Jateng */}
-        <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Jawa Tengah</h2>
-        <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
-          {kantorJateng.map((item, idx) => (
-            <CardManajemen key={idx} item={item} />
-          ))}
-        </div>
-        {/* Jatim */}
-        <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Jawa Timur</h2>
-        <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
-          {kantorJatim.map((item, idx) => (
-            <CardManajemen key={idx} item={item} />
-          ))}
-        </div>
+        {filteredJateng.length > 0 && (
+          <>
+            <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Jawa Tengah</h2>
+            <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
+              {filteredJateng.map((item, idx) => (
+                <CardManajemen key={`jateng-${idx}`} item={item} />
+              ))}
+            </div>
+          </>
+        )}
+
+        {filteredJatim.length > 0 && (
+          <>
+            <h2 className="mb-10 text-3xl font-bold border-yellow-500 border-b-7 text-emerald-900 w-fit">BMH Jawa Timur</h2>
+            <div className="grid grid-cols-1 gap-6 mb-15 md:grid-cols-3">
+              {filteredJatim.map((item, idx) => (
+                <CardManajemen key={`jatim-${idx}`} item={item} />
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* Tampilkan pesan jika tidak ada hasil */}
+        {filteredPusat.length === 0 && filteredJabar.length === 0 && filteredBanten.length === 0 && filteredJateng.length === 0 && filteredJatim.length === 0 && searchTerm && (
+          <div className="py-10 text-center">
+            <p className="text-gray-600">
+              Tidak ada kantor yang ditemukan untuk "<strong>{searchTerm}</strong>".
+            </p>
+          </div>
+        )}
       </section>
 
       {/* CTA Zakat */}
       <div className="container py-12 mx-auto max-w-7xl">
-        {/* Heading */}
         <p className="mb-8 text-xl font-medium text-center text-gray-700">
           Salurkan Zakat Anda Lewat BMH — <span className="font-semibold">Lembaga Zakat Amanah &amp; Terpercaya</span>
         </p>
 
-        {/* Cards */}
         <div className="grid gap-6 mb-10 md:grid-cols-2">
           {/* Kalkulator Zakat */}
           <div className="flex items-start gap-4 p-6 text-white shadow-md bg-emerald-600 rounded-xl">
@@ -319,14 +374,13 @@ export default function KantorPerwakilan() {
             <div>
               <h3 className="text-lg font-bold">Tunaikan Zakat</h3>
               <p className="text-sm text-amber-100">Salurkan zakat Anda secara online dengan aman, transparan, dan tepat sasaran. Setiap rupiah Anda akan membantu mereka yang membutuhkan.</p>
-              <a href="https://berbagi.bmh.or.id/" target="_blank" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
+              <a href="https://berbagi.bmh.or.id/" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
                 Tunaikan Zakat Sekarang
               </a>
             </div>
           </div>
         </div>
 
-        {/* CTA Box */}
         <div className="p-6 text-center shadow bg-gradient-to-r from-gray-100 to-gray-50 rounded-xl">
           <p className="mb-2 text-lg font-medium text-gray-500">Mari Bersama Menebar Kebaikan!</p>
           <h4 className="mb-2 text-lg font-semibold text-emerald-900">BMH: Laznas Amanah, Transparan, dan Profesional Berbasis Dakwah.</h4>

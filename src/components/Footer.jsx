@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaTiktok, FaYoutube } from 'react-icons/fa';
 import { MdPhone, MdEmail } from 'react-icons/md';
 import { FaHome } from 'react-icons/fa';
-
 import { FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
+  const [searchQuery, setSearchQuery] = useState(''); // State lokal untuk input
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      // Arahkan ke halaman kantor-perwakilan dengan query
+      window.location.href = `/kantor-perwakilan?q=${encodeURIComponent(searchQuery.trim())}`;
+    }
+  };
+
   return (
     <footer className="relative z-20 shadow-lg bg-[#095046] backdrop-blur-md text-slate-50 font-poppins">
       {/* Konten Utama */}
@@ -43,18 +52,25 @@ const Footer = () => {
 
           {/* Kolom 3 */}
           <div className="pl-2 pr-2 md:pt-6">
-            <div className="flex mb-5 overflow-hidden rounded-full">
-              <input type="text" placeholder="Type to start searching..." className="flex-grow px-4 py-2 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none" />
-              <button className="px-4 py-2 text-sm font-semibold text-white rounded-r-full bg-[#39BA87] hover:bg-emerald-600">Search</button>
-            </div>
+            {/* Form Pencarian */}
+            <form onSubmit={handleSearch} className="flex mb-5 overflow-hidden rounded-full">
+              <input
+                type="text"
+                placeholder="Cari kantor (nama, alamat, kota, dll)..."
+                className="flex-grow px-4 py-2 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <button type="submit" className="px-4 py-2 text-sm font-semibold text-white rounded-r-full bg-[#39BA87] hover:bg-emerald-600">
+                Search
+              </button>
+            </form>
             <h3 className="mb-3 text-lg font-extrabold text-[#FEB738]">Kalibata Office Park</h3>
             <div className="space-y-2 text-sm font-light">
               <p className="flex items-center transition">Jalan Raya Pasar Minggu No.21, Blok H RT.1/RW.8, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12780, Indonesia.</p>
               <a href="tel:0217975770" className="flex items-center transition hover:text-[#39BA87] pt-3">
                 <MdPhone className="mr-2 text-xs md:text-sm" /> 021-7975-770
               </a>
-
-              {/* Email - link ke mailto: */}
               <a href="mailto:sekretariat@bmh.or.id" className="flex items-center transition hover:text-[#39BA87]">
                 <MdEmail className="mr-2 text-xs md:text-sm" /> sekretariat@bmh.or.id
               </a>
