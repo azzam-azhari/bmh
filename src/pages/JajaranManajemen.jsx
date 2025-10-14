@@ -4,7 +4,7 @@ import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
 // Reusable Component
 const CardManajemen = ({ data }) => {
   return (
-    <div className="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 lg:px-16 md:px-8 px-4 mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
       {data.map((item, index) => (
         <div key={index} className="relative overflow-hidden shadow-md rounded-2xl bg-slate-50">
           {/* Foto pengurus */}
@@ -136,9 +136,9 @@ export default function JajaranManajemen() {
   ];
 
   return (
-    <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
+    <section className="px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
-      <div className="text-left lg:text-left">
+      <div className="text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Jajaran Manajemen</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
 
@@ -178,7 +178,7 @@ export default function JajaranManajemen() {
       </div>
 
       {/* CTA Zakat */}
-      <div className="container py-12 mx-auto max-w-7xl">
+      <div className="py-12 mx-auto max-w-7xl">
         {/* Heading */}
         <p className="mb-8 text-xl font-medium text-center text-gray-700">
           Salurkan Zakat Anda Lewat BMH — <span className="font-semibold">Lembaga Zakat Amanah &amp; Terpercaya</span>
@@ -208,7 +208,7 @@ export default function JajaranManajemen() {
             <div>
               <h3 className="text-lg font-bold">Tunaikan Zakat</h3>
               <p className="text-sm text-amber-100">Salurkan zakat Anda secara online dengan aman, transparan, dan tepat sasaran. Setiap rupiah Anda akan membantu mereka yang membutuhkan.</p>
-              <a href="https://berbagi.bmh.or.id/" target="blank" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
+              <a href="https://berbagi.bmh.or.id/" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 mt-3 text-sm font-medium text-yellow-600 rounded-lg bg-slate-50 hover:bg-slate-100">
                 Tunaikan Zakat Sekarang
               </a>
             </div>
