@@ -56,11 +56,16 @@ const Footer = () => {
             <form onSubmit={handleSearch} className="flex mb-5 overflow-hidden rounded-full">
               <input
                 type="text"
-                placeholder="Cari kantor (nama, alamat, kota, dll)..."
-                className="flex-grow px-4 py-2 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none"
+                placeholder="Cari kantor cabang BMH"
+                className="flex-grow px-4 py-2 pr-10 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none" // Ruang untuk tombol X
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
+              {searchQuery && (
+                <button type="button" className="px-2 py-0 text-gray-500 bg-white border-gray-300 border-none hover:text-gray-900" onClick={() => setSearchQuery('')}>
+                  &times;
+                </button>
+              )}
               <button type="submit" className="px-4 py-2 text-sm font-semibold text-white rounded-r-full bg-[#39BA87] hover:bg-emerald-600">
                 Search
               </button>

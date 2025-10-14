@@ -242,8 +242,8 @@ export default function KantorPerwakilan() {
       <div className="text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Kantor Perwakilan BMH</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
-        <h4 className="leading-relaxed text-justify text-xl font-semibold text-[#095046]">Tunaikan Zakat Anda di Laznas BMH — Amanah, Transparan, dan Profesional Berbasis Dakwah</h4>
-        <h4 className="text-xl font-semibold leading-relaxed text-justify text-[#e79f22]">Kantor Pusat BMH</h4>
+        <h4 className="leading-relaxed text-justify text-base font-semibold text-[#095046]">Tunaikan Zakat Anda di Laznas BMH — Amanah, Transparan, dan Profesional Berbasis Dakwah</h4>
+        <h4 className="text-base font-semibold leading-relaxed text-justify text-[#e79f22]">Kantor Pusat BMH</h4>
         <p className="text-sm leading-relaxed text-justify text-gray-700">
           Baitul Maal Hidayatullah (BMH) <br /> Jl. Raya Pasar Minggu No. 21 H, Kalibata, Jakarta Selatan 12740
         </p>
@@ -252,27 +252,32 @@ export default function KantorPerwakilan() {
             href={`https://wa.me/${kantorPusat[0].telp.replace(/\s+/g, '')}?text=Halo`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 transition rounded-xl bg-slate-200 hover:bg-slate-300"
+            className="inline-flex items-center px-4 py-2 text-xs font-medium text-gray-700 transition rounded-xl bg-slate-200 hover:bg-slate-300"
           >
             WhatsApp: {kantorPusat[0].telp}
           </a>
-          <a href={`mailto:${kantorPusat[0].email}`} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 transition rounded-xl bg-slate-200 hover:bg-slate-300">
+          <a href={`mailto:${kantorPusat[0].email}`} className="inline-flex items-center px-4 py-2 text-xs font-medium text-gray-700 transition rounded-xl bg-slate-200 hover:bg-slate-300">
             Email: {kantorPusat[0].email}
           </a>
         </div>
-        <h4 className="leading-relaxed text-justify text-xl font-semibold text-[#095046] mt-4">Daftar Kantor Perwakilan & Layanan ZIS BMH se-Indonesia</h4>
-        <h4 className="mt-1 text-xl font-light leading-relaxed text-justify text-gray-700">Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.</h4>
+        <h4 className="leading-relaxed text-justify text-base font-semibold text-[#095046] mt-4">Daftar Kantor Perwakilan & Layanan ZIS BMH se-Indonesia</h4>
+        <h4 className="mt-1 text-sm font-light leading-relaxed text-justify text-gray-700">Temukan kantor BMH terdekat untuk menunaikan zakat, infak, dan sedekah Anda.</h4>
       </div>
 
       {/* Search Input di atas (opsional) */}
-      <div className="flex my-5 overflow-hidden rounded-full md:my-10">
+      <div className="relative flex w-full my-5 overflow-hidden rounded-full sm:w-1/2 md:my-10">
         <input
           type="text"
-          placeholder="Cari kantor (nama, alamat, kota, dll)..."
-          className="flex-grow px-4 py-2 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none"
+          placeholder="Cari kantor cabang BMH"
+          className="flex-grow px-4 py-2 pr-10 text-sm text-gray-800 bg-white rounded-l-full focus:outline-none" // Ruang untuk tombol X
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
+        {searchTerm && (
+          <button type="button" className="px-3 py-0 text-gray-500 bg-white hover:text-gray-900" onClick={() => setSearchTerm('')}>
+            &times;
+          </button>
+        )}
         <button className="px-4 py-2 md:py-3 text-sm font-semibold text-white rounded-r-full bg-[#39BA87] hover:bg-emerald-600" onClick={() => {}}>
           Search
         </button>
