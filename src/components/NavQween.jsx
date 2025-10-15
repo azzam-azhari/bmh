@@ -182,7 +182,7 @@ export default function Nav() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="/double-slider-login"
-            className="px-4 py-1 font-semibold text-white transition-all duration-200 border rounded-full shadow-lg bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 border-white/50 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-200"
+            className="px-4 py-1 font-semibold text-white transition-all duration-200 border rounded-full shadow-lg bg-[#39BA87] hover:bg-[#269e6e] border-white/50 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400"
           >
             Log in
           </a>

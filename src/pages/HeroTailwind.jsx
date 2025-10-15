@@ -42,7 +42,7 @@ export default function HeroTailwind() {
             <a
               href="https://berbagi.bmh.or.id/"
               target="_blank"
-              className="rounded-xl bg-[#39BA87] px-5 py-3 text-sm sm:text-base font-semibold text-white shadow-md hover:bg-[#37b683] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#39BA87]"
+              className="rounded-xl bg-[#39BA87] px-5 py-3 text-sm sm:text-base font-semibold focus:outline-2 focus:outline-offset-2 focus:outline-emerald-400 text-white shadow-md hover:bg-[#37b683] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#39BA87]"
             >
               Donasi Sekarang
             </a>

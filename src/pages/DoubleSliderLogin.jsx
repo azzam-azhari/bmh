@@ -12,10 +12,10 @@ export default function DoubleSliderLogin() {
         </div>
 
         {/* Form Wrapper */}
-        <div className="flex flex-col w-full md:w-1/2">
+        <div className="flex flex-col w-full my-1 md:w-1/2 md:my-0">
           {/* Login */}
           {!isRightPanelActive && (
-            <div className="flex flex-col justify-center w-full px-8 py-12 bg-white">
+            <div className="flex flex-col justify-center w-full px-8 py-6 bg-white md:py-12">
               <h2 className="mb-4 text-xl font-bold text-gray-800 md:text-2xl">Login here</h2>
               <input type="email" placeholder="Email" className="w-full  text-sm p-3 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#39BA87]" />
               <input type="password" placeholder="Password" className="w-full text-sm p-3 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#39BA87]" />
@@ -39,7 +39,7 @@ export default function DoubleSliderLogin() {
 
           {/* Register */}
           {isRightPanelActive && (
-            <div className="flex flex-col justify-center w-full px-8 py-12 bg-white">
+            <div className="flex flex-col justify-center w-full px-8 py-6 bg-white md:py-12">
               <h2 className="mb-4 text-xl font-bold text-gray-800 md:text-2xl">Ayo bergabung dan mulai sekarang</h2>
               <input type="text" placeholder="Full Name" className="w-full p-3 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#FEB738]" />
               <input type="email" placeholder="Email" className="w-full p-3 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#FEB738]" />
