@@ -53,7 +53,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 py-3 ${scrolled ? 'bg-white/90 pt-1 pb-1 backdrop-blur-md shadow-lg' : 'bg-transparent shadow-none'} font-poppins`}>
+    <header className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 py-3 ${scrolled ? 'bg-white/60 pt-1 pb-1 backdrop-blur-lg shadow-lg' : 'bg-transparent shadow-none'} font-poppins`}>
       <nav aria-label="Global" className="flex items-center justify-between p-3 px-4 mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
