@@ -62,7 +62,7 @@ const Footer = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
               {searchQuery && (
-                <button type="button" className="px-2 py-0 text-gray-500 bg-white border-gray-300 border-none hover:text-gray-900" onClick={() => setSearchQuery('')}>
+                <button type="button" className="px-2 py-0 text-gray-500 bg-white border-none hover:text-gray-900" onClick={() => setSearchQuery('')}>
                   &times;
                 </button>
               )}
