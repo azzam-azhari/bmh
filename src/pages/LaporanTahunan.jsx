@@ -1,23 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import YearPagination from './YearPagination.jsx';
 
 const LaporanTahunan = () => {
-  const years = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027];
-  const [activeYear, setActiveYear] = useState(2017);
-
   return (
     <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 lg:py-30 max-w-7xl md:px-6 lg:px-12">
       {/* Text Content */}
-      <div className="mb-20 text-left lg:text-left">
+      <div className="mb-10 text-left lg:text-left">
         <h2 className="mt-1 text-2xl font-bold md:text-3xl md:font-extrabold text-[#095046]">Laporan Tahunan</h2>
         <div className="h-2 w-40 bg-[#10B981] mt-1 mb-4"></div>
       </div>
       {/* Timeline Tahun */}
-      <div className="flex flex-wrap items-center justify-center gap-6 mb-10 text-slate-500">
-        {years.map((year) => (
-          <button key={year} onClick={() => setActiveYear(year)} className={`text-lg font-medium transition ${activeYear === year ? 'text-emerald-600 font-bold' : 'hover:text-emerald-500'}`}>
-            {year}
-          </button>
-        ))}
+      <div className="flex flex-wrap items-center justify-center w-full gap-6 mb-10 text-slate-500">
+        <YearPagination />
       </div>
 
       {/* Konten */}
