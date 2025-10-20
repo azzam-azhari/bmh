@@ -7,6 +7,7 @@ import JejakKebaikan from './JejakKebaikan';
 import ProgramKami from './ProgramKami';
 import KenapaHarusKami from './KenapaHarusKami';
 import Testimonials from './Testimonials';
+import FAQZakat from './FAQZakat';
 
 export default function Home() {
   return (
@@ -39,8 +40,12 @@ export default function Home() {
         <ProgramKami />
       </div>
       {/* Testimonials */}
-      <div className="pt-20 mb-30 md:pt-23">
+      <div className="pt-20 md:pt-23">
         <Testimonials />
+      </div>
+      {/* FAQZakat */}
+      <div className="pt-20 mb-30 md:pt-23">
+        <FAQZakat />
       </div>
     </div>
   );

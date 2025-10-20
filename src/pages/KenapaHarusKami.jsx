@@ -2,8 +2,8 @@ import React from 'react';
 
 const KenapaHarusKami = () => {
   return (
-    <section className="py-5 sm:py-5 lg:py-10">
-      <div className="container mx-auto max-w-7xl ">
+    <section className="w-full px-5 font-poppins">
+      <div className="container mx-auto max-w-7xl">
         {/* Judul */}
         <div className="mb-5">
           <h2 className="text-3xl font-bold text-start md:text-4xl text-emerald-900">Kenapa Harus BMH</h2>
