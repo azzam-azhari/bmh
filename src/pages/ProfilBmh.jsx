@@ -1,7 +1,66 @@
 import React from 'react';
 import { FaCalculator, FaMoneyBillWave } from 'react-icons/fa';
+import Masonry from '../ReactBits/Masonry/Masonry.jsx';
 
 export default function ProfilBmh() {
+  const items = [
+    {
+      id: '1',
+      img: 'images/profil/profil2.png',
+      url: 'https://example.com/one',
+      height: 400,
+    },
+    {
+      id: '2',
+      img: 'https://img.freepik.com/free-photo/warehouse-worker-operating-forklift-storage-facility_23-2151962537.jpg?size=338&ext=jpg',
+      url: 'https://example.com/two',
+      height: 250,
+    },
+    {
+      id: '3',
+      img: '/images/profil/profil1.png',
+      url: 'https://example.com/three',
+      height: 600,
+    },
+    {
+      id: '4',
+      img: 'images/profil/profil2.png',
+      url: 'https://example.com/one',
+      height: 400,
+    },
+    {
+      id: '5',
+      img: 'https://img.freepik.com/free-photo/warehouse-worker-operating-forklift-storage-facility_23-2151962537.jpg?size=338&ext=jpg',
+      url: 'https://example.com/two',
+      height: 250,
+    },
+    {
+      id: '6',
+      img: '/images/profil/profil1.png',
+      url: 'https://example.com/three',
+      height: 600,
+    },
+    {
+      id: '7',
+      img: 'images/profil/profil2.png',
+      url: 'https://example.com/one',
+      height: 400,
+    },
+    {
+      id: '8',
+      img: 'https://img.freepik.com/free-photo/warehouse-worker-operating-forklift-storage-facility_23-2151962537.jpg?size=338&ext=jpg',
+      url: 'https://example.com/two',
+      height: 250,
+    },
+    {
+      id: '9',
+      img: '/images/profil/profil1.png',
+      url: 'https://example.com/three',
+      height: 600,
+    },
+
+    // ... more items
+  ];
   return (
     <section className="container px-4 py-20 mx-auto font-poppins bg-slate-100 md:px-8 lg:py-30 lg:px-16">
       <div className="grid items-center gap-10 mx-auto max-w-7xl lg:grid-cols-2">
@@ -147,6 +206,11 @@ export default function ProfilBmh() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* ReactBits Gallery */}
+      <div className="container py-12 mx-auto space-y-10 mb-100 max-w-7xl">
+        <Masonry items={items} ease="power3.out" duration={2} stagger={0.3} animateFrom="bottom" scaleOnHover={true} hoverScale={0.97} blurToFocus={true} colorShiftOnHover={false} />
       </div>
     </section>
   );

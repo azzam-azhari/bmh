@@ -47,11 +47,14 @@ const FAQZakat = () => {
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className={`rounded-xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'bg-[#39BA87] text-white' : 'bg-gray-50'}`}>
-              <button onClick={() => toggleFAQ(index)} className="flex items-center justify-between w-full px-6 py-4 text-left focus:outline-none">
+              <button onClick={() => toggleFAQ(index)} className="flex items-center justify-between w-full px-6 py-3 mt-4 text-left focus:outline-none">
                 <span className={`font-medium ${openIndex === index ? 'text-white' : 'text-[#095046]'}`}>{faq.question}</span>
-                <span className={`transition-transform ${openIndex === index ? 'rotate-180' : ''}`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" className={`${openIndex === index ? 'text-white' : 'text-[#FEB738]'}`}>
-                    <path d="M12 8l6 6H6l6-6z" />
+
+                {/* span pakai transform supaya rotate bekerja */}
+                <span className={`transform transition-transform ${openIndex === index ? 'rotate-180' : ''}`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className={`${openIndex === index ? 'text-white' : 'text-[#FEB738]'}`} aria-hidden="true" focusable="false">
+                    {/* chevron stroke-only */}
+                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
               </button>
