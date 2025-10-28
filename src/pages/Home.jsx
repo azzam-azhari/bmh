@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 import HeroTailwind from './HeroTailwind';
 import NewsSection from './NewsSection';
-import BuktiNyata from './BuktiNyata';
+import AksiNyataBmh from './AksiNyataBmh';
 import LastCard from './LastCard';
 import JejakKebaikan from './JejakKebaikan';
 import ProgramKami from './ProgramKami';
@@ -20,8 +20,8 @@ export default function Home() {
         <NewsSection />
       </div>
       {/* BuktiNyata */}
-      <div className="pt-20 md:pt-23" id="bukti-nyata">
-        <BuktiNyata />
+      <div className="pt-20 md:pt-23" id="aksi-nyata-bmh">
+        <AksiNyataBmh />
       </div>
       {/* LastCard */}
       <div className="pt-20 md:pt-23">

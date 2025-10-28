@@ -7,7 +7,7 @@ import FloatingMenu from './components/FloatingMenu';
 
 import Home from './pages/Home';
 import NewsSection from './pages/NewsSection';
-import BuktiNyata from './pages/BuktiNyata';
+import AksiNyataBmh from './pages/AksiNyataBmh';
 import LastCard from './pages/LastCard';
 import JejakKebaikan from './pages/JejakKebaikan';
 import ProgramKami from './pages/ProgramKami';
@@ -46,7 +46,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news-section" element={<NewsSection />} />
-          <Route path="/bukti-nyata" element={<BuktiNyata />} />
+          <Route path="/aksi-nyata-bmh" element={<AksiNyataBmh />} />
           <Route path="/lastCard" element={<LastCard />} />
           <Route path="/jejakKebaikan" element={<JejakKebaikan />} />
           <Route path="/program-kami" element={<ProgramKami />} />

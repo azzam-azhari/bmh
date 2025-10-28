@@ -20,7 +20,7 @@ export default function HeroTailwind() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative px-3 py-1 text-sm text-gray-600 rounded-full ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Menebar Manfaat, Membangun Umat.{' '}
-              <a href="#bukti-nyata" className="font-semibold text-[#39BA87]">
+              <a href="#aksi-nyata-bmh" className="font-semibold text-[#39BA87]">
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
