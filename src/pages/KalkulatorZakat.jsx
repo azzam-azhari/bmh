@@ -14,7 +14,7 @@ const KalkulatorZakat = () => {
   const [emas, setEmas] = useState('');
   const [hasilZakat, setHasilZakat] = useState('');
 
-  const hargaEmas = 1999846; // per gram
+  const hargaEmas = 2272668; // per gram (Agustus 2025: 1999846) (Oktober 2025: 2272668)
   const nisab = 85 * hargaEmas; // Nisab emas (Rp131jt-an)
 
   const handleHitungZakat = () => {
