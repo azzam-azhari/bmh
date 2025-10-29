@@ -1,14 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+
   theme: {
     extend: {
       keyframes: {
         shine: {
-          '0%': { 'background-position': '100%' },
-          // '100%': { 'background-position': '-100%' },
+          '0%': { backgroundPosition: '100%' },
+          '100%': { backgroundPosition: '-100%' },
         },
-        tilt: { '0%,100%': { transform: 'rotate(-2deg)' }, '50%': { transform: 'rotate(2deg)' } },
+        tilt: {
+          '0%, 100%': { transform: 'rotate(-2deg)' },
+          '50%': { transform: 'rotate(2deg)' },
+        },
         blinkLed: {
           '0%, 100%': {
             background: 'linear-gradient(to right, #ec4899, #f59e0b)', // pink → kuning
@@ -24,13 +28,15 @@ export default {
           },
         },
       },
+
       animation: {
         shine: 'shine 5s linear infinite',
-        tilt: 'tilt 6s infinite ease-in-out',
-        blinkLed: 'blinkLed 3s infinite ease-in-out',
+        tilt: 'tilt 6s ease-in-out infinite',
+        blinkLed: 'blinkLed 3s ease-in-out infinite',
       },
     },
   },
+
   darkMode: 'class',
   plugins: [],
 };
