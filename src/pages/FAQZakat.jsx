@@ -26,7 +26,7 @@ const FAQZakat = () => {
     {
       question: 'Bagaimana saya bisa memantau penyaluran dan mendapatkan bukti donasi?',
       answer:
-        'Setiap donatur akan menerima bukti penerimaan (kwitansi/receipt) setelah transaksi. Donatur juga dapat memantau riwayat donasi dan laporan penyaluran melalui portal donor atau menerima laporan berkala via email. Untuk informasi lebih rinci tentang penerima dan dampak program, silakan cek laporan kegiatan kami di website.',
+        'Setiap donatur akan menerima bukti penerimaan (kwitansi/receipt) setelah transaksi. Donatur juga dapat memantau riwayat donasi dan laporan penyaluran melalui portal donor atau menerima laporan berkala via email. Untuk informasi lebih rinci tentang penerima dan dampak program, silakan cek laporan kegiatan kami di website. Atau kunjungi halaman donasi di <a href="https://berbagi.bmh.or.id/" className="font-medium text-blue-500">Donasi Disini</a>.',
     },
     {
       question: 'Apakah saya bisa berdonasi untuk program tertentu atau menjadi relawan/mitra?',
@@ -60,7 +60,7 @@ const FAQZakat = () => {
               </button>
 
               <div className={`px-6 pb-4 transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                <p className="text-sm leading-relaxed">{faq.answer}</p>
+                <p className="text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
               </div>
             </div>
           ))}
