@@ -3,7 +3,7 @@ const newsData = [
   {
     id: 1,
     img: '/images/berita-terkini/berita1.jpeg',
-    title: 'BMH Kuatkan Kiprah Rumah Qur’an',
+    title: 'BMH Kuatkan Kiprah Rumah Qur’an di Daerah Terpencil',
     desc: 'BMH terus menguatkan peran Rumah Qur’an sebagai pusat pembinaan generasi Qur’ani, agar lahir anak-anak yang cinta Al-Qur’an dan berakhlak mulia.',
     bg: 'bg-[#39BA87]',
   },
